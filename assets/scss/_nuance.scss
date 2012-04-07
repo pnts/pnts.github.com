@@ -1,0 +1,155 @@
+$anchor:          #212a29; 
+$support:         #63908d;
+$link:            lighten($anchor, 10%);
+$support-link:    lighten($support, 5%);
+$hover:           lighten($link, 50%);
+$support-hover:   lighten($support, 15%);
+$copy:            lighten($anchor, 3%);
+
+
+/*-------------------------------------------
+
+    =Basics
+
+-------------------------------------------*/
+
+body {
+  display: block;
+  color: $copy;
+}
+
+a {
+  color: $link;
+}
+
+a:hover {
+  color: $hover !important;
+}
+
+a, a:link, a:visited, a:active, a img {
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+a:hover img {
+  opacity: .7;
+}
+
+dd a, .global a {
+  color: lighten($link, 20%);
+}
+
+article p a, ol.footnotes a {
+  color: $support-link;
+}
+
+article p a:hover {
+  color: $support-hover;
+}
+
+time, sup, header h2 span, dt, dd span, .global span {
+  color: lighten($anchor, 60%);
+}
+
+ol.footnotes {
+  border-top: 1px dotted lighten($anchor, 60%);
+}
+
+blockquote {
+  color: lighten($anchor, 20%);
+  border-left: 3px dotted lighten($anchor, 70%);
+}
+
+article ul {
+  list-style-type: circle;
+}
+
+.article-nav {
+  border-top: 1px dotted lighten($anchor, 70%);
+}
+
+
+
+/*-------------------------------------------
+
+    =Headers
+
+-------------------------------------------*/
+
+h2 a, h2, .secondary a {
+  color: lighten($anchor, 30%);
+}
+
+
+/*-------------------------------------------
+
+    =Palatte Du Jour Border Colors
+
+-------------------------------------------*/
+
+html {
+  border-top: .2em solid $support;
+}
+
+body {
+  border-top: .5em solid $anchor;
+}
+
+/*-------------------------------------------
+
+    =Secondary Content
+
+-------------------------------------------*/
+
+.downloads {
+  border-top: .3em solid $support;
+  padding-top: 1em;
+}
+
+.secondary {
+  background: $anchor;
+  color: lighten($anchor, 70%);
+}
+
+.secondary h2 {
+  font-size: 1.8em;
+}
+
+.secondary h2 span {
+  font-size: .5em;
+}
+
+.downloads h3, .updated {
+  margin: 0;
+  font-size: .9em;
+}
+
+.downloads article {
+  padding: 1em 2em;
+  background: darken($anchor, 2%);
+  border: 1px solid lighten($anchor, 2%);
+}
+
+.secondary .questions {
+  border-top: 1px dotted lighten($anchor, 6%);
+  margin-top: 2em;
+}
+
+.questions p {
+  font-size: .9em;
+  line-height: 1.5em;
+  opacity: .7;
+}
+
+.inner > header {
+  text-transform: uppercase;
+  font-size: 1em;
+  letter-spacing: 2px;
+}
+@media screen and (min-width: 1024px) {
+.elsewhere li {
+  border-bottom: 3px solid lighten($anchor, 5%);
+}
+}

@@ -1,0 +1,113 @@
+/*-------------------------------------------
+
+    =Basics
+
+-------------------------------------------*/
+body {
+  display: block;
+  color: #283331; }
+
+a {
+  color: #374745; }
+
+a:hover {
+  color: #b7c6c5 !important; }
+
+a, a:link, a:visited, a:active, a img {
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear; }
+
+a:hover img {
+  opacity: .7; }
+
+dd a, .global a {
+  color: #64807d; }
+
+article p a, ol.footnotes a {
+  color: #709d9a; }
+
+article p a:hover {
+  color: #8eb1af; }
+
+time, sup, header h2 span, dt, dd span, .global span {
+  color: #b7c6c5; }
+
+ol.footnotes {
+  border-top: 1px dotted #b7c6c5; }
+
+blockquote {
+  color: #4e6361;
+  border-left: 3px dotted #d3dddc; }
+
+article ul {
+  list-style-type: circle; }
+
+.article-nav {
+  border-top: 1px dotted #d3dddc; }
+
+/*-------------------------------------------
+
+    =Headers
+
+-------------------------------------------*/
+h2 a, h2, .secondary a {
+  color: #64807d; }
+
+/*-------------------------------------------
+
+    =Palatte Du Jour Border Colors
+
+-------------------------------------------*/
+html {
+  border-top: 0.2em solid #63908d; }
+
+body {
+  border-top: 0.5em solid #212a29; }
+
+/*-------------------------------------------
+
+    =Secondary Content
+
+-------------------------------------------*/
+.downloads {
+  border-top: 0.3em solid #63908d;
+  padding-top: 1em; }
+
+.secondary {
+  background: #212a29;
+  color: #d3dddc; }
+
+.secondary h2 {
+  font-size: 1.8em; }
+
+.secondary h2 span {
+  font-size: .5em; }
+
+.downloads h3, .updated {
+  margin: 0;
+  font-size: .9em; }
+
+.downloads article {
+  padding: 1em 2em;
+  background: #1d2423;
+  border: 1px solid #25302f; }
+
+.secondary .questions {
+  border-top: 1px dotted #2e3b3a;
+  margin-top: 2em; }
+
+.questions p {
+  font-size: .9em;
+  line-height: 1.5em;
+  opacity: .7; }
+
+.inner > header {
+  text-transform: uppercase;
+  font-size: 1em;
+  letter-spacing: 2px; }
+
+@media screen and (min-width: 1024px) {
+  .elsewhere li {
+    border-bottom: 3px solid #2c3837; } }
