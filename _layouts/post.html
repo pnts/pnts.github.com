@@ -1,5 +1,14 @@
 ---
 layout: default
 ---
-{% include JB/setup %}
-{% include themes/twitter/post.html %}
+
+<article>
+  <header>
+    <h1><a href="#">{{ page.title }}</a></h1> 
+    <h2> {{ page.tags }}</h2>
+    <time datetime="{{ page.date }}" class="meta">{{ page.date | date_to_long_string }}</time>
+  </header>
+  {{ content }}      
+</article>
+
+
