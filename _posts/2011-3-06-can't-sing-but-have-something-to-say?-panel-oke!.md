@@ -7,49 +7,68 @@ permalink: /txt/panel-oke
 
 Panel-oke combines panels and karaoke to create a more participatory and fluid approach to panels by inviting the audience to not only become the questioner, but to become the panel as well. The basic idea is that panels are re-formed in response to each question that is asked. While in play, the panel is a fluid entity and can become larger or smaller as answers are explored. In this format, the distinction between audience and participants fades away and the panel process becomes a fully collaborative event.
 
-Traditional panel interactions happen between questioners and panels, while the audience takes on the passive role of consumer/observer. Audience members actively participate when they assume the role of questioner, but their participation is strictly limited once the initial proposition has been stated. In this format only a very small percentage of the passive audience becomes active questioners, while attempts to 'become the panel' don't even manifest as a possibility throughout the duration of the panel presentation. 
+Traditional panel interactions happen between questioners and panels, while the audience takes on the passive role of consumer/observer. Audience members actively participate when they assume the role of questioner, but their participation is strictly limited once the initial proposition has been stated. In this format only a very small percentage of the passive audience becomes active questioners, while attempts to &#8216;become the panel&#8217; don&#8217;t even manifest as a possibility throughout the duration of the panel presentation.
 
 On the opposite side of the spectrum is karaoke, participatory and open at the core, its form and structure shift from moment to moment. At times a practiced veteran might skillfully control the audience and demand utmost attention and devotion. Other times a classic tune might incite the entire room to belt along with sloppy grins on their faces, swaying and singing together.
 
 Panel + Karaoke = Panel-oke!
 
+<img src="/assets/img/paneloke/peterandjohn.jpg" alt="Peter and John participate in Panel-oke!" title="peterandjohn" width="680" />
+<p class="caption">John and Peter, both New York IxDA Leaders, take part in the panel on visual and interaction design.</p>
 
+<h2>Why Paneloke?</h2>
 
-[caption id="attachment_528" align="alignnone" width="680" caption="John and Peter, both New York IxDA Leaders, take part in the panel on visual and interaction design."][/caption]  
+Panel-oke was hatched at <a href="http://www.ixda.org/interaction/index.html">Interaction &#8217;11</a>, the annual <a href="http://ixda.org">Interaction Design Association</a> conference. Several tracks of the conference consisted of five 20 minute long &#8216;lightning&#8217; presentations, followed by a panel session with all of the people who had just presented. With an audience of 650 people, the panel was able to field four or five questions before the moderator wrapped-up with a quick summary and sent us all off to lunch (or drinks). The panelists were great, the questions were great, but when you have such a high concentration of experts in one room &#8211; such a large and diverse pool of experience and knowledge to pull from &#8211; why not tap into that as well?
 
+Over lunch Ian (<a href="http://twitter.com/iswinson">@iswinson</a>) and I were discussing the panels when he brilliantly mashed up panels and karaoke and exclaimed, &#8220;Panel-oke!&#8221;. We pushed our mediocre noodles aside and explored the idea more. It made sense, it was plausible, and it fit with the ethos of interaction designers. Over the next couple days we bounced the idea off of people and the reception was positive. Panel-oke was viable. 
 
+<h2>Testing it out</h2>
 
-Panel-oke was hatched at , the annual  conference. Several tracks of the conference consisted of five 20 minute long 'lightning' presentations, followed by a panel session with all of the people who had just presented. With an audience of 650 people, the panel was able to field four or five questions before the moderator wrapped-up with a quick summary and sent us all off to lunch (or drinks). The panelists were great, the questions were great, but when you have such a high concentration of experts in one room - such a large and diverse pool of experience and knowledge to pull from - why not tap into that as well?
+It just so happened that Ian was going to be in New York in early March, so the New York branch of the IxDA sprung into action to put on the inaugural Panel-oke event. Originally we thought we&#8217;d just have a small group of guinea pigs, but with an overwhelming 72 RSVPs we realized we had a larger event on our hands. Experimental events need a few things to work successfully: alcohol, willing participants, and in the case of Panel-oke, enough room to move about and re-form panels at will. 
 
-Over lunch Ian () and I were discussing the panels when he brilliantly mashed up panels and karaoke and exclaimed, "Panel-oke!". We pushed our mediocre noodles aside and explored the idea more. It made sense, it was plausible, and it fit with the ethos of interaction designers. Over the next couple days we bounced the idea off of people and the reception was positive. Panel-oke was viable. 
+To help execute the event, <a href="http://pivotallabs.com">Pivotal Labs</a> offered their new space and <a href="http://infinityplusone.com/">InfinityPlusOne</a> (aka <a href="http://twitter.com/yoni">@yoni</a>) plied the group with wine and beer to loosen tongues and boost courage. Mix in the enthusiastic participation of the New York Design community and it&#8217;s hard to go wrong. Unexpected enhancements came by way of the PA system with two mics, and a mini-gong mysteriously housed above the fridge.
 
+<img src="/assets/img/paneloke/presenting.jpg" alt="" title="presenting" width="680" />
+<p class="caption">Ian and I kicking off the inaugeral Panel-oke event.</p>
+  
+Ian has a great write-up of the event (check out the <a href="http://www.postcardpatterns.com/post/3684834684/paneloke">full post</a>) and sums up the logistics of Panel-oke as, 
 
+<blockquote> &#8220;a pretty easy event to organize and set up. The room was generously sized but not overwhelming at about 30 by 75 feet. Against one long wall we place a whiteboard and four chairs. The whiteboard displayed the rules, the hashtag for live tweeting (#paneloke), and the @IxDA_NYC twitter handle. Facing the four chairs we had fifty seats arranged in three rows and forming a slight arch to center the audience on the panel. In the fridge there was beer and wine (thanks again Yoni!) and near the fridge we had name tags, slips of paper and pens. Since this was primarily intended to be a social networking event the name tags are a given. The paper and pens were for preparing questions in advance of the actual discussions. We allowed folks to either hold onto their questions or drop them in a bag for possible inclusion in a discussion round as a wildcard and anonymous submission.&#8221;
+</blockquote>
 
-It just so happened that Ian was going to be in New York in early March, so the New York branch of the IxDA sprung into action to put on the inaugural Panel-oke event. Originally we thought we'd just have a small group of guinea pigs, but with an overwhelming 72 RSVPs we realized we had a larger event on our hands. Experimental events need a few things to work successfully: alcohol, willing participants, and in the case of Panel-oke, enough room to move about and re-form panels at will. 
+The biggest unknown was how long a panel should last, how actively we should moderate, and how to keep the flow going. We started out with a 5 minute limit, but it quickly became apparent that a good conversation between 3 &#8211; 5 people takes about 10 &#8211; 15 minutes to get to a satisfactory concluding point (and perhaps even longer if the audience has had a shared experience). When time was up someone would bang the gong and we&#8217;d check-in with the audience to see if they wanted a new song or to continue with the current one. Using the room as a sounding-board, we navigated our way through 4 panel topics in a little under an hour.
 
-To help execute the event,  offered their new space and  (aka ) plied the group with wine and beer to loosen tongues and boost courage. Mix in the enthusiastic participation of the New York Design community and it's hard to go wrong. Unexpected enhancements came by way of the PA system with two mics, and a mini-gong mysteriously housed above the fridge. 
+<img src="/assets/img/paneloke/audience.jpg" alt="" title="audience" width="680" />
+<p class="caption">Participants look on from the vortex of the insanely-comfy lounge chairs.</p>
 
-[caption id="attachment_530" align="alignnone" width="680" caption="Ian and I kicking off the inaugeral Panel-oke event."][/caption]
+<h2>Questions asked (roughly summarized):</h2>
 
-Ian has a great write-up of the event (check out the ) and sums up the logistics of Panel-oke as, 
+1. What is Agile UX?
+2. How do you integrate accessibility into *all* stages of the product design/dev process?
+3. Success and horror stories trying to convince the client your solution is right.
+4. IxD and Visual Design &#8211; should we all be visual designers? Where is visual design in the process and how do we communicate with visual designers?
 
-
-
-The biggest unknown was how long a panel should last, how actively we should moderate, and how to keep the flow going. We started out with a 5 minute limit, but it quickly became apparent that a good conversation between 3 - 5 people takes about 10 - 15 minutes to get to a satisfactory concluding point (and perhaps even longer if the audience has had a shared experience). When time was up someone would bang the gong and we'd check-in with the audience to see if they wanted a new song or to continue with the current one. Using the room as a sounding-board, we navigated our way through 4 panel topics in a little under an hour. 
-
-[caption id="attachment_522" align="alignnone" width="680" caption="Participants look on from the vortex of the insanely-comfy lounge chairs."][/caption]
-
-
-
-
+<h2>Retrospective Feedback</h2>
 
 Feedback was overall positive, and unified in the desire to encourage even more participation. Suggestions included:
- 
 
+* __More audience participation__ &#8211;  using props for people to signal additional participation / a change in topic
+* __Too much light makes the baby go blind__ &#8211; an improve technique I&#8217;m not too familiar with, but the gist is that there is a string of theme labels hanging near the panel and participants can change the topic by coming up and grabbing one off the line
+* __Better seating arrangement__ &#8211; our configuration didn&#8217;t do much to disrupt the traditional seating structure for panels.
+* __Documentation and moderation__ &#8211; Putting follow-up questions in a parking-lot on the whiteboard, summarizing the points covered, and actively moderating the panel makes everyone happy.
+* __Bring in the WWF__ &#8211; More tag-team style participation to increase audience involvement and magnify spontaneity
+* __Bigger gong__ &#8211; Designers are unhappy with small, tin-sounding gongs. Make sure the gong really means it.
 
-[caption id="attachment_526" align="alignnone" width="680" caption="Have gong, will travel."][/caption]
+<img src="/assets/img/paneloke/mics-and-gong.jpg" alt="" title="mics-and-gong" width="680" />
+<p class="caption">Have gong, will travel.</p>
 
+<h2>Major thanks</h2>
 
-Huge thanks to  for the great space,  for the generous libations which kept the whole shebang going, the  for making the entire thing happen,  for making sure it happened in the first place,  for photographic documentation, and the New York Design community for their engaged and supportive collaboration.
+Huge thanks to <a href="http://pivotallabs.com">Pivotal Labs</a> for the great space, <a href="http://twitter.com/yoni">@yoni</a> for the generous libations which kept the whole shebang going, the <a href="http://www.ixda.org/local/new-york-ixda">IxDA NYC local group</a> for making the entire thing happen, <a href="http://eastmedia.com">Eastmedia</a> for making sure it happened in the first place, <a href="http://www.notes.slcstudios.net/">Samuel Lee</a> for photographic documentation, and the New York Design community for their engaged and supportive collaboration.
 
-
+<h2>Resources</h2>
+<ul class="resources">
+<li><a href="/assets/docs/panel-oke-instructions.pdf">Panel-oke rulesheet (pdf)</a></li>
+<li><a href="http://www.postcardpatterns.com/post/3684834684/paneloke">Panel-oke!</a> &#8211; via Ian Swinson</li>
+<li><a href="http://www.notes.slcstudios.net/archives/235">IxDA Panel-Oke</a> &#8211; via Samuel Lee</li>
+</ul>

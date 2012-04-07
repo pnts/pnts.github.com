@@ -26,6 +26,13 @@
     content: '';
     content: none; }
 
+  .caption {
+    font-size: .8em;
+    display: block;
+    color: #777;
+    padding: 0;
+    margin-top: -1em; }
+
   a {
     background: transparent;
     font-size: 100%;
