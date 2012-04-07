@@ -3,13 +3,13 @@
   <header>Reading</header>
     <ul>
       <li class="firstChild"><a href="http://www.amazon.com/gp/product/0374275637/ref=as_li_tf_tl?ie=UTF8&amp;tag=protocol7net-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0374275637">
-             <img src="<?php bloginfo("template_directory"); ?>/assets/img/books/thinking-fast-and-slow.png" alt="Thinking Fast and Slow" /></a></li>
+             <img src="/assets/img/reading/thinking-fast-and-slow.png" alt="Thinking Fast and Slow" /></a></li>
       <li><a href="http://www.amazon.com/gp/product/0143039830/ref=as_li_tf_tl?ie=UTF8&amp;tag=protocol7net-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0143039830">
-             <img src="<?php bloginfo("template_directory"); ?>/assets/img/books/new-york-trilogy.png" alt="New York Trilogy" /></a></li>
+             <img src="/assets/img/reading/new-york-trilogy.png" alt="New York Trilogy" /></a></li>
       <li><a href="http://www.amazon.com/gp/product/1162619759/ref=as_li_tf_tl?ie=UTF8&amp;tag=protocol7net-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=1162619759">
-             <img src="<?php bloginfo("template_directory"); ?>/assets/img/books/experience-and-nature.png" alt="Experience and Nature"/></a></li>
+             <img src="/assets/img/reading/experience-and-nature.png" alt="Experience and Nature"/></a></li>
       <li class="lastChild"><a href="http://www.amazon.com/gp/product/B0058M5WN0/ref=as_li_tf_tl?ie=UTF8&amp;tag=protocol7net-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B0058M5WN0">
-             <img src="<?php bloginfo("template_directory"); ?>/assets/img/books/urban-revolution.png" alt="Welcome to the Urban Revolution" /></a></li>
+             <img src="/assets/img/reading/urban-revolution.png" alt="Welcome to the Urban Revolution" /></a></li>
     </ul>
 </div>
 </section>
