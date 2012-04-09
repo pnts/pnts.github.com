@@ -2,13 +2,19 @@
 layout: default
 title: Interaction & Interface Design. And beer.
 ---
-
-<ul class="posts">
+<ul>
   {% for post in site.posts %}
-    <li> 
-      <h1><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></h1>
-      <time> {{ post.date | date_to_string }} </time>
-      <p>{{ post.content }}</p>
+    <li>
+      <article> 
+        <header>
+          <h1><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></h1>
+          <h2>{{ post.tags | sort | array_to_sentence_string }} </h2>
+          <time> {{ post.date | date_to_string }} </time>
+        </header>
+        
+        {{ post.content }}
+        
+      <article>
     </li>
   {% endfor %}
 </ul>
