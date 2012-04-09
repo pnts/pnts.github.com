@@ -5,10 +5,10 @@ layout: default
 <article>
   <header>
     <h1>{{ page.title }}</h1> 
-    <h2> {{ page.tags }}</h2>
+    <h2>{{ page.tags | sort | array_to_sentence_string }} </h2>
     <time datetime="{{ page.date }}" class="meta">{{ page.date | date_to_long_string }}</time>
   </header>
-  {{ content }}      
+  {{ content }}    
 </article>
 
 

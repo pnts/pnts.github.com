@@ -7,6 +7,8 @@ permalink: /txt/panel-oke
 
 Panel-oke combines panels and karaoke to create a more participatory and fluid approach to panels by inviting the audience to not only become the questioner, but to become the panel as well. The basic idea is that panels are re-formed in response to each question that is asked. While in play, the panel is a fluid entity and can become larger or smaller as answers are explored. In this format, the distinction between audience and participants fades away and the panel process becomes a fully collaborative event.
 
+<!-- more start -->
+
 Traditional panel interactions happen between questioners and panels, while the audience takes on the passive role of consumer/observer. Audience members actively participate when they assume the role of questioner, but their participation is strictly limited once the initial proposition has been stated. In this format only a very small percentage of the passive audience becomes active questioners, while attempts to &#8216;become the panel&#8217; don&#8217;t even manifest as a possibility throughout the duration of the panel presentation.
 
 On the opposite side of the spectrum is karaoke, participatory and open at the core, its form and structure shift from moment to moment. At times a practiced veteran might skillfully control the audience and demand utmost attention and devotion. Other times a classic tune might incite the entire room to belt along with sloppy grins on their faces, swaying and singing together.
@@ -72,3 +74,5 @@ Huge thanks to <a href="http://pivotallabs.com">Pivotal Labs</a> for the great s
 <li><a href="http://www.postcardpatterns.com/post/3684834684/paneloke">Panel-oke!</a> &#8211; via Ian Swinson</li>
 <li><a href="http://www.notes.slcstudios.net/archives/235">IxDA Panel-Oke</a> &#8211; via Samuel Lee</li>
 </ul>
+
+<!-- more end -->
