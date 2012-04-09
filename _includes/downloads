@@ -2,25 +2,25 @@
 <div class="inner">
 <article>
   <header>
-    <h2><a href="<?php bloginfo('url');?>/oulipo" name="downloads">Oulipo </a><span class="version">v.1.0.9.2 / Last updated October 18th, 2010 / WordPress</span></h2>
+    <h2><a href="./oulipo.html" name="downloads">Oulipo </a><span class="version">v.1.0.9.2 / Last updated October 18th, 2010 / WordPress</span></h2>
   </header>
   <p>Inspired by and named after the group <a href="http://en.wikipedia.org/wiki/Oulipo">Oulipo</a>, this clean, minimal, grid-based theme was created for authors who want their content to shine. Three-column simplicity with an eye for typography, Oulipo is also available on <a href="http://en.blog.wordpress.com/2010/08/16/new-theme-oulipo/">WordPress.com</a></p>
  
   <footer>
-    <a href="<?php bloginfo('url');?>/oulipo">Info</a> / <a href="http://wordpress.org/extend/themes/oulipo">Download</a> 
+    <a href="./oulipo.html">Info</a> / <a href="http://wordpress.org/extend/themes/oulipo">Download</a> 
   </footer>
 </article>
 
 
 <article>
   <header>
-    <h2>  <a href="<?php bloginfo('url');?>/zack-990">Zack 990</a> <span class="version">v.1.2 / Last updated May 16th, 2010 / WordPress</span></h2>			
+    <h2>  <a href="./zack-990.html">Zack 990</a> <span class="version">v.1.2 / Last updated May 16th, 2010 / WordPress</span></h2>			
   </header>
   
   <p>Based on the Boston Globe's <a href="http://www.boston.com/bigpicture/"><em>The Big Picture</em></a>, this theme puts photos and videos up front at 990 pixels wide.  Zack 990 is not meant for written content alone, so if your weapon is words then you might want to check out Oulipo.</p>
 
   <footer>
-    <a href="<?php bloginfo('url');?>/zack-990">Info</a> / <a href="http://wordpress.org/extend/themes/zack-990">Download</a> 
+    <a href="./zack-990.html">Info</a> / <a href="http://wordpress.org/extend/themes/zack-990">Download</a> 
   </footer>
 </article>
 
