@@ -204,7 +204,7 @@ article p a, ol.footnotes a {
 article p a:hover {
   color: #8eb1af; }
 
-time, sup, header h2 span, dt, dd span, .global span {
+time, sup, header h2 span, dt, dd span, .global span, h1 span {
   color: #b7c6c5; }
 
 ol.footnotes {
@@ -327,6 +327,9 @@ h1 {
   font-weight: 600;
   font-size: 1.9em;
   line-height: 1.2em; }
+  h1.header {
+    font-size: 1em;
+    font-weight: 200; }
 
 h2, h3, h4, h5, h6 {
   font-weight: 400; }
@@ -342,8 +345,3 @@ header h2 {
 ol.footnotes {
   font-size: .8em;
   line-height: 1.6em; }
-
-.wp-caption-text {
-  margin-top: -0.8em;
-  font-size: .8em;
-  line-height: 1.2em; }

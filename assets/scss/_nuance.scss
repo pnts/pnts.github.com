@@ -49,7 +49,7 @@ article p a:hover {
   color: $support-hover;
 }
 
-time, sup, header h2 span, dt, dd span, .global span {
+time, sup, header h2 span, dt, dd span, .global span, h1 span {
   color: lighten($anchor, 60%);
 }
 
