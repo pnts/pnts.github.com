@@ -85,72 +85,73 @@
   p {
     margin: 1.5em 0; }
 
-  li.now {
+  li
+  .now {
     float: left; }
 
-  li.past {
-    float: right; }
+  .past {
+    float: right; } }
+ul, ol {
+  margin: .5em 0; }
 
-  ul, ol {
-    margin: .5em 0; }
+li {
+  margin: .5em 0; }
 
-  li {
-    margin: .5em 0; }
+ol.footnotes {
+  margin-top: 4em;
+  padding-top: 1.5em; }
 
-  ol.footnotes {
-    margin-top: 4em;
-    padding-top: 1.5em; }
+.secondary article {
+  margin-top: 0; }
 
-  .secondary article {
-    margin-top: 0; }
+blockquote {
+  padding: 0 1.5em;
+  margin: 2em 0; }
 
-  blockquote {
-    padding: 0 1.5em;
+.share {
+  text-align: center;
+  margin-top: 1em; }
+
+.downloads h2 {
+  margin-top: .1em; }
+
+.downloads article p {
+  margin-top: .8em; }
+
+.elsewhere {
+  clear: both;
+  overflow: hidden;
+  padding-bottom: 4em; }
+  .elsewhere li {
     margin: 2em 0; }
+  .elsewhere a {
+    display: block; }
+  .elsewhere span {
+    font-style: italic; }
 
-  .share {
-    text-align: center;
-    margin-top: 1em; }
+.alignleft, .icon.alignleft {
+  float: left;
+  clear: left;
+  margin: .5em 1em .5em 0 !important; }
 
-  .downloads h2 {
-    margin-top: .1em; }
+.alignright {
+  float: right;
+  clear: right;
+  margin: 0.5em -3.5em 0.5em 1em; }
 
-  .downloads article p {
-    margin-top: .8em; }
+.aligncenter {
+  display: block;
+  margin: 0 auto; }
 
-  .elsewhere {
-    clear: both;
-    overflow: hidden;
-    padding-bottom: 4em; }
-    .elsewhere li {
-      margin: 2em 0; }
-    .elsewhere a {
-      display: block; }
-    .elsewhere span {
-      font-style: italic; }
+.article-nav {
+  display: block;
+  width: 100%;
+  padding-top: 0;
+  margin-bottom: 1em; }
 
-  .alignleft, .icon.alignleft {
-    float: left;
-    clear: left;
-    margin: .5em 1em .5em 0 !important; }
+p.questions {
+  padding-top: 2em; }
 
-  .alignright {
-    float: right;
-    clear: right;
-    margin: 0.5em -3.5em 0.5em 1em; }
-
-  .aligncenter {
-    display: block;
-    margin: 0 auto; }
-
-  .article-nav {
-    display: block;
-    width: 100%;
-    padding-top: 0;
-    margin-bottom: 1em; }
-
-  p.questions {
-    padding-top: 2em; } }
 @media screen and (min-width: 1024px) {
   .inner {
     width: 53%;

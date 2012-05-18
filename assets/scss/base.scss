@@ -106,12 +106,13 @@ p {
   margin: 1.5em 0;
 }
 
-li.now {
-  float: left;
-}
-
-li.past {
-  float: right;
+li
+  .now {
+    float: left;
+  }
+  .past {
+    float: right;
+  }
 }
 
 ul, ol {
@@ -190,7 +191,6 @@ blockquote {
 
 p.questions {
   padding-top: 2em;
-}
 }
 
 
