@@ -1,0 +1,33 @@
+@media screen and (max-width: 480px) {
+  .reading, .elsewhere {
+    text-align: center; }
+
+  .reading li img {
+    display: block;
+    margin: 2em auto; }
+
+  .inner > article {
+    padding-top: 0; }
+
+  .article-nav ul {
+    margin-top: 0; }
+
+  .downloads h2 {
+    padding-top: .7em; }
+
+  .alignleft, .alignright {
+    padding: 0 0 2em 0; } }
+@media screen and (min-width: 481px) {
+  dl {
+    float: left;
+    display: inline; }
+
+  .reading li {
+    float: left;
+    margin-left: 1%;
+    margin-top: 0; }
+    .reading li .firstChild {
+      margin-left: 0; }
+
+  .reading, .elsewhere {
+    text-align: center; } }
