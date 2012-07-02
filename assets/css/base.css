@@ -152,6 +152,16 @@ blockquote {
 p.questions {
   padding-top: 2em; }
 
+.pagination {
+  display: block;
+  width: 100%;
+  padding: .5em 0;
+  font-size: .8em; }
+  .pagination .past {
+    padding-right: 2em; }
+  .pagination .now {
+    padding-left: 2em; }
+
 @media screen and (min-width: 1024px) {
   .inner {
     width: 53%;
@@ -199,7 +209,7 @@ a:hover img {
 dd a, .global a {
   color: #64807d; }
 
-article p a, ol.footnotes a {
+article p a, ol.footnotes a, p a {
   color: #709d9a; }
 
 article p a:hover {
@@ -276,6 +286,9 @@ body {
   font-size: .9em;
   line-height: 1.5em;
   opacity: .7; }
+
+.pagination {
+  background: #e9f0ef; }
 
 .inner > header {
   text-transform: uppercase;

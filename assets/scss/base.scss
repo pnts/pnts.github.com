@@ -193,6 +193,19 @@ p.questions {
   padding-top: 2em;
 }
 
+.pagination {
+  display: block;
+  width: 100%;
+  padding: .5em 0;
+  font-size: .8em;
+  .past {
+    padding-right: 2em;
+  }
+  .now {
+    padding-left: 2em;
+  }
+}
+
 
 @import "desktop";
 @import "nuance";

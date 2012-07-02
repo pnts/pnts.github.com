@@ -41,7 +41,7 @@ dd a, .global a {
   color: lighten($link, 20%);
 }
 
-article p a, ol.footnotes a {
+article p a, ol.footnotes a, p a {
   color: $support-link;
 }
 
@@ -141,6 +141,10 @@ body {
   font-size: .9em;
   line-height: 1.5em;
   opacity: .7;
+}
+
+.pagination {
+  background: lighten($support, 45%);
 }
 
 .inner > header {

@@ -9,3 +9,5 @@ pygments: true
 production_url : http://pnts.github.com
 
 paginate: 2
+
+paginate_file: index.html

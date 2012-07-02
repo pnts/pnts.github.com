@@ -8,6 +8,7 @@ layout: default
     <h2>{{ page.tags | sort | array_to_sentence_string }} </h2>
     <time datetime="{{ page.date }}" class="meta">{{ page.date | date: "%B %d, %Y" }}</time>
   </header>
+  
   {{ content }} 
   
   <footer>
