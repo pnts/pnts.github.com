@@ -1,3 +1,3 @@
 [submodule "assets/js/a-hole"]
 	path = assets/js/a-hole
-	url = https://github.com/pnts/a-hole.git
+	url = git://github.com/pnts/a-hole.git
