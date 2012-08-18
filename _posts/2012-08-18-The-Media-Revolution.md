@@ -7,4 +7,4 @@ permalink: /quote/on-making
 
 > The personal media world ... is a world where answering back is not an option - it's required. Otherwise, you don't have the personal media experience. Take Google. You don't watch Google. Watching Google would be like watching the test pattern on a TV (before test patterns went away). If you don't put something into Google first, you don't get something out. That's the world of personal media, where there are no bystanders; you have to participate to have the experience. That is profoundly new territory for people designing systems.
 
-&#151; [Paul Saffo interviewed by Bill Moogridge - Designing Media](http://www.designing-media.com/)
+&#151; [Paul Saffo interviewed by Bill Moggridge - Designing Media](http://www.designing-media.com/)
