@@ -1,5 +1,29 @@
 /*-------------------------------------------
 
+    =Extend, functions, mixins, whatever. This is a mess.
+
+-------------------------------------------*/
+
+%inlineBlock{
+  display: -moz-inline-stack;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+  vertical-align: top;
+}
+
+@function calcRem($target) {
+  @return ($target / 16) + rem;
+}
+
+$mobile             : 480px;
+$ipadPortrait       : 768px;
+$ipadLandscape      : 1024px;
+$desktop            : 1200px;
+$dashboard          : 1600px;
+
+/*-------------------------------------------
+
     =Global
 
 -------------------------------------------*/
@@ -19,9 +43,16 @@ body, html {
   height: 100%;
 }
 
+html { 
+  text-rendering: optimizeLegibility;
+  font-smooth: always !important;
+}
+
 body {
   margin-bottom: 0;
   width: 100%;
+  font: normal 100%;
+  line-height: 1.6rem;
 }
 
 blockquote, q {
@@ -69,8 +100,12 @@ ul {
 }
 
 .inner {
-  padding: 1em 2em;
+  padding: 1em 0;
   margin: 0 auto;
+  width: 55%;
+  .posts & {
+    width: 600px;
+  }
 }
 
 section {
@@ -150,12 +185,30 @@ blockquote {
   margin-top: .8em;
 }
 
+.reading {
+  ul {
+    margin-left: -3%;
+  }
+  li {
+    @extend %inlineBlock;
+    margin-left: 3%;
+    img, a {
+      display: inherit
+    }
+  }
+}
+
 .elsewhere {
   clear: both;
   overflow: hidden;
   padding-bottom: 4em;
+  ul {
+    margin-left: -3%;
+  }
   li {
-    margin: 2em 0;
+    @extend %inlineBlock;
+    margin: 2em 0 2em 3%;
+    width: 30%;
   }
     a {
       display: block;
