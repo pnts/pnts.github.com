@@ -102,7 +102,7 @@ ul {
 .inner {
   padding: 1em 0;
   margin: 0 auto;
-  width: 55%;
+  width: 57%;
   .posts & {
     width: 600px;
   }
@@ -187,11 +187,11 @@ blockquote {
 
 .reading {
   ul {
-    margin-left: -3%;
+    margin-left: -1%;
   }
   li {
     @extend %inlineBlock;
-    margin-left: 3%;
+    margin-left: 1%;
     img, a {
       display: inherit
     }
@@ -207,7 +207,7 @@ blockquote {
   }
   li {
     @extend %inlineBlock;
-    margin: 2em 0 2em 3%;
+    margin: 1em 0 1em 3%;
     width: 30%;
   }
     a {
@@ -215,6 +215,7 @@ blockquote {
     }
     span {
       font-style: italic;
+      padding-bottom: .5em;
     }
 }
 

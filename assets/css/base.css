@@ -76,7 +76,7 @@
   .inner {
     padding: 1em 0;
     margin: 0 auto;
-    width: 55%; }
+    width: 57%; }
     .posts .inner {
       width: 600px; }
 
@@ -140,9 +140,9 @@ blockquote {
   margin-top: .8em; }
 
 .reading ul {
-  margin-left: -3%; }
+  margin-left: -1%; }
 .reading li {
-  margin-left: 3%; }
+  margin-left: 1%; }
   .reading li img, .reading li a {
     display: inherit; }
 
@@ -153,12 +153,13 @@ blockquote {
   .elsewhere ul {
     margin-left: -3%; }
   .elsewhere li {
-    margin: 2em 0 2em 3%;
+    margin: 1em 0 1em 3%;
     width: 30%; }
   .elsewhere a {
     display: block; }
   .elsewhere span {
-    font-style: italic; }
+    font-style: italic;
+    padding-bottom: .5em; }
 
 .alignleft, .icon.alignleft {
   float: left;

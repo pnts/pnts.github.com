@@ -2,14 +2,14 @@
 <div class="inner">
   <header>Reading</header>
     <ul>
-      <li class="firstChild"><a href="http://www.amazon.com/gp/product/0374275637/ref=as_li_tf_tl?ie=UTF8&amp;tag=protocol7net-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0374275637">
-             <img src="/assets/img/reading/thinking-fast-and-slow.png" alt="Thinking Fast and Slow" /></a></li>
-      <li><a href="http://www.amazon.com/gp/product/0143039830/ref=as_li_tf_tl?ie=UTF8&amp;tag=protocol7net-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0143039830">
-             <img src="/assets/img/reading/new-york-trilogy.png" alt="New York Trilogy" /></a></li>
-      <li><a href="http://www.amazon.com/gp/product/1162619759/ref=as_li_tf_tl?ie=UTF8&amp;tag=protocol7net-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=1162619759">
-             <img src="/assets/img/reading/experience-and-nature.png" alt="Experience and Nature"/></a></li>
-      <li class="lastChild"><a href="http://www.amazon.com/gp/product/B0058M5WN0/ref=as_li_tf_tl?ie=UTF8&amp;tag=protocol7net-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B0058M5WN0">
-             <img src="/assets/img/reading/urban-revolution.png" alt="Welcome to the Urban Revolution" /></a></li>
+      <li class="firstChild"><a href="http://www.amazon.com/gp/product/1607012111/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=1607012111&amp;linkCode=as2&amp;tag=protocol7net-20">
+             <img src="/assets/img/reading/ware-tetralogy.png" alt="The Ware Tetralogy" /></a></li>
+      <li><a href="http://www.amazon.com/gp/product/1568989369/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=1568989369&amp;linkCode=as2&amp;tag=protocol7net-20">
+             <img src="/assets/img/reading/visual-complexity.png" alt="Visual Complexity: Mapping Patterns of Information" /></a></li>
+      <li><a href="http://www.amazon.com/gp/product/B0091SXDOM/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B0091SXDOM&amp;linkCode=as2&amp;tag=protocol7net-20">
+             <img src="/assets/img/reading/functional-art.png" alt="The Functional Art: An introduction to information graphics and visualization"/></a></li>
+      <li class="lastChild"><a href="http://www.amazon.com/gp/product/111834197X/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=111834197X&amp;linkCode=as2&amp;tag=protocol7net-20">
+             <img src="/assets/img/reading/designing-information.png" alt="Designing Information: Human Factors and Common Sense in Information Design" /></a></li>
     </ul>
 </div>
 </section>
