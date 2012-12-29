@@ -113,10 +113,10 @@
   .past {
     float: right; } }
 ul, ol {
-  margin: .5em 0; }
+  margin: 0.5em 0; }
 
 li {
-  margin: .5em 0; }
+  margin: 0.5em 0; }
 
 ol.footnotes {
   margin-top: 4em;
@@ -142,7 +142,8 @@ blockquote {
 .reading ul {
   margin-left: -1%; }
 .reading li {
-  margin-left: 1%; }
+  margin-left: 1%;
+  width: 23%; }
   .reading li img, .reading li a {
     display: inherit; }
 
@@ -164,7 +165,7 @@ blockquote {
 .alignleft, .icon.alignleft {
   float: left;
   clear: left;
-  margin: .5em 1em .5em 0 !important; }
+  margin: 0.5em 1em 0.5em 0 !important; }
 
 .alignright {
   float: right;
@@ -187,7 +188,7 @@ p.questions {
 .pagination {
   display: block;
   width: 100%;
-  padding: .5em 0;
+  padding: 0.5em 0;
   font-size: .8em; }
   .pagination .past {
     padding-right: 2em; }

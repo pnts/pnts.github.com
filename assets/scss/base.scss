@@ -192,6 +192,7 @@ blockquote {
   li {
     @extend %inlineBlock;
     margin-left: 1%;
+    width: 23%;
     img, a {
       display: inherit
     }
