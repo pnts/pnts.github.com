@@ -200,6 +200,13 @@ p.questions {
   .pagination .now {
     padding-left: 2em; }
 
+article iframe {
+  border: none; }
+  article iframe.large {
+    margin-left: -165px;
+    max-width: 960px !important;
+    width: 960px; }
+
 /*-------------------------------------------
 
     =Basics
