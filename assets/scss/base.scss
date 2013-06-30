@@ -163,8 +163,14 @@ ol.footnotes {
   padding-top: 1.5em;
 }
 
-.secondary article {
-  margin-top: 0;
+.secondary {
+  article {
+    margin-top: 0;
+  }
+  header {
+    text-align: center;
+    padding: 2em 0 2em 0;
+  }
 }
 
 blockquote {
@@ -202,9 +208,10 @@ blockquote {
 .elsewhere {
   clear: both;
   overflow: hidden;
+  padding-top: 2em;
   padding-bottom: 4em;
   ul {
-    margin-left: -3%;
+    margin-left: 0;
   }
   li {
     @extend %inlineBlock;
@@ -246,6 +253,7 @@ blockquote {
 
 p.questions {
   padding-top: 2em;
+  padding-bottom: 2em;
 }
 
 .pagination {
