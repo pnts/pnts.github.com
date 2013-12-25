@@ -195,4 +195,12 @@ table {
   border-spacing: 0; }
 
 body {
-  font: normal normal 400 1em/1.7em "skolar", Georgia, "Times New Roman", serif; }
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 1.7em; }
+
+a {
+  text-decoration: none; }
+
+img, embed, object, video {
+  max-width: 100%; }
