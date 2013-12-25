@@ -2,22 +2,19 @@
 layout: default
 title: Interaction & Interface Design. And beer.
 ---
-<ul>
-  {% for post in paginator.posts %}
-    <li>
-      <article> 
-        <header>
-          <h1><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></h1>
-          <h2>{{ post.tags | sort | array_to_sentence_string }} </h2>
-          <time> {{ post.date | date: "%B %d, %Y" }} </time>
-        </header>
+
+{% for post in paginator.posts %}
+<article> 
+  <header>
+    <h1><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></h1>
+    <h2>{{ post.tags | sort | array_to_sentence_string }} </h2>
+    <time> {{ post.date | date: "%B %d, %Y" }} </time>
+  </header>
         
-        {{ post.content }}
+  {{ post.content }}
         
-      <article>
-    </li>
+</article>
   {% endfor %}
-</ul>
 
 <!-- Pagination links -->
 <nav class="pagination">
