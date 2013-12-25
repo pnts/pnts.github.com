@@ -109,3 +109,15 @@ h1, h2, h3, h4, h5, h6 {
     margin: .2em 0;
   }
 }
+
+article {
+  h2 {
+    font-size: calcEm( 18, 16);
+  }
+  p a {
+    color: $support-link;
+    &:hover {
+      color: $support-hover;
+    }
+  }
+}

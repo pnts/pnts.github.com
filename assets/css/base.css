@@ -241,3 +241,10 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400; }
   header h1, header h2, header h3, header h4, header h5, header h6 {
     margin: 0.2em 0; }
+
+article h2 {
+  font-size: 1.125em; }
+article p a {
+  color: #709d9a; }
+  article p a:hover {
+    color: #8eb1af; }
