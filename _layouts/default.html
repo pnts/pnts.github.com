@@ -1,36 +1,5 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr" class="no-js">
-<head>
-  <title>Andrea Mignolo | {{ page.title }}</title>
-	<meta name="google-site-verification" content="tCPhQbhWij1mPScz84y0GQDTWrlZ0oMyN702dRmtmr0" />	
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="author" content="Andrea Mignolo, pnts" />
-	<meta name="viewport" content="width=320" />
-	<meta name="description" content="It is content, or rather the consciousness of content, that fills the void, but the mere presence of content is not enough. It is style that makes us care.  And beer.  Always beer." />
-	<meta name="keywords" content="interaction design, interface design, visual design, urbanism, front-end developer, mobile design, ruby on rails, ios, ruby" />
-	<link rel="icon shortcut" href="favicon.ico" />
-	<link rel="stylesheet" href="/assets/css/base.css" />
-  <script type="text/javascript" src="http://use.typekit.com/vyg7yhp.js"></script>
-  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-  <script src="http://d3js.org/d3.v3.min.js"></script>
-</head>
-
-<body>
-
-<section>
-  <div class="inner">
-    <dl>
-      <dt><a href="/">pnts.us</a> ///</dt>
-      <dd><a href="{{ BASE_PATH }}/design.html">design</a> <span>/</span> <a href="{{ BASE_PATH }}/urbanism.html">urbanism</a> <span>/</span> <a href="http://untappd.com/user/pnts">beer</a></dd>
-    </dl>
-      
-    <nav class="global">
-      <ul>
-        <li><a href="{{ BASE_PATH }}/about.html"> About </a></li>
-      </ul>
-    </nav>
-  </div>
-</section>
+{% include head.html %}
+{% include header.html %}
 
 <section class="posts">
   <div class="inner">
@@ -40,22 +9,4 @@
   </div>
 </section>
 
-{% include elsewhere %}
-
-
-<script type="text/javascript" src="/assets/js/jquery-1.7.2.min.js"></script>
-<script type="text/javascript" src="/assets/js/modernizr-2.5.3.min.js"></script>
-<script type="text/javascript">
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-24174850-1']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-</script> 
-
-</body>
-</html>
+{% include footer.html %}
