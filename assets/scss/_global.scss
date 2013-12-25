@@ -1,13 +1,111 @@
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::
+  =Sassy stuff
+::::::::::::::::::::::::::::::::::::::::::::::::::      
+*/
+
+@function calcEm($target, $context) {
+  @return ( $target / $context ) + em;
+}
+
+@function calcPercent($target, $context) {
+  @return ($target / $context) * 100%;
+}
+
+@mixin prefix($property, $value) {
+  -webkit-#{$property}: $value;
+     -moz-#{$property}: $value;
+      -ms-#{$property}: $value;
+       -o-#{$property}: $value;
+          #{$property}: $value;
+}
+
+// grabbing list style from Sassparilla but making them extends instead of mixins
+%unordered {
+   list-style-position: outside; 
+   list-style-type: disc;
+}
+
+%unordered-inside {
+   list-style-position: inside; 
+   list-style-type: disc;
+}
+
+%ordered {
+  list-style-position: outside; 
+  list-style-type: decimal;
+}
+
+%ordered-inside {
+  list-style-position: inside; 
+  list-style-type: decimal;
+}
+
+%nobullet {
+  list-style-type: none;
+}
+
+%borderBox {
+   -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+           box-sizing: border-box;
+}
+
+*, *:after, *:before {
+  @extend %borderBox;
+}
+
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::
+  =Variables
+::::::::::::::::::::::::::::::::::::::::::::::::::      
+*/
+
+$anchor:          #212a29; 
+$support:         #63908d;
+$link:            lighten($anchor, 10%);
+$support-link:    lighten($support, 5%);
+$hover:           lighten($link, 50%);
+$support-hover:   lighten($support, 15%);
+$copy:            lighten($anchor, 3%);
+
+
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::
+  =Global bits
+::::::::::::::::::::::::::::::::::::::::::::::::::      
+*/
+
 body {
   font-weight: 400;
   font-size: 1em;
-  line-height: 1.7em;
+  line-height: 1.5em;
+  color: $copy;
+}
+
+ul {
+  list-style-type: none;
 }
 
 a {
   text-decoration: none;
+  color: $link;
+  &:hover {
+    color: $hover;
+  }
+}
+
+a, a:link, a:visited, a:active {
+  @include prefix(transition, color 0.3s ease-in-out);
 }
 
 img, embed, object, video {
   max-width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+  header & {
+    margin: .2em 0;
+  }
 }

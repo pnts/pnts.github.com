@@ -24,8 +24,6 @@ audio:not([controls]) {
   display: none; }
 
 html {
-  background: white;
-  color: black;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%; }
 
@@ -194,13 +192,52 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::
+  =Sassy stuff
+::::::::::::::::::::::::::::::::::::::::::::::::::      
+*/
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::
+  =Variables
+::::::::::::::::::::::::::::::::::::::::::::::::::      
+*/
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::
+  =Global bits
+::::::::::::::::::::::::::::::::::::::::::::::::::      
+*/
 body {
   font-weight: 400;
   font-size: 1em;
-  line-height: 1.7em; }
+  line-height: 1.5em;
+  color: #283331; }
+
+ul {
+  list-style-type: none; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #374745; }
+  a:hover {
+    color: #b7c6c5; }
+
+a, a:link, a:visited, a:active {
+  -webkit-transition: color 0.3s ease-in-out;
+  -moz-transition: color 0.3s ease-in-out;
+  -ms-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out; }
 
 img, embed, object, video {
   max-width: 100%; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400; }
+  header h1, header h2, header h3, header h4, header h5, header h6 {
+    margin: 0.2em 0; }
