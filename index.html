@@ -19,12 +19,12 @@ title: Interaction & Interface Design. And beer.
 {% endfor %}
 
 <!-- Pagination links -->
-<nav class="pagination">
-  <ul>
+
+<ul class="pagination">
   {% if paginator.previous_page %}
     <li class="now"><a href="/page{{paginator.previous_page}}">&laquo; towards the now</a></li>
   {% endif %}
   {% if paginator.next_page %}
     <li class="past"><a href="/page{{paginator.next_page}}">into the past &raquo;</a></li>
   {% endif %}
-</nav>
+</ul>

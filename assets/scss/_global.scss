@@ -165,7 +165,7 @@ article {
     }
   }
   h1 {
-    line-height: 1.1em;
+    line-height: 1em;
   }
   h2 {
     font-size: calcEm( 18, 16);
@@ -222,9 +222,12 @@ article {
     font-size: calcEm( 14, 16);
     margin: 0 0 1em 0;
   }
+  .questions {
+    background: lighten($anchor, 70%);
+  }
 }
 
-.main {
+article {
   padding: 1em 2em;
 }
 
@@ -233,9 +236,11 @@ time, sup, header h2 span,.global span, h1 span {
 }
 
 .imprint {
-  background: lighten($anchor, 60%);
+  clear: both;
+  background: lighten($anchor, 65%);
   padding: 2em 2em 3em 2em;
-  h2, .location {
+  border-top: 1px solid #FFF;
+  h2, .meta {
     text-transform: uppercase;
     font-weight: 700;
     letter-spacing: 1px;
@@ -244,22 +249,52 @@ time, sup, header h2 span,.global span, h1 span {
   h2 {
     font-size: calcEm( 14, 16);
   }
-  .location {
+  .meta {
     font-size: calcEm( 12, 16);
+    span {
+      padding-right: 1em;
+    }
   }
   img {
     float: left;
     margin-right: 1.9em;
-    margin-top: .7em;
+    margin-top: 1.4em;
+    margin-bottom: 3em;
     border-radius: 5em;
     background: #FFF;
     padding: .5em;
   }
   a {
-    font-style: italic;
     &:hover {
       color: #FFF;
     }
+  }
+}
+
+.pagination {
+  margin: 0;
+  padding: 0;
+  .past, .now {
+    a {
+      @include prefix(transition, background 0.3s ease-in-out);
+      @extend %col-1-2;
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: calcEm( 11, 16 );
+      &:hover {
+        background: lighten($anchor, 60%);
+        color: $copy;
+      }
+    }
+  }
+  .past a {
+    text-align: right;
+    padding: 1em 2em 1em 0;
+    float: right;
+  }
+  .now a {
+    padding: 1em 0 1em 2em;
+    float: left;
   }
 }
 

@@ -2381,10 +2381,24 @@ table {
   =Sassy stuff
 ::::::::::::::::::::::::::::::::::::::::::::::::::      
 */
+.pagination .past a, .pagination .now a {
+  display: -moz-inline-stack;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+  vertical-align: top; }
+
 *, *:after, *:before {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
+
+.pagination .past a, .pagination .now a {
+  position: relative;
+  float: left; }
+
+.pagination .past a, .pagination .now a {
+  width: 50%; }
 
 /*
 ::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -2452,7 +2466,7 @@ article {
       margin: 0.3em 0 2em 0;
       font-size: 1.125em; }
   article h1 {
-    line-height: 1.1em; }
+    line-height: 1em; }
   article h2 {
     font-size: 1.125em;
     color: #64807d; }
@@ -2497,36 +2511,64 @@ article {
   article .caption {
     font-size: 0.875em;
     margin: 0 0 1em 0; }
+  article .questions {
+    background: #d3dddc; }
 
-.main {
+article {
   padding: 1em 2em; }
 
 time, sup, header h2 span, .global span, h1 span {
   color: #b7c6c5; }
 
 .imprint {
-  background: #b7c6c5;
-  padding: 2em 2em 3em 2em; }
-  .imprint h2, .imprint .location {
+  clear: both;
+  background: #c5d1d0;
+  padding: 2em 2em 3em 2em;
+  border-top: 1px solid white; }
+  .imprint h2, .imprint .meta {
     text-transform: uppercase;
     font-weight: 700;
     letter-spacing: 1px;
     margin-bottom: .2em; }
   .imprint h2 {
     font-size: 0.875em; }
-  .imprint .location {
+  .imprint .meta {
     font-size: 0.75em; }
+    .imprint .meta span {
+      padding-right: 1em; }
   .imprint img {
     float: left;
     margin-right: 1.9em;
-    margin-top: .7em;
+    margin-top: 1.4em;
+    margin-bottom: 3em;
     border-radius: 5em;
     background: #FFF;
     padding: .5em; }
-  .imprint a {
-    font-style: italic; }
-    .imprint a:hover {
-      color: #FFF; }
+  .imprint a:hover {
+    color: #FFF; }
+
+.pagination {
+  margin: 0;
+  padding: 0; }
+  .pagination .past a, .pagination .now a {
+    -webkit-transition: background 0.3s ease-in-out;
+    -moz-transition: background 0.3s ease-in-out;
+    -ms-transition: background 0.3s ease-in-out;
+    -o-transition: background 0.3s ease-in-out;
+    transition: background 0.3s ease-in-out;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.6875em; }
+    .pagination .past a:hover, .pagination .now a:hover {
+      background: #b7c6c5;
+      color: #283331; }
+  .pagination .past a {
+    text-align: right;
+    padding: 1em 2em 1em 0;
+    float: right; }
+  .pagination .now a {
+    padding: 1em 0 1em 2em;
+    float: left; }
 
 .pnts {
   font-style: italic;
