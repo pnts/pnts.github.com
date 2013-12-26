@@ -147,7 +147,7 @@ article {
     text-align: center;
     font-size: calcEm( 64, 16);
     display: block;
-    padding: 3em 0;
+    padding: 4em 0;
     margin-top: 1em;
     color: lighten($anchor, 60%);
     border-top: 1px dotted lighten($anchor, 60%);
@@ -160,12 +160,13 @@ article {
       font-family: "Ionicons";
       display: block;
       color: lighten($anchor, 70%);
-      margin: .3em 0 2em 0;
+      margin: 2em 0 2em 0;
       font-size: calcEm( 18, 16);
     }
   }
   h1 {
-    line-height: 1em;
+    line-height: 1.2em;
+    font-variant: small-caps;
   }
   h2 {
     font-size: calcEm( 18, 16);

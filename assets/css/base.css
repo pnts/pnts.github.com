@@ -2451,7 +2451,7 @@ article {
     text-align: center;
     font-size: 4em;
     display: block;
-    padding: 3em 0;
+    padding: 4em 0;
     margin-top: 1em;
     color: #b7c6c5;
     border-top: 1px dotted #b7c6c5;
@@ -2463,10 +2463,11 @@ article {
       font-family: "Ionicons";
       display: block;
       color: #d3dddc;
-      margin: 0.3em 0 2em 0;
+      margin: 2em 0 2em 0;
       font-size: 1.125em; }
   article h1 {
-    line-height: 1em; }
+    line-height: 1.2em;
+    font-variant: small-caps; }
   article h2 {
     font-size: 1.125em;
     color: #64807d; }
