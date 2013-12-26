@@ -212,6 +212,9 @@ table {
   =Global bits
 ::::::::::::::::::::::::::::::::::::::::::::::::::      
 */
+html {
+  border-top: 0.2em solid #63908d; }
+
 body {
   font-weight: 400;
   font-size: 1em;
@@ -242,9 +245,26 @@ h1, h2, h3, h4, h5, h6 {
   header h1, header h2, header h3, header h4, header h5, header h6 {
     margin: 0.2em 0; }
 
+article header {
+  margin-bottom: 1em; }
 article h2 {
-  font-size: 1.125em; }
+  font-size: 1.125em;
+  color: #64807d; }
 article p a {
   color: #709d9a; }
   article p a:hover {
     color: #8eb1af; }
+
+.main {
+  padding: 1em 2em; }
+
+time, sup, header h2 span, .global span, h1 span {
+  color: #b7c6c5; }
+
+.pnts {
+  font-style: italic;
+  font-size: 1.125em;
+  font-weight: 300;
+  text-align: center;
+  background: #b7c6c5;
+  padding: 0.5em 0; }

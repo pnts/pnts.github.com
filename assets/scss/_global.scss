@@ -45,10 +45,35 @@
   list-style-type: none;
 }
 
+%inlineBlock{
+  display: -moz-inline-stack;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+  vertical-align: top;
+}
+
 %borderBox {
    -webkit-box-sizing: border-box;
       -moz-box-sizing: border-box;
            box-sizing: border-box;
+}
+
+%grid {
+  @extend %inlineBlock;
+  position: relative;
+  float: left;
+}
+
+// create these grids
+$gridList: (2, 3, 4);
+
+@for $grids from min( $gridList... ) through max( $gridList... ){
+
+  @for $columns from 1 through $grids {
+    $columnWidth: round($columns / $grids * 100%);
+    %col-#{$columns}-#{$grids} { @extend %grid; width: $columnWidth; }
+  }
 }
 
 *, *:after, *:before {
@@ -75,6 +100,10 @@ $copy:            lighten($anchor, 3%);
   =Global bits
 ::::::::::::::::::::::::::::::::::::::::::::::::::      
 */
+
+html {
+  border-top: .2em solid $support;
+}
 
 body {
   font-weight: 400;
@@ -111,8 +140,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 article {
+  header {
+    margin-bottom: 1em;
+  }
   h2 {
     font-size: calcEm( 18, 16);
+    color: lighten($anchor, 30%);
   }
   p a {
     color: $support-link;
@@ -120,4 +153,27 @@ article {
       color: $support-hover;
     }
   }
+}
+
+.main {
+  padding: 1em 2em;
+}
+
+time, sup, header h2 span,.global span, h1 span {
+  color: lighten($anchor, 60%);
+}
+
+
+
+
+
+
+
+.pnts {
+  font-style: italic;
+  font-size: calcEm( 18, 16);
+  font-weight: 300;
+  text-align: center;
+  background: $hover;
+  padding: .5em 0;
 }
