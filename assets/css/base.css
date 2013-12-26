@@ -2450,7 +2450,9 @@ article {
     font-size: 1.125em;
     color: #64807d; }
   article p {
-    margin: 1em 0; }
+    margin: 1.5em 0;
+    font-size: 1.125em;
+    line-height: 1.5em; }
     article p a {
       color: #709d9a; }
       article p a:hover {
@@ -2460,24 +2462,29 @@ article {
     font-weight: 300;
     font-size: 1.5em;
     font-style: italic;
-    margin: 0.5em 0;
+    margin: 1em 0;
     line-height: 1.5em;
     color: #556c69; }
-    article blockquote:before {
-      content: "\201C";
+    article blockquote:before, article blockquote:after {
       position: absolute;
-      top: .3em;
-      left: -.2em;
       color: #b7c6c5;
       z-index: -10;
       font-size: 9.25em;
       opacity: .4; }
+    article blockquote:before {
+      content: "\201C";
+      top: .3em;
+      left: -.2em; }
+    article blockquote:after {
+      content: "\201D";
+      bottom: -.3em;
+      right: .1em; }
     article blockquote > p {
       padding: 0.2em 0; }
     article blockquote + p {
       font-weight: 300;
-      margin-left: 3em;
-      font-size: 1em;
+      margin-bottom: 2em;
+      font-size: 1.125em;
       line-height: 1.4em;
       color: #b7c6c5; }
   article .caption {

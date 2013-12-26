@@ -164,7 +164,9 @@ article {
     color: lighten($anchor, 30%);
   }
   p {
-    margin: 1em 0;
+    margin: 1.5em 0;
+    font-size: calcEm( 18, 16);
+    line-height: 1.5em;
     a {
       color: $support-link;
       &:hover {
@@ -177,26 +179,33 @@ article {
     font-weight: 300;
     font-size: calcEm( 24, 16);
     font-style: italic;
-    margin: .5em 0;
+    margin: 1em 0;
     line-height: 1.5em;
     color: lighten($copy, 20%);
-    &:before {
-      content: "\201C";
+    &:before, &:after {
       position: absolute;
-      top: .3em;
-      left: -.2em;
       color: lighten($anchor, 60%);
       z-index: -10;
       font-size: calcEm( 148, 16);
       opacity: .4;
+    }
+    &:before {
+      content: "\201C";
+      top: .3em;
+      left: -.2em;
+    }
+    &:after {
+      content: "\201D";
+      bottom: -.3em;
+      right: .1em;
     }
     &> p {
       padding: .2em 0;
     }
     &+ p {
       font-weight: 300;
-      margin-left: 3em;
-      font-size: calcEm( 16, 16);
+      margin-bottom: 2em;
+      font-size: calcEm( 18, 16);
       line-height: 1.4em;
       color: lighten($anchor, 60%);
     }
