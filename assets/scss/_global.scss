@@ -140,18 +140,70 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 article {
+  margin: 1em 0 4em 0;
+  &:after {
+    content: "\f19d";
+    font-family: "Ionicons";
+    text-align: center;
+    font-size: calcEm( 64, 16);
+    display: block;
+    padding: 3em 0;
+    margin-top: 1em;
+    color: lighten($anchor, 60%);
+    border-top: 1px dotted lighten($anchor, 60%);
+    border-bottom: 1px dotted lighten($anchor, 60%);
+  }
   header {
     margin-bottom: 1em;
+  }
+  h1 {
+    line-height: 1.2em;
   }
   h2 {
     font-size: calcEm( 18, 16);
     color: lighten($anchor, 30%);
   }
-  p a {
-    color: $support-link;
-    &:hover {
-      color: $support-hover;
+  p {
+    margin: 1em 0;
+    a {
+      color: $support-link;
+      &:hover {
+        color: $support-hover;
+      }
     }
+  }
+  blockquote {
+    position: relative;
+    font-weight: 300;
+    font-size: calcEm( 24, 16);
+    font-style: italic;
+    margin: .5em 0;
+    line-height: 1.5em;
+    color: lighten($copy, 20%);
+    &:before {
+      content: "\201C";
+      position: absolute;
+      top: .3em;
+      left: -.2em;
+      color: lighten($anchor, 60%);
+      z-index: -10;
+      font-size: calcEm( 148, 16);
+      opacity: .4;
+    }
+    &> p {
+      padding: .2em 0;
+    }
+    &+ p {
+      font-weight: 300;
+      margin-left: 3em;
+      font-size: calcEm( 16, 16);
+      line-height: 1.4em;
+      color: lighten($anchor, 60%);
+    }
+  }
+  .caption {
+    font-size: calcEm( 14, 16);
+    margin: 0 0 1em 0;
   }
 }
 
@@ -174,6 +226,6 @@ time, sup, header h2 span,.global span, h1 span {
   font-size: calcEm( 18, 16);
   font-weight: 300;
   text-align: center;
-  background: $hover;
+  border-bottom: 1px dotted $hover;
   padding: .5em 0;
 }
