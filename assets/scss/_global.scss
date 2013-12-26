@@ -155,9 +155,17 @@ article {
   }
   header {
     margin-bottom: 1em;
+    &:after {
+      content: "\f154 \f154 \f154 \f154 \f154";
+      font-family: "Ionicons";
+      display: block;
+      color: lighten($anchor, 70%);
+      margin: .3em 0 2em 0;
+      font-size: calcEm( 18, 16);
+    }
   }
   h1 {
-    line-height: 1.2em;
+    line-height: 1.1em;
   }
   h2 {
     font-size: calcEm( 18, 16);
@@ -222,6 +230,37 @@ article {
 
 time, sup, header h2 span,.global span, h1 span {
   color: lighten($anchor, 60%);
+}
+
+.imprint {
+  background: lighten($anchor, 60%);
+  padding: 2em 2em 3em 2em;
+  h2, .location {
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: .2em;
+  }
+  h2 {
+    font-size: calcEm( 14, 16);
+  }
+  .location {
+    font-size: calcEm( 12, 16);
+  }
+  img {
+    float: left;
+    margin-right: 1.9em;
+    margin-top: .7em;
+    border-radius: 5em;
+    background: #FFF;
+    padding: .5em;
+  }
+  a {
+    font-style: italic;
+    &:hover {
+      color: #FFF;
+    }
+  }
 }
 
 

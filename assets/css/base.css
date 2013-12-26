@@ -45,7 +45,7 @@ a {
     outline: 0; }
 
 h1 {
-  font-size: 2.7em;
+  font-size: 3.3em;
   margin: 0.67em 0; }
 
 h2 {
@@ -2444,8 +2444,15 @@ article {
     border-bottom: 1px dotted #b7c6c5; }
   article header {
     margin-bottom: 1em; }
+    article header:after {
+      content: "\f154 \f154 \f154 \f154 \f154";
+      font-family: "Ionicons";
+      display: block;
+      color: #d3dddc;
+      margin: 0.3em 0 2em 0;
+      font-size: 1.125em; }
   article h1 {
-    line-height: 1.2em; }
+    line-height: 1.1em; }
   article h2 {
     font-size: 1.125em;
     color: #64807d; }
@@ -2496,6 +2503,30 @@ article {
 
 time, sup, header h2 span, .global span, h1 span {
   color: #b7c6c5; }
+
+.imprint {
+  background: #b7c6c5;
+  padding: 2em 2em 3em 2em; }
+  .imprint h2, .imprint .location {
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: .2em; }
+  .imprint h2 {
+    font-size: 0.875em; }
+  .imprint .location {
+    font-size: 0.75em; }
+  .imprint img {
+    float: left;
+    margin-right: 1.9em;
+    margin-top: .7em;
+    border-radius: 5em;
+    background: #FFF;
+    padding: .5em; }
+  .imprint a {
+    font-style: italic; }
+    .imprint a:hover {
+      color: #FFF; }
 
 .pnts {
   font-style: italic;

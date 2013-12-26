@@ -5,11 +5,13 @@ title: Interaction & Interface Design. And beer.
 
 {% for post in paginator.posts %}
 <article> 
-  <header>
-    <h1><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></h1>
-    <h2>{{ post.tags | sort | array_to_sentence_string }} </h2>
-    <time> {{ post.date | date: "%B %d, %Y" }} </time>
-  </header>
+  <a href="{{ BASE_PATH }}{{ post.url }}">
+    <header>
+      <h1>{{ post.title }}</h1>
+      <h2>{{ post.tags | sort | array_to_sentence_string }} </h2>
+      <time> {{ post.date | date: "%B %d, %Y" }} </time>
+    </header>
+  </a>
         
   {{ post.content }}
         
