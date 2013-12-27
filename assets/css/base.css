@@ -2531,11 +2531,13 @@ time, sup, header h2 span, .global span, h1 span {
   color: #b7c6c5; }
 
 .imprint {
-  border-top: 1px solid white;
+  border-top: 1px solid #444444;
   clear: both;
-  background: #c5d1d0; }
+  background: url(../img/space/saturn.jpg); }
   .imprint .inner {
-    padding: 2em 2em 3em 2em; }
+    padding: 2em 2em 3em 2em;
+    color: #EFEFEF;
+    background: rgba(0, 0, 0, 0.5); }
   .imprint h2, .imprint .meta {
     margin-bottom: .2em;
     text-transform: uppercase;
@@ -2553,8 +2555,10 @@ time, sup, header h2 span, .global span, h1 span {
     padding: .5em;
     float: left;
     background: #FFF; }
-  .imprint a:hover {
-    color: #FFF; }
+  .imprint a {
+    color: #e5dba0; }
+    .imprint a:hover {
+      color: #FFF; }
   .imprint ul {
     margin: 0; }
     .imprint ul li {
@@ -2567,7 +2571,8 @@ time, sup, header h2 span, .global span, h1 span {
       position: fixed;
       top: 0;
       bottom: 0;
-      border-top: none; }
+      border-top: none;
+      border-right: 1px solid #444444; }
       .imprint img {
         display: block;
         float: none;
@@ -2579,7 +2584,7 @@ time, sup, header h2 span, .global span, h1 span {
         padding: 0; }
       .imprint .inner {
         position: absolute;
-        bottom: 1em; } }
+        bottom: 0; } }
 
 .pagination {
   margin: 0;
