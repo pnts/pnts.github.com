@@ -267,12 +267,13 @@ time, sup, header h2 span,.global span, h1 span {
 .imprint {
   border-top: 1px solid #444;
   clear: both;
-  //background: lighten($anchor, 65%);
-  background: url(../img/space/saturn.jpg);
+  background-image: url(../img/space/saturn.jpg);
+  background-color: #000;
+  background-repeat: no-repeat;
   .inner {
     padding: 2em 2em 3em 2em;
     color: #EFEFEF;
-    background: transparentize( #000, .5);
+    //background: transparentize( #000, .5);
   }
   h2, .meta {
     margin-bottom: .2em;
@@ -317,7 +318,7 @@ time, sup, header h2 span,.global span, h1 span {
     top: 0;
     bottom: 0;
     border-top: none;
-    border-right: 1px solid #444;
+    border-right: .5em solid transparentize( #000, .8);
     img {
       display: block;
       float: none;

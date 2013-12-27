@@ -2533,11 +2533,12 @@ time, sup, header h2 span, .global span, h1 span {
 .imprint {
   border-top: 1px solid #444444;
   clear: both;
-  background: url(../img/space/saturn.jpg); }
+  background-image: url(../img/space/saturn.jpg);
+  background-color: #000;
+  background-repeat: no-repeat; }
   .imprint .inner {
     padding: 2em 2em 3em 2em;
-    color: #EFEFEF;
-    background: rgba(0, 0, 0, 0.5); }
+    color: #EFEFEF; }
   .imprint h2, .imprint .meta {
     margin-bottom: .2em;
     text-transform: uppercase;
@@ -2572,7 +2573,7 @@ time, sup, header h2 span, .global span, h1 span {
       top: 0;
       bottom: 0;
       border-top: none;
-      border-right: 1px solid #444444; }
+      border-right: 0.5em solid rgba(0, 0, 0, 0.2); }
       .imprint img {
         display: block;
         float: none;
