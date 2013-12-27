@@ -20,6 +20,21 @@
           #{$property}: $value;
 }
 
+@mixin breakpoint( $point ) {
+  @if $point == large {
+    @media ( min-width: $desktop ) { @content; }
+  }
+  @else if $point == horizontal {
+    @media ( min-width: $ipadLandscape ) { @content; }
+  }
+  @else if $point == vertical {
+    @media ( min-width: $ipadPortrait )  { @content; }
+  }
+  @else if $point == pocket {
+    @media ( min-width: $mobile ) { @content; }
+  }
+}
+
 // grabbing list style from Sassparilla but making them extends instead of mixins
 %unordered {
    list-style-position: outside; 
@@ -68,8 +83,7 @@
 // create these grids
 $gridList: (2, 3, 4);
 
-@for $grids from min( $gridList... ) through max( $gridList... ){
-
+@for $grids from min( $gridList... ) through max( $gridList... ) {
   @for $columns from 1 through $grids {
     $columnWidth: round($columns / $grids * 100%);
     %col-#{$columns}-#{$grids} { @extend %grid; width: $columnWidth; }
@@ -86,13 +100,18 @@ $gridList: (2, 3, 4);
 ::::::::::::::::::::::::::::::::::::::::::::::::::      
 */
 
-$anchor:          #212a29; 
-$support:         #63908d;
-$link:            lighten($anchor, 10%);
-$support-link:    lighten($support, 5%);
-$hover:           lighten($link, 50%);
-$support-hover:   lighten($support, 15%);
-$copy:            lighten($anchor, 3%);
+$anchor           :#212a29; 
+$support          :#63908d;
+$link             :lighten($anchor, 10%);
+$support-link     :lighten($support, 5%);
+$hover            :lighten($link, 50%);
+$support-hover    :lighten($support, 15%);
+$copy             :lighten($anchor, 3%);
+
+$desktop          :calcEm(850, 16);
+$ipadPortrait     :calcEm(768, 16);
+$ipadLandscape    :calcEm(1024, 16);
+$mobile           :calcEm(480, 16);
 
 
 /*
@@ -103,6 +122,9 @@ $copy:            lighten($anchor, 3%);
 
 html {
   border-top: .2em solid $support;
+  @include breakpoint(vertical) {
+    border-top: none;
+  }
 }
 
 body {
@@ -142,31 +164,30 @@ h1, h2, h3, h4, h5, h6 {
 article {
   margin: 1em 0 4em 0;
   &:after {
+    display: block;
+    margin-top: 1em;
+    border-top: 1px dotted lighten($anchor, 60%);
+    border-bottom: 1px dotted lighten($anchor, 60%);
+    padding: 4em 0;
     content: "\f19d";
     font-family: "Ionicons";
     text-align: center;
     font-size: calcEm( 64, 16);
-    display: block;
-    padding: 4em 0;
-    margin-top: 1em;
     color: lighten($anchor, 60%);
-    border-top: 1px dotted lighten($anchor, 60%);
-    border-bottom: 1px dotted lighten($anchor, 60%);
   }
   header {
     margin-bottom: 1em;
-    &:after {
+    /*&:after {
+      display: block;
+      margin: 2em 0 2em 0;
       content: "\f154 \f154 \f154 \f154 \f154";
       font-family: "Ionicons";
-      display: block;
       color: lighten($anchor, 70%);
-      margin: 2em 0 2em 0;
       font-size: calcEm( 18, 16);
-    }
+    }*/
   }
   h1 {
     line-height: 1.2em;
-    //font-variant: small-caps;
   }
   h2 {
     font-size: calcEm( 18, 16);
@@ -185,10 +206,10 @@ article {
   }
   blockquote {
     position: relative;
+    margin: 1em 0;
     font-weight: 300;
     font-size: calcEm( 24, 16);
     font-style: italic;
-    margin: 1em 0;
     line-height: 1.5em;
     color: lighten($copy, 20%);
     &:before, &:after {
@@ -226,6 +247,13 @@ article {
   .questions {
     background: lighten($anchor, 70%);
   }
+  @include breakpoint(vertical) {
+    //@extend %col-2-3;
+    width: 66%;
+    margin-left: 35%;
+    margin-right: 2%;
+    max-width: 45em;
+  }
 }
 
 article {
@@ -237,15 +265,17 @@ time, sup, header h2 span,.global span, h1 span {
 }
 
 .imprint {
+  border-top: 1px solid #FFF;
   clear: both;
   background: lighten($anchor, 65%);
-  padding: 2em 2em 3em 2em;
-  border-top: 1px solid #FFF;
+  .inner {
+    padding: 2em 2em 3em 2em;
+  }
   h2, .meta {
+    margin-bottom: .2em;
     text-transform: uppercase;
     font-weight: 700;
     letter-spacing: 1px;
-    margin-bottom: .2em;
   }
   h2 {
     font-size: calcEm( 14, 16);
@@ -257,17 +287,48 @@ time, sup, header h2 span,.global span, h1 span {
     }
   }
   img {
-    float: left;
-    margin-right: 1.9em;
-    margin-top: 1.4em;
-    margin-bottom: 3em;
+    margin: 1.4em 1.9em 3em 0;
     border-radius: 5em;
-    background: #FFF;
     padding: .5em;
+    float: left;
+    background: #FFF;
   }
   a {
     &:hover {
       color: #FFF;
+    }
+  }
+  ul {
+    margin: 0;
+    li {
+      display: inline;
+      padding-right: 1em;
+    }
+  }
+  @include breakpoint(vertical) {
+    //@extend %col-1-3;  arrrrrgh, this doesn't work with media queries
+    max-width: 25em;
+    width: 33%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    border-top: none;
+    img {
+      display: block;
+      float: none;
+      margin: 0 auto 1em auto;
+    }
+    span, ul {
+      display: block;
+      text-align: center;
+    }
+    ul {
+      padding: 0;
+    }
+    .inner {
+      position: absolute;
+      bottom: 1em;
+      //padding-right: 3%;
     }
   }
 }
@@ -289,9 +350,9 @@ time, sup, header h2 span,.global span, h1 span {
     }
   }
   .past a {
-    text-align: right;
     padding: 1em 2em 1em 0;
     float: right;
+    text-align: right;
   }
   .now a {
     padding: 1em 0 1em 2em;
@@ -300,16 +361,14 @@ time, sup, header h2 span,.global span, h1 span {
 }
 
 
-
-
-
-
-
 .pnts {
+  border-bottom: 1px dotted $hover;
+  padding: .5em 0;
   font-style: italic;
   font-size: calcEm( 18, 16);
   font-weight: 300;
   text-align: center;
-  border-bottom: 1px dotted $hover;
-  padding: .5em 0;
+  @include breakpoint(vertical) {
+    display: none;
+  }
 }

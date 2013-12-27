@@ -2412,6 +2412,9 @@ table {
 */
 html {
   border-top: 0.2em solid #63908d; }
+  @media (min-width: 48em) {
+    html {
+      border-top: none; } }
 
 body {
   font-weight: 400;
@@ -2446,25 +2449,26 @@ h1, h2, h3, h4, h5, h6 {
 article {
   margin: 1em 0 4em 0; }
   article:after {
+    display: block;
+    margin-top: 1em;
+    border-top: 1px dotted #b7c6c5;
+    border-bottom: 1px dotted #b7c6c5;
+    padding: 4em 0;
     content: "\f19d";
     font-family: "Ionicons";
     text-align: center;
     font-size: 4em;
-    display: block;
-    padding: 4em 0;
-    margin-top: 1em;
-    color: #b7c6c5;
-    border-top: 1px dotted #b7c6c5;
-    border-bottom: 1px dotted #b7c6c5; }
+    color: #b7c6c5; }
   article header {
-    margin-bottom: 1em; }
-    article header:after {
+    margin-bottom: 1em;
+    /*&:after {
+      display: block;
+      margin: 2em 0 2em 0;
       content: "\f154 \f154 \f154 \f154 \f154";
       font-family: "Ionicons";
-      display: block;
-      color: #d3dddc;
-      margin: 2em 0 2em 0;
-      font-size: 1.125em; }
+      color: lighten($anchor, 70%);
+      font-size: calcEm( 18, 16);
+    }*/ }
   article h1 {
     line-height: 1.2em; }
   article h2 {
@@ -2480,10 +2484,10 @@ article {
         color: #8eb1af; }
   article blockquote {
     position: relative;
+    margin: 1em 0;
     font-weight: 300;
     font-size: 1.5em;
     font-style: italic;
-    margin: 1em 0;
     line-height: 1.5em;
     color: #556c69; }
     article blockquote:before, article blockquote:after {
@@ -2513,6 +2517,12 @@ article {
     margin: 0 0 1em 0; }
   article .questions {
     background: #d3dddc; }
+  @media (min-width: 48em) {
+    article {
+      width: 66%;
+      margin-left: 35%;
+      margin-right: 2%;
+      max-width: 45em; } }
 
 article {
   padding: 1em 2em; }
@@ -2521,15 +2531,16 @@ time, sup, header h2 span, .global span, h1 span {
   color: #b7c6c5; }
 
 .imprint {
+  border-top: 1px solid white;
   clear: both;
-  background: #c5d1d0;
-  padding: 2em 2em 3em 2em;
-  border-top: 1px solid white; }
+  background: #c5d1d0; }
+  .imprint .inner {
+    padding: 2em 2em 3em 2em; }
   .imprint h2, .imprint .meta {
+    margin-bottom: .2em;
     text-transform: uppercase;
     font-weight: 700;
-    letter-spacing: 1px;
-    margin-bottom: .2em; }
+    letter-spacing: 1px; }
   .imprint h2 {
     font-size: 0.875em; }
   .imprint .meta {
@@ -2537,15 +2548,38 @@ time, sup, header h2 span, .global span, h1 span {
     .imprint .meta span {
       padding-right: 1em; }
   .imprint img {
-    float: left;
-    margin-right: 1.9em;
-    margin-top: 1.4em;
-    margin-bottom: 3em;
+    margin: 1.4em 1.9em 3em 0;
     border-radius: 5em;
-    background: #FFF;
-    padding: .5em; }
+    padding: .5em;
+    float: left;
+    background: #FFF; }
   .imprint a:hover {
     color: #FFF; }
+  .imprint ul {
+    margin: 0; }
+    .imprint ul li {
+      display: inline;
+      padding-right: 1em; }
+  @media (min-width: 48em) {
+    .imprint {
+      max-width: 25em;
+      width: 33%;
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      border-top: none; }
+      .imprint img {
+        display: block;
+        float: none;
+        margin: 0 auto 1em auto; }
+      .imprint span, .imprint ul {
+        display: block;
+        text-align: center; }
+      .imprint ul {
+        padding: 0; }
+      .imprint .inner {
+        position: absolute;
+        bottom: 1em; } }
 
 .pagination {
   margin: 0;
@@ -2563,17 +2597,20 @@ time, sup, header h2 span, .global span, h1 span {
       background: #b7c6c5;
       color: #283331; }
   .pagination .past a {
-    text-align: right;
     padding: 1em 2em 1em 0;
-    float: right; }
+    float: right;
+    text-align: right; }
   .pagination .now a {
     padding: 1em 0 1em 2em;
     float: left; }
 
 .pnts {
+  border-bottom: 1px dotted #b7c6c5;
+  padding: 0.5em 0;
   font-style: italic;
   font-size: 1.125em;
   font-weight: 300;
-  text-align: center;
-  border-bottom: 1px dotted #b7c6c5;
-  padding: 0.5em 0; }
+  text-align: center; }
+  @media (min-width: 48em) {
+    .pnts {
+      display: none; } }
