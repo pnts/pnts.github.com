@@ -128,7 +128,7 @@ figure {
   margin: 0; }
 
 fieldset {
-  border: 1px solid silver;
+  border: 1px solid #c0c0c0;
   margin: 0 2px;
   padding: 0.35em 0.625em 0.75em; }
 
@@ -192,7 +192,7 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-/*
+/*!
   Ionicons, v1.4.0
   Created by Ben Sperry for the Ionic Framework, http://ionicons.com/
   https://twitter.com/helloimben  https://twitter.com/ionicframework
@@ -2444,7 +2444,7 @@ img, embed, object, video {
 h1, h2, h3, h4, h5, h6 {
   font-weight: 400; }
   header h1, header h2, header h3, header h4, header h5, header h6 {
-    margin: 0.2em 0; }
+    margin: .2em 0; }
 
 article {
   margin: 1em 0 4em 0; }
@@ -2505,7 +2505,7 @@ article {
       bottom: -.3em;
       right: .1em; }
     article blockquote > p {
-      padding: 0.2em 0; }
+      padding: .2em 0; }
     article blockquote + p {
       font-weight: 300;
       margin-bottom: 2em;
@@ -2520,7 +2520,7 @@ article {
   @media (min-width: 48em) {
     article {
       width: 66%;
-      margin-left: 35%;
+      margin-left: 27em;
       margin-right: 2%;
       max-width: 45em; } }
 
@@ -2531,7 +2531,7 @@ time, sup, header h2 span, .global span, h1 span {
   color: #b7c6c5; }
 
 .imprint {
-  border-top: 1px solid #444444;
+  border-top: 1px solid #444;
   clear: both;
   background-image: url(../img/space/saturn.jpg);
   background-color: #000;
@@ -2618,7 +2618,7 @@ time, sup, header h2 span, .global span, h1 span {
 
 .pnts {
   border-bottom: 1px dotted #b7c6c5;
-  padding: 0.5em 0;
+  padding: .5em 0;
   font-style: italic;
   font-size: 1.125em;
   font-weight: 300;

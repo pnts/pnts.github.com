@@ -250,7 +250,7 @@ article {
   @include breakpoint(vertical) {
     //@extend %col-2-3;
     width: 66%;
-    margin-left: 35%;
+    margin-left: 27em;
     margin-right: 2%;
     max-width: 45em;
   }
@@ -334,7 +334,6 @@ time, sup, header h2 span,.global span, h1 span {
     .inner {
       position: absolute;
       bottom: 0;
-      //padding-right: 3%;
     }
   }
 }
