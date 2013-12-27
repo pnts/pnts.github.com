@@ -2603,6 +2603,12 @@ time, sup, header h2 span, .global span, h1 span {
   .pagination .now a {
     padding: 1em 0 1em 2em;
     float: left; }
+  @media (min-width: 48em) {
+    .pagination {
+      width: 66%;
+      margin-left: 33%;
+      margin-right: 2%;
+      max-width: 45em; } }
 
 .pnts {
   border-bottom: 1px dotted #b7c6c5;
