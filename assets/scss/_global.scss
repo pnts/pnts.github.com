@@ -463,6 +463,10 @@ time, sup, header h2 span,.global span, h1 span {
       @extend %subheader;
       font-size: calcEm( 14, 16 );
       font-weight: 400;
+      &.atom {
+        margin-top: 4em;
+        margin-bottom: 1em;
+      }
     }
     h2 {
       font-size: calcEm( 24, 16 );
@@ -470,6 +474,7 @@ time, sup, header h2 span,.global span, h1 span {
     h4 {
       font-family: "Ionicons";
       font-size: calcEm( 36, 16 );
+      margin: 0;
     }
   }
   h1 {
