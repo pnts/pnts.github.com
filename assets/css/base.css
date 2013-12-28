@@ -2396,6 +2396,10 @@ table {
   =Extends
 ::::::::::::::::::::::::::::::::::::::::::::::::::      
 */
+article ul {
+  list-style-position: outside;
+  list-style-type: disc; }
+
 .pagination .past a, .pagination .now a {
   display: -moz-inline-stack;
   display: inline-block;
@@ -2411,6 +2415,11 @@ table {
 .pagination .past a, .pagination .now a {
   position: relative;
   float: left; }
+
+.imprint h2, .imprint .meta, .footnotes:before {
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px; }
 
 /*
 ::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -2442,9 +2451,9 @@ ul {
 
 a {
   text-decoration: none;
-  color: #374745; }
+  color: #709d9a; }
   a:hover {
-    color: #b7c6c5; }
+    color: #cd2b8f; }
 
 a, a:link, a:visited, a:active {
   -webkit-transition: color 0.3s ease-in-out;
@@ -2452,6 +2461,12 @@ a, a:link, a:visited, a:active {
   -ms-transition: color 0.3s ease-in-out;
   -o-transition: color 0.3s ease-in-out;
   transition: color 0.3s ease-in-out; }
+
+em {
+  font-style: italic; }
+
+strong {
+  font-weight: 700; }
 
 img, embed, object, video {
   max-width: 100%; }
@@ -2461,8 +2476,17 @@ h1, h2, h3, h4, h5, h6 {
   header h1, header h2, header h3, header h4, header h5, header h6 {
     margin: .2em 0; }
 
+.alignleft {
+  float: left;
+  margin-right: 1em; }
+
+.alignright {
+  float: right;
+  margin-left: 1em;
+  margin-bottom: 1em; }
+
 article {
-  margin: 1em 0 4em 0;
+  margin: 1em 0 1em 0;
   padding: 1em 2em; }
   article:after {
     display: block;
@@ -2477,11 +2501,15 @@ article {
     color: #b7c6c5; }
   article header {
     margin-bottom: 1em; }
+    article header h2 {
+      font-size: 1.125em;
+      color: #64807d; }
   article h1 {
     line-height: 1.2em; }
   article h2 {
-    font-size: 1.125em;
-    color: #64807d; }
+    font-size: 1.75em; }
+  article h3 {
+    font-size: 1.5em; }
   article p {
     margin: 1.5em 0;
     font-size: 1.125em;
@@ -2489,10 +2517,18 @@ article {
     article p a {
       color: #709d9a; }
       article p a:hover {
-        color: #8eb1af; }
+        color: #cd2b8f; }
+  article img {
+    margin-bottom: 1em; }
+  article ul {
+    padding: 0;
+    font-weight: 300;
+    margin: 1em 0; }
+    article ul li {
+      margin: 1em 0; }
   article blockquote {
     position: relative;
-    margin: 1em 0;
+    margin: 2em 0;
     font-weight: 300;
     font-size: 1.5em;
     font-style: italic;
@@ -2514,15 +2550,10 @@ article {
       right: .1em; }
     article blockquote > p {
       padding: .2em 0; }
-    article blockquote + p {
-      font-weight: 300;
-      margin-bottom: 2em;
-      font-size: 1.125em;
-      line-height: 1.4em;
-      color: #b7c6c5; }
   article .caption {
     font-size: 0.875em;
-    margin: 0 0 1em 0; }
+    margin: -1em 0 2em 0;
+    color: #556c69; }
   article .questions {
     background: #d3dddc; }
   @media (min-width: 48em) {
@@ -2534,6 +2565,13 @@ article {
   @media (min-width: 74.375em) {
     article {
       margin-left: 28em; } }
+
+.source {
+  font-weight: 300;
+  margin-bottom: 2em;
+  font-size: 1.125em;
+  line-height: 1.4em;
+  color: #b7c6c5; }
 
 .pagination {
   margin: 0;
@@ -2580,10 +2618,7 @@ time, sup, header h2 span, .global span, h1 span {
     padding: 2em 2em 3em 2em;
     color: #EFEFEF; }
   .imprint h2, .imprint .meta {
-    margin-bottom: .2em;
-    text-transform: uppercase;
-    font-weight: 700;
-    letter-spacing: 1px; }
+    margin-bottom: .2em; }
   .imprint h2 {
     font-size: 0.875em; }
   .imprint .meta {
@@ -2599,7 +2634,7 @@ time, sup, header h2 span, .global span, h1 span {
   .imprint a {
     color: #e9e1b0; }
     .imprint a:hover {
-      color: #FFF; }
+      color: #cd2b8f; }
   .imprint ul {
     margin: 0; }
     .imprint ul li {
@@ -2627,8 +2662,25 @@ time, sup, header h2 span, .global span, h1 span {
         position: absolute;
         bottom: 0; } }
 
+.footnotes {
+  padding: 0;
+  margin: 4em 0 0 0;
+  font-size: 0.875em;
+  line-height: 1.4em; }
+  .footnotes:before {
+    display: block;
+    content: "footnotes";
+    font-size: 0.875em;
+    margin: 2em 0 1em 0; }
+  .footnotes a {
+    color: #709d9a; }
+    .footnotes a:hover {
+      color: #cd2b8f; }
+  .footnotes li {
+    margin-bottom: .5em; }
+
 .pnts {
-  border-bottom: 1px dotted #b7c6c5;
+  border-bottom: 1px dotted #cd2b8f;
   padding: .5em 0;
   font-style: italic;
   font-size: 1.125em;

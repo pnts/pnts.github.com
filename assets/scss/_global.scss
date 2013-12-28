@@ -4,11 +4,11 @@
 ::::::::::::::::::::::::::::::::::::::::::::::::::      
 */
 
-@function calcEm($target, $context) {
+@function calcEm( $target, $context ) {
   @return ( $target / $context ) + em;
 }
 
-@function calcPercent($target, $context) {
+@function calcPercent( $target, $context ) {
   @return ($target / $context) * 100%;
 }
 
@@ -20,14 +20,15 @@
 
 $anchor           :#212a29; 
 $support          :#63908d;
-$link             :lighten($anchor, 10%);
-$support-link     :lighten($support, 5%);
-$hover            :lighten($link, 50%);
-$support-hover    :lighten($support, 15%);
-$copy             :lighten($anchor, 3%);
+$highlight        : hsl( 323, 65.3226%, 48.6275% );
+$link             :lighten( $anchor, 10% );
+$support-link     :lighten( $support, 5% );
+$hover            :$highlight;
+$support-hover    :$highlight;
+$copy             :lighten( $anchor, 3% );
 
-$desktop          :calcEm(1190, 16);
-$portrait         :calcEm(768, 16);
+$desktop          :calcEm( 1190, 16 );
+$portrait         :calcEm( 768, 16 );
 
 
 /*
@@ -36,7 +37,7 @@ $portrait         :calcEm(768, 16);
 ::::::::::::::::::::::::::::::::::::::::::::::::::      
 */
 
-@mixin prefix($property, $value) {
+@mixin prefix( $property, $value ) {
   -webkit-#{$property}: $value;
      -moz-#{$property}: $value;
       -ms-#{$property}: $value;
@@ -46,7 +47,7 @@ $portrait         :calcEm(768, 16);
 
 @mixin breakpoint( $point ) {
   @if $point == portrait {
-    @media ( min-width: $portrait) { @content; }
+    @media ( min-width: $portrait ) { @content; }
   }
   @else if $point == desktop {
     @media ( min-width: $desktop ) { @content; }
@@ -111,6 +112,12 @@ $portrait         :calcEm(768, 16);
   float: left;
 }
 
+%subheader {
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
 /*
 ::::::::::::::::::::::::::::::::::::::::::::::::::
   =Gridsy
@@ -138,7 +145,7 @@ $gridList: (2, 3, 4);
 
 html {
   border-top: .2em solid $support;
-  @include breakpoint(portrait) {
+  @include breakpoint( portrait ) {
     border-top: none;
   }
 }
@@ -156,14 +163,22 @@ ul {
 
 a {
   text-decoration: none;
-  color: $link;
+  color: $support-link;
   &:hover {
-    color: $hover;
+    color: $highlight;
   }
 }
 
 a, a:link, a:visited, a:active {
-  @include prefix(transition, color 0.3s ease-in-out);
+  @include prefix( transition, color 0.3s ease-in-out );
+}
+
+em {
+  font-style: italic;
+}
+
+strong {
+  font-weight: 700;
 }
 
 img, embed, object, video {
@@ -177,34 +192,51 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+.alignleft {
+  float: left;
+  margin-right: 1em;
+}
+
+.alignright {
+  float: right;
+  margin-left: 1em;
+  margin-bottom: 1em;
+}
+
 article {
-  margin: 1em 0 4em 0;
+  margin: 1em 0 1em 0;
   padding: 1em 2em;
   &:after {
     display: block;
     margin-top: 1em;
-    border-top: 1px dotted lighten($anchor, 60%);
-    border-bottom: 1px dotted lighten($anchor, 60%);
+    border-top: 1px dotted lighten( $anchor, 60% );
+    border-bottom: 1px dotted lighten( $anchor, 60% );
     padding: 4em 0;
     content: "\f19d";
     font-family: "Ionicons";
     text-align: center;
-    font-size: calcEm( 64, 16);
-    color: lighten($anchor, 60%);
+    font-size: calcEm( 64, 16 );
+    color: lighten( $anchor, 60% );
   }
   header {
     margin-bottom: 1em;
+    h2 {
+      font-size: calcEm( 18, 16 );
+      color: lighten( $anchor, 30% );
+    }
   }
   h1 {
     line-height: 1.2em;
   }
   h2 {
-    font-size: calcEm( 18, 16);
-    color: lighten($anchor, 30%);
+    font-size: calcEm( 28, 16 );
+  }
+  h3 {
+    font-size: calcEm( 24, 16 );
   }
   p {
     margin: 1.5em 0;
-    font-size: calcEm( 18, 16);
+    font-size: calcEm( 18, 16 );
     line-height: 1.5em;
     a {
       color: $support-link;
@@ -213,19 +245,31 @@ article {
       }
     }
   }
+  img {
+    margin-bottom: 1em;
+  }
+  ul {
+    @extend %unordered;
+    padding: 0;
+    font-weight: 300;
+    margin: 1em 0;
+    li {
+      margin: 1em 0;
+    }
+  }
   blockquote {
     position: relative;
-    margin: 1em 0;
+    margin: 2em 0;
     font-weight: 300;
-    font-size: calcEm( 24, 16);
+    font-size: calcEm( 24, 16 );
     font-style: italic;
     line-height: 1.5em;
-    color: lighten($copy, 20%);
+    color: lighten( $copy, 20% );
     &:before, &:after {
       position: absolute;
-      color: lighten($anchor, 60%);
+      color: lighten( $anchor, 60% );
       z-index: -10;
-      font-size: calcEm( 148, 16);
+      font-size: calcEm( 148, 16 );
       opacity: .4;
     }
     &:before {
@@ -241,27 +285,29 @@ article {
     &> p {
       padding: .2em 0;
     }
-    &+ p {
-      font-weight: 300;
-      margin-bottom: 2em;
-      font-size: calcEm( 18, 16);
-      line-height: 1.4em;
-      color: lighten($anchor, 60%);
-    }
   }
   .caption {
-    font-size: calcEm( 14, 16);
-    margin: 0 0 1em 0;
+    font-size: calcEm( 14, 16 );
+    margin: -1em 0 2em 0;
+    color: lighten( $copy, 20% );
   }
   .questions {
-    background: lighten($anchor, 70%);
+    background: lighten( $anchor, 70% );
   }
-  @include breakpoint(portrait) {
+  @include breakpoint( portrait ) {
     @include largescreen();
   }
-  @include breakpoint(desktop) {  
+  @include breakpoint( desktop ) {  
     margin-left: 28em;
   }
+}
+
+.source {
+  font-weight: 300;
+  margin-bottom: 2em;
+  font-size: calcEm( 18, 16 );
+  line-height: 1.4em;
+  color: lighten( $anchor, 60% );
 }
 
 .pagination {
@@ -269,13 +315,13 @@ article {
   padding: 0;
   .past, .now {
     a {
-      @include prefix(transition, background 0.3s ease-in-out);
+      @include prefix( transition, background 0.3s ease-in-out );
       @extend %col-1-2;
       font-weight: 700;
       text-transform: uppercase;
       font-size: calcEm( 11, 16 );
       &:hover {
-        background: lighten($anchor, 60%);
+        background: lighten( $anchor, 60% );
         color: $copy;
       }
     }
@@ -289,10 +335,10 @@ article {
     padding: 1em 0 1em 2em;
     float: left;
   }
-  @include breakpoint(portrait) {
+  @include breakpoint( portrait ) {
     @include largescreen();
   }
-  @include breakpoint(desktop) {  
+  @include breakpoint( desktop ) {  
     margin-left: 28em;
   }
 }
@@ -313,16 +359,14 @@ time, sup, header h2 span,.global span, h1 span {
     //background: transparentize( #000, .5);
   }
   h2, .meta {
+    @extend %subheader;
     margin-bottom: .2em;
-    text-transform: uppercase;
-    font-weight: 700;
-    letter-spacing: 1px;
   }
   h2 {
-    font-size: calcEm( 14, 16);
+    font-size: calcEm( 14, 16 );
   }
   .meta {
-    font-size: calcEm( 12, 16);
+    font-size: calcEm( 12, 16 );
     span {
       padding-right: 1em;
     }
@@ -335,9 +379,9 @@ time, sup, header h2 span,.global span, h1 span {
     background: #FFF;
   }
   a {
-    color: hsl(51, 57.0248%, 80.2745%);
+    color: hsl( 51, 57.0248%, 80.2745% );
     &:hover {
-      color: #FFF;
+      color: $highlight;
     }
   }
   ul {
@@ -347,14 +391,14 @@ time, sup, header h2 span,.global span, h1 span {
       padding-right: 1em;
     }
   }
-  @include breakpoint(portrait) {
+  @include breakpoint( portrait ) {
     max-width: 25em;
     width: 33%;
     position: fixed;
     top: 0;
     bottom: 0;
     border-top: none;
-    border-right: .5em solid transparentize( #000, .8);
+    border-right: .5em solid transparentize( #000, .8 );
     img {
       display: block;
       float: none;
@@ -374,14 +418,37 @@ time, sup, header h2 span,.global span, h1 span {
   }
 }
 
+.footnotes {
+  padding: 0;
+  margin: 4em 0 0 0;
+  font-size: calcEm( 14, 16 );
+  line-height: 1.4em;
+  &:before {
+    display: block;
+    content: "footnotes";
+    @extend %subheader;
+    font-size: calcEm( 14, 16 );
+    margin: 2em 0 1em 0;
+  }
+  a {
+    color: $support-link;
+    &:hover {
+      color: $highlight;
+    }
+  }
+  li {
+    margin-bottom: .5em;
+  }
+}
+
 .pnts {
   border-bottom: 1px dotted $hover;
   padding: .5em 0;
   font-style: italic;
-  font-size: calcEm( 18, 16);
+  font-size: calcEm( 18, 16 );
   font-weight: 300;
   text-align: center;
-  @include breakpoint(portrait) {
+  @include breakpoint( portrait ) {
     display: none;
   }
 }
