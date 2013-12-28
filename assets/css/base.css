@@ -2612,7 +2612,7 @@ time, sup, header h2 span, .global span, h1 span {
   @media (min-width: 48em) {
     .pagination {
       width: 66%;
-      margin-left: 33%;
+      margin-left: 27em;
       margin-right: 2%;
       max-width: 45em; } }
 

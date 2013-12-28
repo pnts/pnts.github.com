@@ -366,7 +366,7 @@ time, sup, header h2 span,.global span, h1 span {
   @include breakpoint(vertical) {
     //@extend %col-2-3;
     width: 66%;
-    margin-left: 33%;
+    margin-left: 27em;
     margin-right: 2%;
     max-width: 45em;
   }
