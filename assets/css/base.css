@@ -2709,6 +2709,12 @@ time, sup, header h2 span, .global span, h1 span {
   font-size: 6em;
   margin: 0;
   font-weight: 300; }
+.imprint-full .supporting {
+  margin-top: 3.5em;
+  padding-top: 2.5em;
+  border-top: 1px dotted #b7c6c5; }
+  .imprint-full .supporting p {
+    font-size: 0.875em; }
 .imprint-full ul {
   margin-bottom: 4em; }
   .imprint-full ul li {
@@ -2722,3 +2728,5 @@ time, sup, header h2 span, .global span, h1 span {
         padding-right: 2em; }
       .imprint-full ul li:nth-child(2):after {
         padding-left: 2em; }
+.imprint-full .powered {
+  text-align: center; }

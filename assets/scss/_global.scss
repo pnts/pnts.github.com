@@ -477,6 +477,14 @@ time, sup, header h2 span,.global span, h1 span {
     margin: 0;
     font-weight: 300;
   }
+  .supporting {
+    margin-top: 3.5em;
+    padding-top: 2.5em;
+    border-top: 1px dotted lighten( $anchor, 60% );
+    p {
+      font-size: calcEm( 14, 16 );
+    }
+  }
   ul {
     @extend %nobullet;
     @extend %subheader;
@@ -498,5 +506,8 @@ time, sup, header h2 span,.global span, h1 span {
         }
       }
     }
+  }
+  .powered {
+    text-align: center;
   }
 }
