@@ -1,6 +1,6 @@
 /*
 ::::::::::::::::::::::::::::::::::::::::::::::::::
-  =Sassy stuff
+  =Functions
 ::::::::::::::::::::::::::::::::::::::::::::::::::      
 */
 
@@ -12,6 +12,30 @@
   @return ($target / $context) * 100%;
 }
 
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::
+  =Variables
+::::::::::::::::::::::::::::::::::::::::::::::::::      
+*/
+
+$anchor           :#212a29; 
+$support          :#63908d;
+$link             :lighten($anchor, 10%);
+$support-link     :lighten($support, 5%);
+$hover            :lighten($link, 50%);
+$support-hover    :lighten($support, 15%);
+$copy             :lighten($anchor, 3%);
+
+$desktop          :calcEm(1190, 16);
+$portrait         :calcEm(768, 16);
+
+
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::
+  =Mixins
+::::::::::::::::::::::::::::::::::::::::::::::::::      
+*/
+
 @mixin prefix($property, $value) {
   -webkit-#{$property}: $value;
      -moz-#{$property}: $value;
@@ -21,19 +45,26 @@
 }
 
 @mixin breakpoint( $point ) {
-  @if $point == large {
+  @if $point == portrait {
+    @media ( min-width: $portrait) { @content; }
+  }
+  @else if $point == desktop {
     @media ( min-width: $desktop ) { @content; }
   }
-  @else if $point == horizontal {
-    @media ( min-width: $ipadLandscape ) { @content; }
-  }
-  @else if $point == vertical {
-    @media ( min-width: $ipadPortrait )  { @content; }
-  }
-  @else if $point == pocket {
-    @media ( min-width: $mobile ) { @content; }
-  }
 }
+
+@mixin largescreen() {
+  width: 66%;
+  margin-left: 33%;
+  margin-right: 2%;
+  max-width: 45em;
+}
+
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::
+  =Extends
+::::::::::::::::::::::::::::::::::::::::::::::::::      
+*/
 
 // grabbing list style from Sassparilla but making them extends instead of mixins
 %unordered {
@@ -80,7 +111,12 @@
   float: left;
 }
 
-// create these grids
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::
+  =Gridsy
+::::::::::::::::::::::::::::::::::::::::::::::::::      
+*/
+
 $gridList: (2, 3, 4);
 
 @for $grids from min( $gridList... ) through max( $gridList... ) {
@@ -90,39 +126,19 @@ $gridList: (2, 3, 4);
   }
 }
 
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::
+  =Utilize all the things
+::::::::::::::::::::::::::::::::::::::::::::::::::      
+*/
+
 *, *:after, *:before {
   @extend %borderBox;
 }
 
-/*
-::::::::::::::::::::::::::::::::::::::::::::::::::
-  =Variables
-::::::::::::::::::::::::::::::::::::::::::::::::::      
-*/
-
-$anchor           :#212a29; 
-$support          :#63908d;
-$link             :lighten($anchor, 10%);
-$support-link     :lighten($support, 5%);
-$hover            :lighten($link, 50%);
-$support-hover    :lighten($support, 15%);
-$copy             :lighten($anchor, 3%);
-
-$desktop          :calcEm(850, 16);
-$ipadPortrait     :calcEm(768, 16);
-$ipadLandscape    :calcEm(1024, 16);
-$mobile           :calcEm(480, 16);
-
-
-/*
-::::::::::::::::::::::::::::::::::::::::::::::::::
-  =Global bits
-::::::::::::::::::::::::::::::::::::::::::::::::::      
-*/
-
 html {
   border-top: .2em solid $support;
-  @include breakpoint(vertical) {
+  @include breakpoint(portrait) {
     border-top: none;
   }
 }
@@ -163,6 +179,7 @@ h1, h2, h3, h4, h5, h6 {
 
 article {
   margin: 1em 0 4em 0;
+  padding: 1em 2em;
   &:after {
     display: block;
     margin-top: 1em;
@@ -177,14 +194,6 @@ article {
   }
   header {
     margin-bottom: 1em;
-    /*&:after {
-      display: block;
-      margin: 2em 0 2em 0;
-      content: "\f154 \f154 \f154 \f154 \f154";
-      font-family: "Ionicons";
-      color: lighten($anchor, 70%);
-      font-size: calcEm( 18, 16);
-    }*/
   }
   h1 {
     line-height: 1.2em;
@@ -247,17 +256,45 @@ article {
   .questions {
     background: lighten($anchor, 70%);
   }
-  @include breakpoint(vertical) {
-    //@extend %col-2-3;
-    width: 66%;
-    margin-left: 27em;
-    margin-right: 2%;
-    max-width: 45em;
+  @include breakpoint(portrait) {
+    @include largescreen();
+  }
+  @include breakpoint(desktop) {  
+    margin-left: 28em;
   }
 }
 
-article {
-  padding: 1em 2em;
+.pagination {
+  margin: 0;
+  padding: 0;
+  .past, .now {
+    a {
+      @include prefix(transition, background 0.3s ease-in-out);
+      @extend %col-1-2;
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: calcEm( 11, 16 );
+      &:hover {
+        background: lighten($anchor, 60%);
+        color: $copy;
+      }
+    }
+  }
+  .past a {
+    padding: 1em 2em 1em 0;
+    float: right;
+    text-align: right;
+  }
+  .now a {
+    padding: 1em 0 1em 2em;
+    float: left;
+  }
+  @include breakpoint(portrait) {
+    @include largescreen();
+  }
+  @include breakpoint(desktop) {  
+    margin-left: 28em;
+  }
 }
 
 time, sup, header h2 span,.global span, h1 span {
@@ -310,7 +347,7 @@ time, sup, header h2 span,.global span, h1 span {
       padding-right: 1em;
     }
   }
-  @include breakpoint(vertical) {
+  @include breakpoint(portrait) {
     //@extend %col-1-3;  arrrrrgh, this doesn't work with media queries
     max-width: 25em;
     width: 33%;
@@ -338,40 +375,6 @@ time, sup, header h2 span,.global span, h1 span {
   }
 }
 
-.pagination {
-  margin: 0;
-  padding: 0;
-  .past, .now {
-    a {
-      @include prefix(transition, background 0.3s ease-in-out);
-      @extend %col-1-2;
-      font-weight: 700;
-      text-transform: uppercase;
-      font-size: calcEm( 11, 16 );
-      &:hover {
-        background: lighten($anchor, 60%);
-        color: $copy;
-      }
-    }
-  }
-  .past a {
-    padding: 1em 2em 1em 0;
-    float: right;
-    text-align: right;
-  }
-  .now a {
-    padding: 1em 0 1em 2em;
-    float: left;
-  }
-  @include breakpoint(vertical) {
-    //@extend %col-2-3;
-    width: 66%;
-    margin-left: 27em;
-    margin-right: 2%;
-    max-width: 45em;
-  }
-}
-
 
 .pnts {
   border-bottom: 1px dotted $hover;
@@ -380,7 +383,7 @@ time, sup, header h2 span,.global span, h1 span {
   font-size: calcEm( 18, 16);
   font-weight: 300;
   text-align: center;
-  @include breakpoint(vertical) {
+  @include breakpoint(portrait) {
     display: none;
   }
 }

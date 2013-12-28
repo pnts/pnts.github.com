@@ -2378,7 +2378,22 @@ table {
 
 /*
 ::::::::::::::::::::::::::::::::::::::::::::::::::
-  =Sassy stuff
+  =Functions
+::::::::::::::::::::::::::::::::::::::::::::::::::      
+*/
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::
+  =Variables
+::::::::::::::::::::::::::::::::::::::::::::::::::      
+*/
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::
+  =Mixins
+::::::::::::::::::::::::::::::::::::::::::::::::::      
+*/
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::
+  =Extends
 ::::::::::::::::::::::::::::::::::::::::::::::::::      
 */
 .pagination .past a, .pagination .now a {
@@ -2397,17 +2412,17 @@ table {
   position: relative;
   float: left; }
 
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::
+  =Gridsy
+::::::::::::::::::::::::::::::::::::::::::::::::::      
+*/
 .pagination .past a, .pagination .now a {
   width: 50%; }
 
 /*
 ::::::::::::::::::::::::::::::::::::::::::::::::::
-  =Variables
-::::::::::::::::::::::::::::::::::::::::::::::::::      
-*/
-/*
-::::::::::::::::::::::::::::::::::::::::::::::::::
-  =Global bits
+  =Utilize all the things
 ::::::::::::::::::::::::::::::::::::::::::::::::::      
 */
 html {
@@ -2447,7 +2462,8 @@ h1, h2, h3, h4, h5, h6 {
     margin: .2em 0; }
 
 article {
-  margin: 1em 0 4em 0; }
+  margin: 1em 0 4em 0;
+  padding: 1em 2em; }
   article:after {
     display: block;
     margin-top: 1em;
@@ -2460,15 +2476,7 @@ article {
     font-size: 4em;
     color: #b7c6c5; }
   article header {
-    margin-bottom: 1em;
-    /*&:after {
-      display: block;
-      margin: 2em 0 2em 0;
-      content: "\f154 \f154 \f154 \f154 \f154";
-      font-family: "Ionicons";
-      color: lighten($anchor, 70%);
-      font-size: calcEm( 18, 16);
-    }*/ }
+    margin-bottom: 1em; }
   article h1 {
     line-height: 1.2em; }
   article h2 {
@@ -2520,12 +2528,44 @@ article {
   @media (min-width: 48em) {
     article {
       width: 66%;
-      margin-left: 27em;
+      margin-left: 33%;
       margin-right: 2%;
       max-width: 45em; } }
+  @media (min-width: 74.375em) {
+    article {
+      margin-left: 28em; } }
 
-article {
-  padding: 1em 2em; }
+.pagination {
+  margin: 0;
+  padding: 0; }
+  .pagination .past a, .pagination .now a {
+    -webkit-transition: background 0.3s ease-in-out;
+    -moz-transition: background 0.3s ease-in-out;
+    -ms-transition: background 0.3s ease-in-out;
+    -o-transition: background 0.3s ease-in-out;
+    transition: background 0.3s ease-in-out;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.6875em; }
+    .pagination .past a:hover, .pagination .now a:hover {
+      background: #b7c6c5;
+      color: #283331; }
+  .pagination .past a {
+    padding: 1em 2em 1em 0;
+    float: right;
+    text-align: right; }
+  .pagination .now a {
+    padding: 1em 0 1em 2em;
+    float: left; }
+  @media (min-width: 48em) {
+    .pagination {
+      width: 66%;
+      margin-left: 33%;
+      margin-right: 2%;
+      max-width: 45em; } }
+  @media (min-width: 74.375em) {
+    .pagination {
+      margin-left: 28em; } }
 
 time, sup, header h2 span, .global span, h1 span {
   color: #b7c6c5; }
@@ -2586,35 +2626,6 @@ time, sup, header h2 span, .global span, h1 span {
       .imprint .inner {
         position: absolute;
         bottom: 0; } }
-
-.pagination {
-  margin: 0;
-  padding: 0; }
-  .pagination .past a, .pagination .now a {
-    -webkit-transition: background 0.3s ease-in-out;
-    -moz-transition: background 0.3s ease-in-out;
-    -ms-transition: background 0.3s ease-in-out;
-    -o-transition: background 0.3s ease-in-out;
-    transition: background 0.3s ease-in-out;
-    font-weight: 700;
-    text-transform: uppercase;
-    font-size: 0.6875em; }
-    .pagination .past a:hover, .pagination .now a:hover {
-      background: #b7c6c5;
-      color: #283331; }
-  .pagination .past a {
-    padding: 1em 2em 1em 0;
-    float: right;
-    text-align: right; }
-  .pagination .now a {
-    padding: 1em 0 1em 2em;
-    float: left; }
-  @media (min-width: 48em) {
-    .pagination {
-      width: 66%;
-      margin-left: 27em;
-      margin-right: 2%;
-      max-width: 45em; } }
 
 .pnts {
   border-bottom: 1px dotted #b7c6c5;
