@@ -2633,7 +2633,14 @@ time, sup, header h2 span, .global span, h1 span {
     border-radius: 5em;
     padding: .5em;
     float: left;
-    background: #FFF; }
+    background: #FFF;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out; }
+    .imprint-mini img:hover {
+      opacity: .5; }
   .imprint-mini a {
     color: #e9e1b0; }
     .imprint-mini a:hover {

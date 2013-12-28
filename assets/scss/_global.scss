@@ -377,6 +377,10 @@ time, sup, header h2 span,.global span, h1 span {
     padding: .5em;
     float: left;
     background: #FFF;
+    @include prefix( transition, all .3s ease-in-out);
+    &:hover {
+      opacity: .5;
+    }
   }
   a {
     color: hsl( 51, 57.0248%, 80.2745% );
