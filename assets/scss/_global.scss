@@ -347,7 +347,7 @@ time, sup, header h2 span,.global span, h1 span {
   color: lighten($anchor, 60%);
 }
 
-.imprint {
+.imprint-mini {
   border-top: 1px solid #444;
   clear: both;
   background-image: url(../img/space/saturn.jpg);
@@ -450,5 +450,53 @@ time, sup, header h2 span,.global span, h1 span {
   text-align: center;
   @include breakpoint( portrait ) {
     display: none;
+  }
+}
+
+.imprint-full {
+  .main {
+    text-align: center;
+    span {
+      font-style: italic;
+    }
+    h3 {
+      @extend %subheader;
+      font-size: calcEm( 14, 16 );
+      font-weight: 400;
+    }
+    h2 {
+      font-size: calcEm( 24, 16 );
+    }
+    h4 {
+      font-family: "Ionicons";
+      font-size: calcEm( 36, 16 );
+    }
+  }
+  h1 {
+    font-size: calcEm( 96, 16 );
+    margin: 0;
+    font-weight: 300;
+  }
+  ul {
+    @extend %nobullet;
+    @extend %subheader;
+    margin-bottom: 4em;
+    li {
+      @extend %inlineBlock;
+      font-weight: 400;
+      &:nth-child(2) {
+        padding: 0 2em;
+        &:before, &:after {
+          content: "\f2bd";
+          font-family: "Ionicons";
+        }
+        &:before {
+          padding-right: 2em;
+        }
+        &:after {
+          padding-left: 2em;
+        }
+      }
+    }
   }
 }

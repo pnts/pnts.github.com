@@ -2400,7 +2400,10 @@ article ul {
   list-style-position: outside;
   list-style-type: disc; }
 
-.pagination .past a, .pagination .now a {
+.imprint-full ul {
+  list-style-type: none; }
+
+.pagination .past a, .pagination .now a, .imprint-full ul li {
   display: -moz-inline-stack;
   display: inline-block;
   zoom: 1;
@@ -2416,7 +2419,7 @@ article ul {
   position: relative;
   float: left; }
 
-.imprint h2, .imprint .meta, .footnotes:before {
+.imprint-mini h2, .imprint-mini .meta, .footnotes:before, .imprint-full .main h3, .imprint-full ul {
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 1px; }
@@ -2608,40 +2611,40 @@ article {
 time, sup, header h2 span, .global span, h1 span {
   color: #b7c6c5; }
 
-.imprint {
+.imprint-mini {
   border-top: 1px solid #444;
   clear: both;
   background-image: url(../img/space/saturn.jpg);
   background-color: #000;
   background-repeat: no-repeat; }
-  .imprint .inner {
+  .imprint-mini .inner {
     padding: 2em 2em 3em 2em;
     color: #EFEFEF; }
-  .imprint h2, .imprint .meta {
+  .imprint-mini h2, .imprint-mini .meta {
     margin-bottom: .2em; }
-  .imprint h2 {
+  .imprint-mini h2 {
     font-size: 0.875em; }
-  .imprint .meta {
+  .imprint-mini .meta {
     font-size: 0.75em; }
-    .imprint .meta span {
+    .imprint-mini .meta span {
       padding-right: 1em; }
-  .imprint img {
+  .imprint-mini img {
     margin: 1.4em 1.9em 3em 0;
     border-radius: 5em;
     padding: .5em;
     float: left;
     background: #FFF; }
-  .imprint a {
+  .imprint-mini a {
     color: #e9e1b0; }
-    .imprint a:hover {
+    .imprint-mini a:hover {
       color: #cd2b8f; }
-  .imprint ul {
+  .imprint-mini ul {
     margin: 0; }
-    .imprint ul li {
+    .imprint-mini ul li {
       display: inline;
       padding-right: 1em; }
   @media (min-width: 48em) {
-    .imprint {
+    .imprint-mini {
       max-width: 25em;
       width: 33%;
       position: fixed;
@@ -2649,16 +2652,16 @@ time, sup, header h2 span, .global span, h1 span {
       bottom: 0;
       border-top: none;
       border-right: 0.5em solid rgba(0, 0, 0, 0.2); }
-      .imprint img {
+      .imprint-mini img {
         display: block;
         float: none;
         margin: 0 auto 1em auto; }
-      .imprint span, .imprint ul {
+      .imprint-mini span, .imprint-mini ul {
         display: block;
         text-align: center; }
-      .imprint ul {
+      .imprint-mini ul {
         padding: 0; }
-      .imprint .inner {
+      .imprint-mini .inner {
         position: absolute;
         bottom: 0; } }
 
@@ -2689,3 +2692,33 @@ time, sup, header h2 span, .global span, h1 span {
   @media (min-width: 48em) {
     .pnts {
       display: none; } }
+
+.imprint-full .main {
+  text-align: center; }
+  .imprint-full .main span {
+    font-style: italic; }
+  .imprint-full .main h3 {
+    font-size: 0.875em;
+    font-weight: 400; }
+  .imprint-full .main h2 {
+    font-size: 1.5em; }
+  .imprint-full .main h4 {
+    font-family: "Ionicons";
+    font-size: 2.25em; }
+.imprint-full h1 {
+  font-size: 6em;
+  margin: 0;
+  font-weight: 300; }
+.imprint-full ul {
+  margin-bottom: 4em; }
+  .imprint-full ul li {
+    font-weight: 400; }
+    .imprint-full ul li:nth-child(2) {
+      padding: 0 2em; }
+      .imprint-full ul li:nth-child(2):before, .imprint-full ul li:nth-child(2):after {
+        content: "\f2bd";
+        font-family: "Ionicons"; }
+      .imprint-full ul li:nth-child(2):before {
+        padding-right: 2em; }
+      .imprint-full ul li:nth-child(2):after {
+        padding-left: 2em; }
