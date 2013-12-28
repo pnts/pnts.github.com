@@ -2419,7 +2419,7 @@ article ul {
   position: relative;
   float: left; }
 
-.imprint-mini h2, .imprint-mini .meta, .footnotes:before, .imprint-full .main h3, .imprint-full ul {
+.subheader, .imprint-mini h2, .imprint-mini .meta, .footnotes:before, .imprint-full .main h3, .imprint-full ul {
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 1px; }
