@@ -348,7 +348,6 @@ time, sup, header h2 span,.global span, h1 span {
     }
   }
   @include breakpoint(portrait) {
-    //@extend %col-1-3;  arrrrrgh, this doesn't work with media queries
     max-width: 25em;
     width: 33%;
     position: fixed;
@@ -374,7 +373,6 @@ time, sup, header h2 span,.global span, h1 span {
     }
   }
 }
-
 
 .pnts {
   border-bottom: 1px dotted $hover;
