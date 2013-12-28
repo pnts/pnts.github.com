@@ -2708,7 +2708,7 @@ time, sup, header h2 span, .global span, h1 span {
   .imprint-full .main h4 {
     font-family: "Ionicons";
     font-size: 2.25em;
-    margin: 0; }
+    margin: 0 0 2em 0; }
 .imprint-full h1 {
   font-size: 6em;
   margin: 0;
