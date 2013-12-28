@@ -18,17 +18,18 @@
 ::::::::::::::::::::::::::::::::::::::::::::::::::      
 */
 
-$anchor           :#212a29; 
-$support          :#63908d;
+$anchor           : hsl(173, 12.0000%, 14.7059%); 
+$support          : hsl(176, 18.5185%, 47.6471%);
 $highlight        : hsl( 323, 65.3226%, 48.6275% );
-$link             :lighten( $anchor, 10% );
-$support-link     :lighten( $support, 5% );
-$hover            :$highlight;
-$support-hover    :$highlight;
-$copy             :lighten( $anchor, 3% );
+$link             : lighten( $anchor, 10% );
+$alt-link         : hsl( 51, 57.0248%, 80.2745% );
+$support-link     : lighten( $support, 5% );
+$hover            : $highlight;
+$support-hover    : $highlight;
+$copy             : lighten( $anchor, 3% );
 
-$desktop          :calcEm( 1190, 16 );
-$portrait         :calcEm( 768, 16 );
+$desktop          : calcEm( 1190, 16 );
+$portrait         : calcEm( 768, 16 );
 
 
 /*
@@ -315,15 +316,10 @@ article {
   padding: 0;
   .past, .now {
     a {
-      @include prefix( transition, background 0.3s ease-in-out );
       @extend %col-1-2;
       font-weight: 700;
       text-transform: uppercase;
       font-size: calcEm( 11, 16 );
-      &:hover {
-        background: lighten( $anchor, 60% );
-        color: $copy;
-      }
     }
   }
   .past a {
@@ -383,7 +379,7 @@ time, sup, header h2 span,.global span, h1 span {
     }
   }
   a {
-    color: hsl( 51, 57.0248%, 80.2745% );
+    color: $alt-link;
     &:hover {
       color: $highlight;
     }
@@ -446,7 +442,7 @@ time, sup, header h2 span,.global span, h1 span {
 }
 
 .pnts {
-  border-bottom: 1px dotted $hover;
+  border-bottom: 1px dotted lighten($link, 50%);
   padding: .5em 0;
   font-style: italic;
   font-size: calcEm( 18, 16 );

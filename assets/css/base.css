@@ -2494,19 +2494,19 @@ article {
   article:after {
     display: block;
     margin-top: 1em;
-    border-top: 1px dotted #b7c6c5;
-    border-bottom: 1px dotted #b7c6c5;
+    border-top: 1px dotted #b7c6c4;
+    border-bottom: 1px dotted #b7c6c4;
     padding: 4em 0;
     content: "\f19d";
     font-family: "Ionicons";
     text-align: center;
     font-size: 4em;
-    color: #b7c6c5; }
+    color: #b7c6c4; }
   article header {
     margin-bottom: 1em; }
     article header h2 {
       font-size: 1.125em;
-      color: #64807d; }
+      color: #64807c; }
   article h1 {
     line-height: 1.2em; }
   article h2 {
@@ -2539,7 +2539,7 @@ article {
     color: #556c69; }
     article blockquote:before, article blockquote:after {
       position: absolute;
-      color: #b7c6c5;
+      color: #b7c6c4;
       z-index: -10;
       font-size: 9.25em;
       opacity: .4; }
@@ -2574,23 +2574,15 @@ article {
   margin-bottom: 2em;
   font-size: 1.125em;
   line-height: 1.4em;
-  color: #b7c6c5; }
+  color: #b7c6c4; }
 
 .pagination {
   margin: 0;
   padding: 0; }
   .pagination .past a, .pagination .now a {
-    -webkit-transition: background 0.3s ease-in-out;
-    -moz-transition: background 0.3s ease-in-out;
-    -ms-transition: background 0.3s ease-in-out;
-    -o-transition: background 0.3s ease-in-out;
-    transition: background 0.3s ease-in-out;
     font-weight: 700;
     text-transform: uppercase;
     font-size: 0.6875em; }
-    .pagination .past a:hover, .pagination .now a:hover {
-      background: #b7c6c5;
-      color: #283331; }
   .pagination .past a {
     padding: 1em 2em 1em 0;
     float: right;
@@ -2609,7 +2601,7 @@ article {
       margin-left: 28em; } }
 
 time, sup, header h2 span, .global span, h1 span {
-  color: #b7c6c5; }
+  color: #b7c6c4; }
 
 .imprint-mini {
   border-top: 1px solid #444;
@@ -2690,7 +2682,7 @@ time, sup, header h2 span, .global span, h1 span {
     margin-bottom: .5em; }
 
 .pnts {
-  border-bottom: 1px dotted #cd2b8f;
+  border-bottom: 1px dotted #b7c6c4;
   padding: .5em 0;
   font-style: italic;
   font-size: 1.125em;
@@ -2723,7 +2715,7 @@ time, sup, header h2 span, .global span, h1 span {
 .imprint-full .supporting {
   margin-top: 3.5em;
   padding-top: 2.5em;
-  border-top: 1px dotted #b7c6c5; }
+  border-top: 1px dotted #b7c6c4; }
   .imprint-full .supporting p {
     font-size: 0.875em; }
 .imprint-full ul {
