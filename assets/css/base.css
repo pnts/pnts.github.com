@@ -45,7 +45,7 @@ a {
     outline: 0; }
 
 h1 {
-  font-size: 3.3em;
+  font-size: 2.3em;
   margin: 0.67em 0; }
 
 h2 {
@@ -2508,7 +2508,8 @@ article {
       font-size: 1.125em;
       color: #64807c; }
   article h1 {
-    line-height: 1.2em; }
+    line-height: 1.2em;
+    word-wrap: break-word; }
   article h2 {
     font-size: 1.75em; }
   article h3 {
@@ -2564,7 +2565,9 @@ article {
       width: 66%;
       margin-left: 33%;
       margin-right: 2%;
-      max-width: 45em; } }
+      max-width: 45em; }
+      article h1 {
+        font-size: 3.3em; } }
   @media (min-width: 74.375em) {
     article {
       margin-left: 28em; } }
@@ -2595,7 +2598,9 @@ article {
       width: 66%;
       margin-left: 33%;
       margin-right: 2%;
-      max-width: 45em; } }
+      max-width: 45em; }
+      .pagination h1 {
+        font-size: 3.3em; } }
   @media (min-width: 74.375em) {
     .pagination {
       margin-left: 28em; } }

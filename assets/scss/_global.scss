@@ -61,6 +61,9 @@ $portrait         : calcEm( 768, 16 );
   margin-left: 33%;
   margin-right: 2%;
   max-width: 45em;
+  h1 {
+    font-size: 3.3em;
+  }
 }
 
 /*
@@ -234,6 +237,7 @@ article {
   }
   h1 {
     line-height: 1.2em;
+    word-wrap: break-word;
   }
   h2 {
     font-size: calcEm( 28, 16 );
