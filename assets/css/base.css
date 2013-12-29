@@ -2697,44 +2697,46 @@ time, sup, header h2 span, .global span, h1 span {
     .pnts {
       display: none; } }
 
-.imprint-full .main {
-  text-align: center; }
-  .imprint-full .main span {
-    font-style: italic; }
-  .imprint-full .main h3 {
-    font-size: 0.875em;
-    font-weight: 400; }
-    .imprint-full .main h3.atom {
-      margin-top: 4em;
-      margin-bottom: 1.5em; }
-  .imprint-full .main h2 {
-    font-size: 1.5em; }
-  .imprint-full .main h4 {
-    font-family: "Ionicons";
-    font-size: 2.25em;
-    margin: 0 0 2em 0; }
-.imprint-full h1 {
-  font-size: 6em;
-  margin: 0;
-  font-weight: 300; }
-.imprint-full .supporting {
-  margin-top: 3.5em;
-  padding-top: 2.5em;
-  border-top: 1px dotted #b7c6c4; }
-  .imprint-full .supporting p {
-    font-size: 0.875em; }
-.imprint-full ul {
-  margin-bottom: 4em; }
-  .imprint-full ul li {
-    font-weight: 400; }
-    .imprint-full ul li:nth-child(2) {
-      padding: 0 2em; }
-      .imprint-full ul li:nth-child(2):before, .imprint-full ul li:nth-child(2):after {
-        content: "\f2bd";
-        font-family: "Ionicons"; }
-      .imprint-full ul li:nth-child(2):before {
-        padding-right: 2em; }
-      .imprint-full ul li:nth-child(2):after {
-        padding-left: 2em; }
-.imprint-full .powered {
-  text-align: center; }
+.imprint-full {
+  margin-top: 2em; }
+  .imprint-full .main {
+    text-align: center; }
+    .imprint-full .main span {
+      font-style: italic; }
+    .imprint-full .main h3 {
+      font-size: 0.875em;
+      font-weight: 400; }
+      .imprint-full .main h3.atom {
+        margin-top: 4em;
+        margin-bottom: 1.5em; }
+    .imprint-full .main h2 {
+      font-size: 1.5em; }
+    .imprint-full .main h4 {
+      font-family: "Ionicons";
+      font-size: 2.25em;
+      margin: 0 0 2em 0; }
+  .imprint-full h1 {
+    font-size: 6em;
+    margin: 0;
+    font-weight: 300; }
+  .imprint-full .supporting {
+    margin-top: 3.5em;
+    padding-top: 2.5em;
+    border-top: 1px dotted #b7c6c4; }
+    .imprint-full .supporting p {
+      font-size: 0.875em; }
+  .imprint-full ul {
+    margin-bottom: 4em; }
+    .imprint-full ul li {
+      font-weight: 400; }
+      .imprint-full ul li:nth-child(2) {
+        padding: 0 2em; }
+        .imprint-full ul li:nth-child(2):before, .imprint-full ul li:nth-child(2):after {
+          content: "\f2bd";
+          font-family: "Ionicons"; }
+        .imprint-full ul li:nth-child(2):before {
+          padding-right: 2em; }
+        .imprint-full ul li:nth-child(2):after {
+          padding-left: 2em; }
+  .imprint-full .powered {
+    text-align: center; }
