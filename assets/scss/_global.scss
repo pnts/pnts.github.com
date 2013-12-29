@@ -22,7 +22,8 @@ $anchor           : hsl(173, 12.0000%, 14.7059%);
 $support          : hsl(176, 18.5185%, 47.6471%);
 $highlight        : hsl( 323, 65.3226%, 48.6275% );
 $link             : lighten( $anchor, 10% );
-$alt-link         : hsl( 51, 57.0248%, 80.2745% );
+//$alt-link         : hsl( 51, 57.0248%, 80.2745% );
+$alt-link         : hsl(182, 20.6068%, 67.2611%);
 $support-link     : lighten( $support, 5% );
 $hover            : $highlight;
 $support-hover    : $highlight;
@@ -357,7 +358,6 @@ time, sup, header h2 span,.global span, h1 span {
   .inner {
     padding: 2em 2em 3em 2em;
     color: #EFEFEF;
-    //background: transparentize( #000, .5);
   }
   h2, .meta {
     @extend %subheader;
@@ -394,6 +394,14 @@ time, sup, header h2 span,.global span, h1 span {
     li {
       display: inline;
       padding-right: 1em;
+      &:first-child {
+        &:after {
+          content: "\f2bd";
+          font-family: "Ionicons";
+          color: #FFF;
+          padding-left: 1.5em;
+        }
+      }
     }
   }
   @include breakpoint( portrait ) {

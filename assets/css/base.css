@@ -2634,7 +2634,7 @@ time, sup, header h2 span, .global span, h1 span {
     .imprint-mini img:hover {
       opacity: .5; }
   .imprint-mini a {
-    color: #e9e1b0; }
+    color: #9abcbd; }
     .imprint-mini a:hover {
       color: #cd2b8f; }
   .imprint-mini ul {
@@ -2642,6 +2642,11 @@ time, sup, header h2 span, .global span, h1 span {
     .imprint-mini ul li {
       display: inline;
       padding-right: 1em; }
+      .imprint-mini ul li:first-child:after {
+        content: "\f2bd";
+        font-family: "Ionicons";
+        color: #FFF;
+        padding-left: 1.5em; }
   @media (min-width: 48em) {
     .imprint-mini {
       max-width: 25em;
