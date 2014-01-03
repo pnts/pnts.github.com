@@ -296,6 +296,11 @@ article {
     &> p {
       padding: .2em 0;
     }
+    strong {
+      font-style: italic;
+      font-weight: 300;
+      background: transparentize(hsl(52, 100.0000%, 87.1943%), .5);
+    }
   }
   .caption {
     font-size: calcEm( 14, 16 );
@@ -377,7 +382,7 @@ time, sup, header h2 span,.global span, h1 span {
     }
   }
   img {
-    margin: 1.4em 1.9em 3em 0;
+    margin: 1.4em 1.9em 4em 0;
     border-radius: 5em;
     padding: .5em;
     float: left;

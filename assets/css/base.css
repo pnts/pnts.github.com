@@ -2554,6 +2554,10 @@ article {
       right: .1em; }
     article blockquote > p {
       padding: .2em 0; }
+    article blockquote strong {
+      font-style: italic;
+      font-weight: 300;
+      background: rgba(255, 246, 190, 0.5); }
   article .caption {
     font-size: 0.875em;
     margin: -1em 0 2em 0;
@@ -2626,7 +2630,7 @@ time, sup, header h2 span, .global span, h1 span {
     .imprint-mini .meta span {
       padding-right: 1em; }
   .imprint-mini img {
-    margin: 1.4em 1.9em 3em 0;
+    margin: 1.4em 1.9em 4em 0;
     border-radius: 5em;
     padding: .5em;
     float: left;
