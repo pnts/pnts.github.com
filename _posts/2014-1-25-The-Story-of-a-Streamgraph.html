@@ -1,0 +1,40 @@
+---
+layout : post
+category : txt
+tags : [design, visualization]
+permalink: /txt/story-of-a-streamgraph
+---
+
+<p>At <a href="http://simplereach.com">SimpleReach</a> we spend a lot of time investigating, among other things, the motley social behavior of digital content. We ingest the links people share in a perpetual, frantic choreography of likes, pins, +1s, and tweets, and look for patterns that can predict the next few hours of social traffic to any given url. We see <em>a lot</em> of content and sharing in a 24 hour period which, internally, we look at all day in the form of charts, graphs, leaderboards, logs, and reports. Publically we’ve <a href="http://simplereach.com/blog/facebook-continues-to-be-the-biggest-driver-of-social-traffic/"> written a few</a> blog posts <a href="http://simplereach.com/blog/content-believes-in-second-chances/">about our research</a> and spent a beer-fueled week building the <a href="http://nativeadvertising.com">sponsored content leaderboard</a>, but other than that, the data is pretty much under lock and key.</p>  
+
+<p>When we started designing our first official marketing site (upgraded from a <a href="http://dribbble.com/shots/716975-Simplereach-Beta">sign-up-form-slash-holding page</a> lacquered in lighting effects, box shadows, and texture) one of the requirements was to incorporate our data in some way. After a bit of exploration we found the best approach was to visualize the relative sharing activity between social networks over a 24 hour period.</p>
+
+<p>We looked into a number of different visualization techniques before settling on the streamgraph - a type of stacked area graph - for its visual appeal and architectural interestingness.</p>
+
+<img src="assets/img/visualization/sr-marketing.png" />
+
+<blockquote>The horizontal flow of the river represents the flow of time. Each vertical section of the river corresponds to an ordered time slice. Each theme is represented by a colored current that runs horizontally within the river. The width of a current changes to reflect the strength of the corresponding theme over time. As the occurrence of a theme increases over time, the corresponding current widens. As a theme’s occurrence decreases over time, the corresponding current narrows.</blockquote>
+<p class="source">&mdash; <a href="http://vis.pnnl.gov/pdf/themeriver99.pdf">Theme River: In Search of Trends, Patterns, and Relationships</a></p>
+
+<p>The streamgraph on our marketing site visualizes the frequency of social actions over time across six major social networks. The graph displays data over the last 24 hours and updates every 10 minutes causing the height of the stream to undulate across the width of the screen throughout the day. It’s an interesting way to gauge the ebbs and flows of social actions - each day surfaces different shapes, bumps, and wiggles.</p>
+
+<img src="assets/img/visualization/streamgraph-booshy.png" />
+
+<p>I check the site throughout the day to get a sense of how things are going on a macro level. Facebook always dominates, while the other five social networks alternate between 2nd and 3rd place. StumbleUpon occasionally has spikes of activity, and Twitter waxes and wanes. Unsurprisingly, if you remove Facebook from the visualization, the relationships between the other networks becomes more dynamic.</p>
+
+<img src="assets/img/visualization/streamgraph-no-facebook.png" />
+
+<p>We work with a lot of large publishers who drive significant traffic on a daily basis. Sometimes when we onboard a particularly large one and the implementation isn’t quite right, it can have some interesting effects:</p>
+
+<img src="assets/img/visualization/streamgraph-woah!.png" />
+
+<p>The streamgraph has been surprising in the variety of ways it can be used beyond our original intent. There are, of course, a number of ways we could improve on the current graph - add the ability to toggle which networks are visible or select custom time frames such as the last 7 or 30 days. We could also spend some time investigating layout algorithms that cater more specifically to the statistical properties of our particular data set. Looking forward to our next redesign!</p>
+
+<div class="additional-reading">
+<h3>Additional reading:</h3>
+<ol>
+  <li><a href="http://vis.pnnl.gov/pdf/themeriver99.pdf">Theme River: In Search of Trends, Patterns, and Relationships - Susan Havre, Beth Hetzler, and Lucy Nowell </a></li>
+  <li><a href="http://www.leebyron.com/else/streamgraph/download.php?file=stackedgraphs_byron_wattenberg.pdf">Stacked Graphs, Geometry &amp; Aesthetics - Lee Byron &amp; Margin Wattenberg</a></li>
+  <li><a href="http://bl.ocks.org/mbostock/4060954">D3 and Streamgraphs</a></li>
+</ol>
+</div>
