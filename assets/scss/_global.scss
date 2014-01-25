@@ -463,6 +463,22 @@ time, sup, header h2 span,.global span, h1 span {
   }
 }
 
+.additional-reading {
+  h3 {
+    margin-bottom: 0;
+    text-transform: uppercase;
+    font-size: calcEm( 13, 16);
+    font-weight: 700;
+  }
+  ol {
+    margin-top: 0;
+    padding-left: 0;
+  }
+  li {
+    margin: .3em 0;
+  }
+}
+
 .pnts {
   border-bottom: 1px dotted lighten($link, 50%);
   padding: .5em 0;

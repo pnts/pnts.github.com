@@ -2695,6 +2695,17 @@ time, sup, header h2 span, .global span, h1 span {
   .footnotes li {
     margin-bottom: .5em; }
 
+.additional-reading h3 {
+  margin-bottom: 0;
+  text-transform: uppercase;
+  font-size: 0.8125em;
+  font-weight: 700; }
+.additional-reading ol {
+  margin-top: 0;
+  padding-left: 0; }
+.additional-reading li {
+  margin: .3em 0; }
+
 .pnts {
   border-bottom: 1px dotted #b7c6c4;
   padding: .5em 0;
