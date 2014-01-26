@@ -31,6 +31,7 @@ $copy             : lighten( $anchor, 3% );
 
 $desktop          : calcEm( 1190, 16 );
 $portrait         : calcEm( 768, 16 );
+$pocket           : calcEm( 480, 16 );
 
 
 /*
@@ -53,6 +54,9 @@ $portrait         : calcEm( 768, 16 );
   }
   @else if $point == desktop {
     @media ( min-width: $desktop ) { @content; }
+  }
+  @else if $point == pocket {
+    @media ( max-width: $pocket ) { @content; }
   }
 }
 
@@ -380,6 +384,9 @@ time, sup, header h2 span,.global span, h1 span {
     span {
       padding-right: 1em;
     }
+    @include breakpoint( pocket ) {
+      text-align: center;
+    }
   }
   img {
     margin: 1.4em 1.9em 4em 0;
@@ -400,6 +407,7 @@ time, sup, header h2 span,.global span, h1 span {
   }
   ul {
     margin: 0;
+    padding-left: 0;
     li {
       display: inline;
       padding-right: 1em;
@@ -520,6 +528,9 @@ time, sup, header h2 span,.global span, h1 span {
     font-size: calcEm( 96, 16 );
     margin: 0;
     font-weight: 300;
+    @include breakpoint ( pocket ) {
+      font-size: calcEm( 72, 16 );
+    }
   }
   .supporting {
     margin-top: 3.5em;
@@ -533,6 +544,9 @@ time, sup, header h2 span,.global span, h1 span {
     @extend %nobullet;
     @extend %subheader;
     margin-bottom: 4em;
+    @include breakpoint ( pocket ) {
+      font-size: calcEm( 18, 16 );
+    }
     li {
       @extend %inlineBlock;
       font-weight: 400;
