@@ -3,11 +3,17 @@ layout : page
 title: imprint
 ---
 
-<ul>
+<ul class="books">
   {% for book in site.data.library %}
-  <h1> {{ book.title }} </h1>
-  <h2> {{ book.people | array_to_sentence_string }} </h2>
-  <a href="http://{{ book.link }}"> link </a>
-  <span>{{ book.tags | array_to_sentence_string}}</span>
+  <li>
+    <div class="book">
+      <h1> {{ book.title }} </h1>
+      <h2> {{ book.people | array_to_sentence_string }} </h2>
+    </div>
+    <div class="meta">
+      <a href="http://{{ book.link }}"> link </a>
+      <span>{{ book.tags | array_to_sentence_string}}</span>
+    </div>
+  </li>
   {% endfor %}
 </ul>

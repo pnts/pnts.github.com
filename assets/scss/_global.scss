@@ -569,3 +569,42 @@ time, sup, header h2 span,.global span, h1 span {
     text-align: center;
   }
 }
+
+.books {
+  @extend %nobullet;
+  li {
+    overflow: hidden;
+    margin-bottom: 3em;
+  }
+  .book {
+    @extend %col-2-3;
+    position: relative;
+    background: darken( $copy, 5% );
+    color: #EFEFEF;
+    padding: 0 1.5em;
+    min-height: 37em;
+  }
+  .meta {
+    @extend %col-1-3;
+    text-align: right;
+    padding-left: 4em;
+    * {
+      display: block;
+    }
+  }
+  h1, h2 {
+    font-weight: 300;
+  }
+  h1 {
+    font-size: calcEm( 36, 16 );
+    margin-top: 2em;
+    border-top: 3px solid #EFEFEF;
+    border-bottom: 1px solid #EFEFEF;
+    padding: 1em 0;
+  }
+  h2 {
+    font-size: calcEm( 18, 16 );
+    position: absolute;
+    bottom: 1.5em;
+  }
+}

@@ -2400,10 +2400,10 @@ article ul {
   list-style-position: outside;
   list-style-type: disc; }
 
-.imprint-full ul {
+.imprint-full ul, .books {
   list-style-type: none; }
 
-.pagination .past a, .pagination .now a, .imprint-full ul li {
+.pagination .past a, .pagination .now a, .books .meta, .books .book, .imprint-full ul li {
   display: -moz-inline-stack;
   display: inline-block;
   zoom: 1;
@@ -2415,7 +2415,7 @@ article ul {
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-.pagination .past a, .pagination .now a {
+.pagination .past a, .pagination .now a, .books .meta, .books .book {
   position: relative;
   float: left; }
 
@@ -2431,6 +2431,12 @@ article ul {
 */
 .pagination .past a, .pagination .now a {
   width: 50%; }
+
+.books .meta {
+  width: 33%; }
+
+.books .book {
+  width: 67%; }
 
 /*
 ::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -2770,3 +2776,30 @@ time, sup, header h2 span, .global span, h1 span {
           padding-left: 2em; }
   .imprint-full .powered {
     text-align: center; }
+
+.books li {
+  overflow: hidden;
+  margin-bottom: 3em; }
+.books .book {
+  position: relative;
+  background: #1d2423;
+  color: #EFEFEF;
+  padding: 0 1.5em;
+  min-height: 37em; }
+.books .meta {
+  text-align: right;
+  padding-left: 4em; }
+  .books .meta * {
+    display: block; }
+.books h1, .books h2 {
+  font-weight: 300; }
+.books h1 {
+  font-size: 2.25em;
+  margin-top: 2em;
+  border-top: 3px solid #EFEFEF;
+  border-bottom: 1px solid #EFEFEF;
+  padding: 1em 0; }
+.books h2 {
+  font-size: 1.125em;
+  position: absolute;
+  bottom: 1.5em; }

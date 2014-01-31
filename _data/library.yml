@@ -2,13 +2,13 @@
   people: [ Jill Butler, Kritina Holden, William Lidwell ]
   link: www.amazon.com/gp/product/1592535879/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=1592535879&linkCode=as2&tag=pntsus-20
   cover: 
-  tags: [ design, foundation ]
+  tags: [ design ]
 
 - title: "Universal Methods of Design"
   people: [ Bruce Hanington, Bella Martin ]
   link: www.amazon.com/gp/product/B007WRCRH8/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=B007WRCRH8&linkCode=as2&tag=pntsus-20
   cover: 
-  tags: [ design, foundation ]
+  tags: [ design ]
 
 - title: "Designing for the Digital Age: How to Create Human-Centered Products and Services"
   people: [ Kim Goodwin ]
@@ -20,7 +20,7 @@
   people: [ Richard Buchanan, Victor Margolin ]
   link: www.amazon.com/gp/product/0226078159/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=0226078159&linkCode=as2&tag=pntsus-20
   cover: 
-  tags: [ design, theory, criticism ]
+  tags: [ design, theory ]
 
 - title: "Thinking in Systems: A Primer"
   people: [ Donella Meadows ]
@@ -76,6 +76,12 @@
   cover: 
   tags: [ design, interaction ]
 
+- title: "Javascript: The Good Parts"
+  people: [ Douglas Crockford ]
+  link: www.amazon.com/gp/product/B0026OR2ZY/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=B0026OR2ZY&linkCode=as2&tag=pntsus-20
+  cover: 
+  tags: [ javascript ]
+
 - title: "Utopian Entrepreneur"
   people: [ Brenda Laurel ]
   link: www.amazon.com/gp/product/0262621533/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=0262621533&linkCode=as2&tag=pntsus-20
@@ -93,4 +99,10 @@
   link: www.amazon.com/gp/product/0060891548/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=0060891548&linkCode=as2&tag=pntsus-20
   cover: 
   tags: [ writing ]
+
+- title: "The Grasshopper: Games, Life and Utopia"
+  people: [ Bernard Suits ]
+  link: www.amazon.com/gp/product/155111772X/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=155111772X&linkCode=as2&tag=pntsus-20
+  cover: 
+  tags: [ play ]
 
