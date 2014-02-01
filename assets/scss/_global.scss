@@ -375,9 +375,9 @@ time, sup, header h2 span,.global span, h1 span {
   .seal {
     width: 100px;
     height: 100px;
-    margin: 0 auto;
+    margin: 0 auto 3em auto;
     position: relative;
-    perspective: 800px;
+    @include prefix( perspective, 800px );
   }
   .card {
     width: 100%;
@@ -609,13 +609,12 @@ time, sup, header h2 span,.global span, h1 span {
   }
   .book {
     @extend %col-2-3;
-    @include prefix( transition, all 0.3s ease-in-out );
     float: right;
     position: relative;
     background: darken( $copy, 5% );
     color: #EFEFEF;
     padding: 0 1.5em;
-    min-height: 37em;
+    min-height: 39em;
     @include breakpoint( pocket ) {  
       width: 100%;
     }
@@ -631,6 +630,7 @@ time, sup, header h2 span,.global span, h1 span {
   }
   h1, h2 {
     font-weight: 300;
+    @include prefix( transition, all 0.3s ease-in-out );
   }
   h1 {
     font-size: calcEm( 36, 16 );

@@ -2627,8 +2627,12 @@ time, sup, header h2 span, .global span, h1 span {
   .imprint-mini .seal {
     width: 100px;
     height: 100px;
-    margin: 0 auto;
+    margin: 0 auto 3em auto;
     position: relative;
+    -webkit-perspective: 800px;
+    -moz-perspective: 800px;
+    -ms-perspective: 800px;
+    -o-perspective: 800px;
     perspective: 800px; }
   .imprint-mini .card {
     width: 100%;
@@ -2814,17 +2818,12 @@ time, sup, header h2 span, .global span, h1 span {
   overflow: hidden;
   margin-bottom: 17em; }
 .books .book {
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
   float: right;
   position: relative;
   background: #1d2423;
   color: #EFEFEF;
   padding: 0 1.5em;
-  min-height: 37em; }
+  min-height: 39em; }
   @media (max-width: 30em) {
     .books .book {
       width: 100%; } }
@@ -2834,7 +2833,12 @@ time, sup, header h2 span, .global span, h1 span {
   .books .book:hover h2 {
     color: #9abcbd; }
 .books h1, .books h2 {
-  font-weight: 300; }
+  font-weight: 300;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; }
 .books h1 {
   font-size: 2.25em;
   margin-top: 2em;
