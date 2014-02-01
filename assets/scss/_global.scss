@@ -372,6 +372,44 @@ time, sup, header h2 span,.global span, h1 span {
     padding: 2em 2em 3em 2em;
     color: #EFEFEF;
   }
+  .seal {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    position: relative;
+    perspective: 800px;
+  }
+  .card {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    @include prefix( transform-style, preserve-3d);
+    -webkit-transition: -webkit-transform 1s;
+    &:hover {
+      @include prefix( transform, rotateY( 540deg ));
+    }
+  }
+  figure {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    backface-visibility: hidden;
+  }
+  .back {
+    //@include prefix( transform, rotateY( 180deg ));
+  }
+  img {
+    //margin: 1.4em 1.9em 4em 0;
+    border-radius: 5em;
+    padding: .5em;
+    //float: left;
+    background: #FFF;
+    /*@include prefix( transition, all .3s ease-in-out);
+    &:hover {
+      opacity: .5;
+    }*/
+  }
   h2, .meta {
     @extend %subheader;
     margin-bottom: .2em;
@@ -386,17 +424,6 @@ time, sup, header h2 span,.global span, h1 span {
     }
     @include breakpoint( pocket ) {
       text-align: center;
-    }
-  }
-  img {
-    margin: 1.4em 1.9em 4em 0;
-    border-radius: 5em;
-    padding: .5em;
-    float: left;
-    background: #FFF;
-    @include prefix( transition, all .3s ease-in-out);
-    &:hover {
-      opacity: .5;
     }
   }
   a {
