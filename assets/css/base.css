@@ -2403,7 +2403,7 @@ article ul {
 .imprint-full ul, .books {
   list-style-type: none; }
 
-.pagination .past a, .pagination .now a, .books .meta, .books .book, .imprint-full ul li {
+.pagination .past a, .pagination .now a, .books .book, .imprint-full ul li {
   display: -moz-inline-stack;
   display: inline-block;
   zoom: 1;
@@ -2415,7 +2415,7 @@ article ul {
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-.pagination .past a, .pagination .now a, .books .meta, .books .book {
+.pagination .past a, .pagination .now a, .books .book {
   position: relative;
   float: left; }
 
@@ -2431,9 +2431,6 @@ article ul {
 */
 .pagination .past a, .pagination .now a {
   width: 50%; }
-
-.books .meta {
-  width: 33%; }
 
 .books .book {
   width: 67%; }
@@ -2666,6 +2663,11 @@ time, sup, header h2 span, .global span, h1 span {
         font-family: "Ionicons";
         color: #FFF;
         padding-left: 1.5em; }
+      .imprint-mini ul li:last-child:before {
+        content: "\f2bd";
+        font-family: "Ionicons";
+        color: #FFF;
+        padding-right: 1.5em; }
   @media (min-width: 48em) {
     .imprint-mini {
       max-width: 25em;
@@ -2779,18 +2781,17 @@ time, sup, header h2 span, .global span, h1 span {
 
 .books li {
   overflow: hidden;
-  margin-bottom: 3em; }
+  margin-bottom: 17em; }
 .books .book {
+  float: right;
   position: relative;
   background: #1d2423;
   color: #EFEFEF;
   padding: 0 1.5em;
   min-height: 37em; }
-.books .meta {
-  text-align: right;
-  padding-left: 4em; }
-  .books .meta * {
-    display: block; }
+  @media (max-width: 30em) {
+    .books .book {
+      width: 100%; } }
 .books h1, .books h2 {
   font-weight: 300; }
 .books h1 {
