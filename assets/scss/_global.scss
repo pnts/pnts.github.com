@@ -609,6 +609,7 @@ time, sup, header h2 span,.global span, h1 span {
   }
   .book {
     @extend %col-2-3;
+    @include prefix( transition, all 0.3s ease-in-out );
     float: right;
     position: relative;
     background: darken( $copy, 5% );
@@ -617,6 +618,15 @@ time, sup, header h2 span,.global span, h1 span {
     min-height: 37em;
     @include breakpoint( pocket ) {  
       width: 100%;
+    }
+    &:hover {
+      h1 {
+        border-top: 3px solid $alt-link;
+        border-bottom: 1px solid $alt-link;
+      }
+      h2 {
+        color: $alt-link;
+      }
     }
   }
   h1, h2 {

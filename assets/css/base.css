@@ -2814,6 +2814,11 @@ time, sup, header h2 span, .global span, h1 span {
   overflow: hidden;
   margin-bottom: 17em; }
 .books .book {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   float: right;
   position: relative;
   background: #1d2423;
@@ -2823,6 +2828,11 @@ time, sup, header h2 span, .global span, h1 span {
   @media (max-width: 30em) {
     .books .book {
       width: 100%; } }
+  .books .book:hover h1 {
+    border-top: 3px solid #9abcbd;
+    border-bottom: 1px solid #9abcbd; }
+  .books .book:hover h2 {
+    color: #9abcbd; }
 .books h1, .books h2 {
   font-weight: 300; }
 .books h1 {
