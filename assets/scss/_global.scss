@@ -385,6 +385,8 @@ time, sup, header h2 span,.global span, h1 span {
     position: absolute;
     @include prefix( transform-style, preserve-3d);
     -webkit-transition: -webkit-transform 1s;
+    -moz-transition: -moz-transform 1s;
+    transition: transform 1s;
     &:hover {
       @include prefix( transform, rotateY( 540deg ));
     }
@@ -394,21 +396,15 @@ time, sup, header h2 span,.global span, h1 span {
     height: 100%;
     display: block;
     position: absolute;
-    backface-visibility: hidden;
+    @include prefix( backface-visibility, hidden );
   }
   .back {
-    //@include prefix( transform, rotateY( 180deg ));
+    @include prefix( transform, rotateY( 540deg ));
   }
   img {
-    //margin: 1.4em 1.9em 4em 0;
     border-radius: 5em;
     padding: .5em;
-    //float: left;
     background: #FFF;
-    /*@include prefix( transition, all .3s ease-in-out);
-    &:hover {
-      opacity: .5;
-    }*/
   }
   h2, .meta {
     @extend %subheader;

@@ -2639,7 +2639,9 @@ time, sup, header h2 span, .global span, h1 span {
     -ms-transform-style: preserve-3d;
     -o-transform-style: preserve-3d;
     transform-style: preserve-3d;
-    -webkit-transition: -webkit-transform 1s; }
+    -webkit-transition: -webkit-transform 1s;
+    -moz-transition: -moz-transform 1s;
+    transition: transform 1s; }
     .imprint-mini .card:hover {
       -webkit-transform: rotateY(540deg);
       -moz-transform: rotateY(540deg);
@@ -2651,15 +2653,21 @@ time, sup, header h2 span, .global span, h1 span {
     height: 100%;
     display: block;
     position: absolute;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
     backface-visibility: hidden; }
+  .imprint-mini .back {
+    -webkit-transform: rotateY(540deg);
+    -moz-transform: rotateY(540deg);
+    -ms-transform: rotateY(540deg);
+    -o-transform: rotateY(540deg);
+    transform: rotateY(540deg); }
   .imprint-mini img {
     border-radius: 5em;
     padding: .5em;
-    background: #FFF;
-    /*@include prefix( transition, all .3s ease-in-out);
-    &:hover {
-      opacity: .5;
-    }*/ }
+    background: #FFF; }
   .imprint-mini h2, .imprint-mini .meta {
     margin-bottom: .2em; }
   .imprint-mini h2 {
