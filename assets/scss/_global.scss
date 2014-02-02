@@ -603,10 +603,7 @@ time, sup, header h2 span,.global span, h1 span {
 
 .books {
   @extend %nobullet;
-  li {
-    overflow: hidden;
-    margin-bottom: 17em;
-  }
+  overflow: hidden;
   .book {
     @extend %col-2-3;
     float: right;
@@ -615,10 +612,15 @@ time, sup, header h2 span,.global span, h1 span {
     color: #EFEFEF;
     padding: 0 1.5em;
     min-height: 39em;
+    margin-bottom: 17em;
+    margin-right: 3em;
+    @include prefix( transition, all 0.3s ease-in-out );
+    @include prefix(box-shadow, -30px 30px 0 0 $link);
     @include breakpoint( pocket ) {  
       width: 100%;
     }
     &:hover {
+      @include prefix(box-shadow, 30px 30px 0 0 $alt-link);
       h1 {
         border-top: 3px solid $alt-link;
         border-bottom: 1px solid $alt-link;
