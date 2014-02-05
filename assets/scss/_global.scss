@@ -618,6 +618,11 @@ time, sup, header h2 span,.global span, h1 span {
     @include prefix(box-shadow, -30px 30px 0 0 $link);
     @include breakpoint( pocket ) {  
       width: 100%;
+      margin-right: 0;
+      border: 0;
+      h2 {
+        padding-right: 1em;
+      }
     }
     &:hover {
       @include prefix(box-shadow, 30px 30px 0 0 $alt-link);
