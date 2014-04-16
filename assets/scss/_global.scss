@@ -27,7 +27,7 @@ $alt-link         : hsl(182, 20.6068%, 67.2611%);
 $support-link     : lighten( $support, 5% );
 $hover            : $highlight;
 $support-hover    : $highlight;
-$copy             : lighten( $anchor, 3% );
+$copy             : lighten( $anchor, 10% );
 
 $desktop          : calcEm( 1190, 16 );
 $portrait         : calcEm( 768, 16 );
@@ -66,7 +66,7 @@ $pocket           : calcEm( 480, 16 );
   margin-right: 2%;
   max-width: 45em;
   h1 {
-    font-size: 3.3em;
+    font-size: 2em;
   }
 }
 
@@ -165,6 +165,7 @@ body {
   font-size: 1em;
   line-height: 1.5em;
   color: $copy;
+  //color: lighten( $copy, 20% );
 }
 
 ul {
@@ -181,6 +182,7 @@ a {
 
 a, a:link, a:visited, a:active {
   @include prefix( transition, color 0.3s ease-in-out );
+  @include prefix( transition, border-color 0.1s ease-in-out );
 }
 
 em {
@@ -223,9 +225,7 @@ article {
   &:after {
     display: block;
     margin-top: 1em;
-    border-top: 1px dotted lighten( $anchor, 60% );
-    border-bottom: 1px dotted lighten( $anchor, 60% );
-    padding: 4em 0;
+    padding: 1em 0 4em 0;
     content: "\f19d";
     font-family: "Ionicons";
     text-align: center;
@@ -242,6 +242,7 @@ article {
   h1 {
     line-height: 1.2em;
     word-wrap: break-word;
+    color: darken($copy, 2%);
   }
   h2 {
     font-size: calcEm( 28, 16 );
@@ -252,11 +253,14 @@ article {
   p {
     margin: 1.5em 0;
     font-size: calcEm( 18, 16 );
-    line-height: 1.5em;
+    line-height: 1.7em;
     a {
-      color: $support-link;
+      text-decoration: none;
+      color: lighten( $anchor, 30% );
+      border-bottom: 1px solid lighten($support-link, 35%);
       &:hover {
-        color: $support-hover;
+        color: $highlight;
+        border-bottom: 1px solid $highlight;
       }
     }
   }
@@ -369,7 +373,7 @@ time, sup, header h2 span,.global span, h1 span {
   background-color: #000;
   background-repeat: no-repeat;
   .inner {
-    padding: 2em 2em 3em 2em;
+    padding: 2em 2em 5em 2em;
     color: #EFEFEF;
   }
   .seal {

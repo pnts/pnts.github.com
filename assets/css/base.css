@@ -204,7 +204,6 @@ table {
   src: url("../fonts/ionicons.eot?v=1.4.0#iefix") format("embedded-opentype"), url("../fonts/ionicons.ttf?v=1.4.0") format("truetype"), url("../fonts/ionicons.woff?v=1.4.0") format("woff"), url("../fonts/ionicons.svg?v=1.4.0#Ionicons") format("svg");
   font-weight: normal;
   font-style: normal; }
-
 .ion, .ion-loading-a,
 .ion-loading-b,
 .ion-loading-c,
@@ -767,35 +766,30 @@ table {
 
   100% {
     -moz-transform: rotate(359deg); } }
-
 @-webkit-keyframes spin {
   0% {
     -webkit-transform: rotate(0deg); }
 
   100% {
     -webkit-transform: rotate(359deg); } }
-
 @-o-keyframes spin {
   0% {
     -o-transform: rotate(0deg); }
 
   100% {
     -o-transform: rotate(359deg); } }
-
 @-ms-keyframes spin {
   0% {
     -ms-transform: rotate(0deg); }
 
   100% {
     -ms-transform: rotate(359deg); } }
-
 @keyframes spin {
   0% {
     transform: rotate(0deg); }
 
   100% {
     transform: rotate(359deg); } }
-
 .ion-loading-a {
   -webkit-animation-timing-function: steps(8, start);
   -moz-animation-timing-function: steps(8, start);
@@ -2450,7 +2444,7 @@ body {
   font-weight: 400;
   font-size: 1em;
   line-height: 1.5em;
-  color: #283331; }
+  color: #374745; }
 
 ul {
   list-style-type: none; }
@@ -2466,7 +2460,12 @@ a, a:link, a:visited, a:active {
   -moz-transition: color 0.3s ease-in-out;
   -ms-transition: color 0.3s ease-in-out;
   -o-transition: color 0.3s ease-in-out;
-  transition: color 0.3s ease-in-out; }
+  transition: color 0.3s ease-in-out;
+  -webkit-transition: border-color 0.1s ease-in-out;
+  -moz-transition: border-color 0.1s ease-in-out;
+  -ms-transition: border-color 0.1s ease-in-out;
+  -o-transition: border-color 0.1s ease-in-out;
+  transition: border-color 0.1s ease-in-out; }
 
 em {
   font-style: italic; }
@@ -2497,9 +2496,7 @@ article {
   article:after {
     display: block;
     margin-top: 1em;
-    border-top: 1px dotted #b7c6c4;
-    border-bottom: 1px dotted #b7c6c4;
-    padding: 4em 0;
+    padding: 1em 0 4em 0;
     content: "\f19d";
     font-family: "Ionicons";
     text-align: center;
@@ -2512,7 +2509,8 @@ article {
       color: #64807c; }
   article h1 {
     line-height: 1.2em;
-    word-wrap: break-word; }
+    word-wrap: break-word;
+    color: #33413f; }
   article h2 {
     font-size: 1.75em; }
   article h3 {
@@ -2520,11 +2518,14 @@ article {
   article p {
     margin: 1.5em 0;
     font-size: 1.125em;
-    line-height: 1.5em; }
+    line-height: 1.7em; }
     article p a {
-      color: #709d9a; }
+      text-decoration: none;
+      color: #64807c;
+      border-bottom: 1px solid #dae5e5; }
       article p a:hover {
-        color: #cd2b8f; }
+        color: #cd2b8f;
+        border-bottom: 1px solid #cd2b8f; }
   article img {
     margin-bottom: 1em; }
   article ul {
@@ -2540,7 +2541,7 @@ article {
     font-size: 1.5em;
     font-style: italic;
     line-height: 1.5em;
-    color: #556c69; }
+    color: #64807c; }
     article blockquote:before, article blockquote:after {
       position: absolute;
       color: #b7c6c4;
@@ -2564,7 +2565,7 @@ article {
   article .caption {
     font-size: 0.875em;
     margin: -1em 0 2em 0;
-    color: #556c69; }
+    color: #64807c; }
   article .questions {
     background: #d3dddc; }
   @media (min-width: 48em) {
@@ -2574,7 +2575,7 @@ article {
       margin-right: 2%;
       max-width: 45em; }
       article h1 {
-        font-size: 3.3em; } }
+        font-size: 2em; } }
   @media (min-width: 74.375em) {
     article {
       margin-left: 28em; } }
@@ -2607,7 +2608,7 @@ article {
       margin-right: 2%;
       max-width: 45em; }
       .pagination h1 {
-        font-size: 3.3em; } }
+        font-size: 2em; } }
   @media (min-width: 74.375em) {
     .pagination {
       margin-left: 28em; } }
@@ -2622,7 +2623,7 @@ time, sup, header h2 span, .global span, h1 span {
   background-color: #000;
   background-repeat: no-repeat; }
   .imprint-mini .inner {
-    padding: 2em 2em 3em 2em;
+    padding: 2em 2em 5em 2em;
     color: #EFEFEF; }
   .imprint-mini .seal {
     width: 100px;
@@ -2819,7 +2820,7 @@ time, sup, header h2 span, .global span, h1 span {
   .books .book {
     float: right;
     position: relative;
-    background: #1d2423;
+    background: #2c3837;
     color: #EFEFEF;
     padding: 0 1.5em;
     min-height: 39em;
