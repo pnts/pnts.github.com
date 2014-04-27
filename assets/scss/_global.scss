@@ -619,7 +619,7 @@ time, sup, header h2 span,.global span, h1 span {
     margin-bottom: 17em;
     margin-right: 3em;
     @include prefix( transition, all 0.3s ease-in-out );
-    @include prefix(box-shadow, -30px 30px 0 0 $link);
+    @include prefix(box-shadow, 30px 30px 0 0 $alt-link);
     @include breakpoint( pocket ) {  
       width: 100%;
       margin-right: 0;
@@ -629,7 +629,6 @@ time, sup, header h2 span,.global span, h1 span {
       }
     }
     &:hover {
-      @include prefix(box-shadow, 30px 30px 0 0 $alt-link);
       h1 {
         border-top: 3px solid $alt-link;
         border-bottom: 1px solid $alt-link;
@@ -648,11 +647,15 @@ time, sup, header h2 span,.global span, h1 span {
     margin-top: 2em;
     border-top: 3px solid #EFEFEF;
     border-bottom: 1px solid #EFEFEF;
+    color: #EFEFEF;
     padding: 1em 0;
   }
   h2 {
     font-size: calcEm( 18, 16 );
     position: absolute;
     bottom: 1.5em;
+  }
+  a {
+    color: $highlight;
   }
 }

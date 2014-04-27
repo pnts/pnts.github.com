@@ -2831,11 +2831,11 @@ time, sup, header h2 span, .global span, h1 span {
     -ms-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    -webkit-box-shadow: -30px 30px 0 0 #374745;
-    -moz-box-shadow: -30px 30px 0 0 #374745;
-    -ms-box-shadow: -30px 30px 0 0 #374745;
-    -o-box-shadow: -30px 30px 0 0 #374745;
-    box-shadow: -30px 30px 0 0 #374745; }
+    -webkit-box-shadow: 30px 30px 0 0 #9abcbd;
+    -moz-box-shadow: 30px 30px 0 0 #9abcbd;
+    -ms-box-shadow: 30px 30px 0 0 #9abcbd;
+    -o-box-shadow: 30px 30px 0 0 #9abcbd;
+    box-shadow: 30px 30px 0 0 #9abcbd; }
     @media (max-width: 30em) {
       .books .book {
         width: 100%;
@@ -2843,17 +2843,11 @@ time, sup, header h2 span, .global span, h1 span {
         border: 0; }
         .books .book h2 {
           padding-right: 1em; } }
-    .books .book:hover {
-      -webkit-box-shadow: 30px 30px 0 0 #9abcbd;
-      -moz-box-shadow: 30px 30px 0 0 #9abcbd;
-      -ms-box-shadow: 30px 30px 0 0 #9abcbd;
-      -o-box-shadow: 30px 30px 0 0 #9abcbd;
-      box-shadow: 30px 30px 0 0 #9abcbd; }
-      .books .book:hover h1 {
-        border-top: 3px solid #9abcbd;
-        border-bottom: 1px solid #9abcbd; }
-      .books .book:hover h2 {
-        color: #9abcbd; }
+    .books .book:hover h1 {
+      border-top: 3px solid #9abcbd;
+      border-bottom: 1px solid #9abcbd; }
+    .books .book:hover h2 {
+      color: #9abcbd; }
   .books h1, .books h2 {
     font-weight: 300;
     -webkit-transition: all 0.3s ease-in-out;
@@ -2866,8 +2860,11 @@ time, sup, header h2 span, .global span, h1 span {
     margin-top: 2em;
     border-top: 3px solid #EFEFEF;
     border-bottom: 1px solid #EFEFEF;
+    color: #EFEFEF;
     padding: 1em 0; }
   .books h2 {
     font-size: 1.125em;
     position: absolute;
     bottom: 1.5em; }
+  .books a {
+    color: #cd2b8f; }
