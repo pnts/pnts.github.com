@@ -11,3 +11,5 @@ paginate: 5
 paginate_file: index.html
 
 timezone: America/New_York
+
+markdown: kramdown
