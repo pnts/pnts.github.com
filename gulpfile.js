@@ -1,5 +1,5 @@
 var gulp = require('gulp');
-var sass = require('gulp-ruby-sass');
+var sass = require('gulp-sass');
 
 
 gulp.task('default', function() {
@@ -7,9 +7,9 @@ gulp.task('default', function() {
 });
 
 gulp.task('sass', function() {
-  return gulp.src('.assets/scss/*.scss')
-    .pipe(sass({sourcemap: true}))
-    .pipe(gulp.dest('.assets/css'));
+  return gulp.src('./assets/scss/*.scss')
+    .pipe(sass())
+    .pipe(gulp.dest('./assets/css'));
 });
 
 // Rerun the task when a file changes
