@@ -1,12 +1,10 @@
 var gulp = require('gulp');
-var sass = require('gulp-sass');
+var sass = require('gulp-ruby-sass');
+
 
 gulp.task('default', function() {
-
+  return gulp.src('.assets/scss/*.scss')
+    .pipe(sass({sourcemap: true}))
+    .pipe(gulp.dest('.assets/css'));
 });
 
-gulp.task('sass', function () {
-  gulp.src('./assets/scss/*.scss')
-  .pipe(sass())
-  .pipe(gulp.dest('./assets/css'));
-});
