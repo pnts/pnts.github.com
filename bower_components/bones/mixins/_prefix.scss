@@ -1,0 +1,27 @@
+/* ::::::::::::::::::::::::::::::::::::::::::::::::::   
+
+PREFIXER
+
+Vendor prefix properties or values. The default prefixes the property. If you
+need to prefix the value, simply pass in 'value' as the third parameter in the
+mixin
+
+::::::::::::::::::::::::::::::::::::::::::::::::::      
+*/
+
+@mixin prefix($property, $value, $prefix: property) {
+  @if $prefix == property {
+    -webkit-#{$property}: $value;
+       -moz-#{$property}: $value;
+        -ms-#{$property}: $value;
+         -o-#{$property}: $value;
+            #{$property}: $value;
+  } 
+  @else if $prefix == value {
+    #{$property}: -webkit-#{$value};
+       #{$property}: -moz-#{$value};
+        #{$property}: -ms-#{$value};
+         #{$property}: -o-#{$value};
+            #{$property}: #{$value};
+  }
+}

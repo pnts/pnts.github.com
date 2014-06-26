@@ -1,0 +1,20 @@
+/* ::::::::::::::::::::::::::::::::::::::::::::::::::   
+
+Sizing
+
+Rems, ems, and percentages, depending on what your flavor is.
+
+::::::::::::::::::::::::::::::::::::::::::::::::::      
+*/
+
+@function calcRem($target) {
+  @return ($target / 16) + rem;
+}
+
+@function calcEm($target, $context) {
+  @return ( $target / $context ) + em;
+}
+
+@function calcPercent($target, $context) {
+  @return ($target / $context) * 100%;
+}

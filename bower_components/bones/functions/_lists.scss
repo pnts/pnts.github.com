@@ -1,0 +1,59 @@
+/* ::::::::::::::::::::::::::::::::::::::::::::::::::   
+
+List functions
+
+Inspired by and taken from Hugo Giraudel
+http://hugogiraudel.com/2013/08/08/advanced-sass-list-functions/
+
+::::::::::::::::::::::::::::::::::::::::::::::::::      
+*/
+
+// create an arbitrary list of numbers
+@function sequence($start, $end) {
+  $seq: $start;
+
+  @for $i from $start through $end {
+    $x: nth($seq, length($seq)) + 1;
+    $seq: append($seq, $x);
+  }
+ 
+  @return $seq;
+}
+
+// reverse a list
+@function reverse($list, $recursive: false) {
+  $result: ();
+
+  @for $i from length($list)*-1 through -1 {
+    @if type-of(nth($list, abs($i))) == list and $recursive {
+      $result: append($result, reverse(nth($list, abs($i)), $recursive));      
+    }
+
+    @else {
+      $result: append($result, nth($list, abs($i)));
+    }
+  }
+
+  @return $result;
+}
+
+// get first item in a list
+@function first($list) {
+  @return nth($list, 1);
+}
+
+// get last item in a list
+@function last($list) {
+  @return nth($list, length($list));
+}
+
+// get index of last item 
+@function last-index($list, $value) {
+  @for $i from length($list)*-1 through -1 {
+    @if nth($list, abs($i)) == $value {
+      @return abs($i);
+    }
+  }
+
+  @return null;
+}

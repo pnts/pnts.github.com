@@ -1,0 +1,61 @@
+/* ::::::::::::::::::::::::::::::::::::::::::::::::::   
+
+Extends
+
+A basic set of extends. Will break this out when length dictates, but for now
+seems good...
+
+::::::::::::::::::::::::::::::::::::::::::::::::::      
+*/
+
+// display as an inline-block
+%inlineBlock{
+  display: -moz-inline-stack;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+  vertical-align: top;
+}
+
+// truncate long bits of text
+%truncate {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+// make it a border box!
+%borderBox {
+   -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+           box-sizing: border-box;
+}
+
+// remove default browser styling on form elements
+%noDefaultStyling {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+      -ms-appearance: none;
+       -o-appearance: none;
+          appearance: none;
+}
+
+// vertically and horizontally center something
+%center {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+// font sizes use extends to group logically in the output
+$font-sizes: (6, 7, 8, 9, 10, 11, 12, 14, 16, 18, 21, 24, 36, 48, 60, 72);
+
+// set up extends for font-sizes - see functions/sizing for other unit options
+@each $font-size in $font-sizes {
+  %font#{$font-size} {
+    font-size: calcRem( $font-size );
+  }
+}
+

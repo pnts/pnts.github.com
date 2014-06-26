@@ -40,14 +40,6 @@ $pocket           : calcEm( 480, 16 );
 ::::::::::::::::::::::::::::::::::::::::::::::::::      
 */
 
-@mixin prefix( $property, $value ) {
-  -webkit-#{$property}: $value;
-     -moz-#{$property}: $value;
-      -ms-#{$property}: $value;
-       -o-#{$property}: $value;
-          #{$property}: $value;
-}
-
 @mixin breakpoint( $point ) {
   @if $point == portrait {
     @media ( min-width: $portrait ) { @content; }
@@ -99,14 +91,6 @@ $pocket           : calcEm( 480, 16 );
 
 %nobullet {
   list-style-type: none;
-}
-
-%inlineBlock{
-  display: -moz-inline-stack;
-  display: inline-block;
-  zoom: 1;
-  *display: inline;
-  vertical-align: top;
 }
 
 %borderBox {
