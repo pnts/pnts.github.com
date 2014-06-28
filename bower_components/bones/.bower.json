@@ -1,6 +1,6 @@
 {
   "name": "bones",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "homepage": "https://github.com/pnts/bones",
   "author": [
     "pnts <hi@pnts.us>"
@@ -23,15 +23,16 @@
     "gulpfile.js",
     "package.json",
     ".gitignore",
-    "bones.css"
+    "bones.css",
+    "bones.png"
   ],
-  "_release": "0.1.1",
+  "_release": "0.1.2",
   "_resolution": {
     "type": "version",
-    "tag": "0.1.1",
-    "commit": "7c7d27ba7ec95b0c4d6c23cb69a496a2fa59010f"
+    "tag": "0.1.2",
+    "commit": "969aca1f725a30d6c80f9ee2a55721cf560288a3"
   },
   "_source": "git://github.com/pnts/bones.git",
-  "_target": "0.1.1",
+  "_target": "0.1.2",
   "_originalSource": "bones"
 }

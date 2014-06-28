@@ -4,7 +4,7 @@ PREFIXER
 
 Vendor prefix properties or values. The default prefixes the property. If you
 need to prefix the value, simply pass in 'value' as the third parameter in the
-mixin
+mixin. If you need to prefix both, pass in 'both' as the third parameter.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::      
 */
@@ -22,6 +22,12 @@ mixin
        #{$property}: -moz-#{$value};
         #{$property}: -ms-#{$value};
          #{$property}: -o-#{$value};
+            #{$property}: #{$value};
+  } @else if $prefix == both {
+    -webkit-#{$property}: -webkit-#{$value};
+       -moz-#{$property}: -moz-#{$value};
+        -ms-#{$property}: -ms-#{$value};
+         -o-#{$property}: -o-#{$value};
             #{$property}: #{$value};
   }
 }

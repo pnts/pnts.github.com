@@ -319,9 +319,7 @@ time, sup, header h2 span,.global span, h1 span {
   }
   .card {
     @include prefix( transform-style, preserve-3d);
-    -webkit-transition: -webkit-transform 1s;
-    -moz-transition: -moz-transform 1s;
-    transition: transform 1s;
+    @include prefix(transition, transform 1s, both);
     width: 100%;
     height: 100%;
     position: absolute;

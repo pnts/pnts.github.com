@@ -21,7 +21,7 @@ PREFIXER
 
 Vendor prefix properties or values. The default prefixes the property. If you
 need to prefix the value, simply pass in 'value' as the third parameter in the
-mixin
+mixin. If you need to prefix both, pass in 'both' as the third parameter.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::      
 */
@@ -2355,6 +2355,8 @@ time, sup, header h2 span, .global span, h1 span {
     transform-style: preserve-3d;
     -webkit-transition: -webkit-transform 1s;
     -moz-transition: -moz-transform 1s;
+    -ms-transition: -ms-transform 1s;
+    -o-transition: -o-transform 1s;
     transition: transform 1s;
     width: 100%;
     height: 100%;
