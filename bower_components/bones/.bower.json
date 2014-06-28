@@ -1,6 +1,6 @@
 {
   "name": "bones",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "homepage": "https://github.com/pnts/bones",
   "author": [
     "pnts <hi@pnts.us>"
@@ -25,14 +25,13 @@
     ".gitignore",
     "bones.css"
   ],
-  "_release": "0.1.0",
+  "_release": "0.1.1",
   "_resolution": {
     "type": "version",
-    "tag": "0.1.0",
-    "commit": "b7b5f7878f53017dfcbc998ab2d98b81ab5355a6"
+    "tag": "0.1.1",
+    "commit": "7c7d27ba7ec95b0c4d6c23cb69a496a2fa59010f"
   },
   "_source": "git://github.com/pnts/bones.git",
-  "_target": "~0.1.0",
-  "_originalSource": "bones",
-  "_direct": true
+  "_target": "0.1.1",
+  "_originalSource": "bones"
 }

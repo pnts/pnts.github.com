@@ -26,18 +26,12 @@ seems good...
 
 // make it a border box!
 %borderBox {
-   -webkit-box-sizing: border-box;
-      -moz-box-sizing: border-box;
-           box-sizing: border-box;
+  @include prefix(box-sizing, border-box);
 }
 
 // remove default browser styling on form elements
 %noDefaultStyling {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-      -ms-appearance: none;
-       -o-appearance: none;
-          appearance: none;
+  @include prefix(appearance, none);;
 }
 
 // vertically and horizontally center something
@@ -47,6 +41,31 @@ seems good...
   left: 0;
   bottom: 0;
   right: 0;
+}
+
+// grabbing list style from Sassparilla but making them extends instead of mixins
+%unordered {
+   list-style-position: outside; 
+   list-style-type: disc;
+}
+
+%unordered-inside {
+   list-style-position: inside; 
+   list-style-type: disc;
+}
+
+%ordered {
+  list-style-position: outside; 
+  list-style-type: decimal;
+}
+
+%ordered-inside {
+  list-style-position: inside; 
+  list-style-type: decimal;
+}
+
+%nobullet {
+  list-style-type: none;
 }
 
 // font sizes use extends to group logically in the output
