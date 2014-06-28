@@ -294,7 +294,16 @@ seems good...
 *, *:after, *:before {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
   box-sizing: border-box; }
+
+article ul {
+  list-style-position: outside;
+  list-style-type: disc; }
+
+.imprint-full ul, .books {
+  list-style-type: none; }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
   display: block; }
@@ -2106,11 +2115,6 @@ table {
 
 /*
 ::::::::::::::::::::::::::::::::::::::::::::::::::
-  =Functions
-::::::::::::::::::::::::::::::::::::::::::::::::::      
-*/
-/*
-::::::::::::::::::::::::::::::::::::::::::::::::::
   =Variables
 ::::::::::::::::::::::::::::::::::::::::::::::::::      
 */
@@ -2124,18 +2128,6 @@ table {
   =Extends
 ::::::::::::::::::::::::::::::::::::::::::::::::::      
 */
-article ul {
-  list-style-position: outside;
-  list-style-type: disc; }
-
-.imprint-full ul, .books {
-  list-style-type: none; }
-
-*, *:after, *:before {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box; }
-
 .pagination .past a, .pagination .now a, .books .book {
   position: relative;
   float: left; }
@@ -2177,22 +2169,15 @@ ul {
   list-style-type: none; }
 
 a {
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   text-decoration: none;
   color: #709d9a; }
   a:hover {
     color: #cd2b8f; }
-
-a, a:link, a:visited, a:active {
-  -webkit-transition: color 0.3s ease-in-out;
-  -moz-transition: color 0.3s ease-in-out;
-  -ms-transition: color 0.3s ease-in-out;
-  -o-transition: color 0.3s ease-in-out;
-  transition: color 0.3s ease-in-out;
-  -webkit-transition: border-color 0.1s ease-in-out;
-  -moz-transition: border-color 0.1s ease-in-out;
-  -ms-transition: border-color 0.1s ease-in-out;
-  -o-transition: border-color 0.1s ease-in-out;
-  transition: border-color 0.1s ease-in-out; }
 
 em {
   font-style: italic; }
@@ -2256,9 +2241,9 @@ article {
   article img {
     margin-bottom: 1em; }
   article ul {
+    margin: 1em 0;
     padding: 0;
-    font-weight: 300;
-    margin: 1em 0; }
+    font-weight: 300; }
     article ul li {
       margin: 1em 0; }
   article blockquote {
@@ -2353,27 +2338,29 @@ time, sup, header h2 span, .global span, h1 span {
     padding: 2em 2em 5em 2em;
     color: #EFEFEF; }
   .imprint-mini .seal {
-    width: 100px;
-    height: 100px;
-    margin: 0 auto 3em auto;
-    position: relative;
     -webkit-perspective: 800px;
     -moz-perspective: 800px;
     -ms-perspective: 800px;
     -o-perspective: 800px;
-    perspective: 800px; }
+    perspective: 800px;
+    position: relative;
+    margin: 0 auto 3em auto;
+    width: 100px;
+    height: 100px; }
   .imprint-mini .card {
-    width: 100%;
-    height: 100%;
-    position: absolute;
     -webkit-transform-style: preserve-3d;
     -moz-transform-style: preserve-3d;
     -ms-transform-style: preserve-3d;
     -o-transform-style: preserve-3d;
     transform-style: preserve-3d;
-    -webkit-transition: -webkit-transform 1s;
-    -moz-transition: -moz-transform 1s;
-    transition: transform 1s; }
+    -webkit-transition: transform 1s;
+    -moz-transition: transform 1s;
+    -ms-transition: transform 1s;
+    -o-transition: transform 1s;
+    transition: transform 1s;
+    width: 100%;
+    height: 100%;
+    position: absolute; }
     .imprint-mini .card:hover {
       -webkit-transform: rotateY(540deg);
       -moz-transform: rotateY(540deg);
@@ -2381,15 +2368,15 @@ time, sup, header h2 span, .global span, h1 span {
       -o-transform: rotateY(540deg);
       transform: rotateY(540deg); }
   .imprint-mini figure {
-    width: 100%;
-    height: 100%;
-    display: block;
-    position: absolute;
     -webkit-backface-visibility: hidden;
     -moz-backface-visibility: hidden;
     -ms-backface-visibility: hidden;
     -o-backface-visibility: hidden;
-    backface-visibility: hidden; }
+    backface-visibility: hidden;
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute; }
   .imprint-mini .back {
     -webkit-transform: rotateY(540deg);
     -moz-transform: rotateY(540deg);
@@ -2397,6 +2384,10 @@ time, sup, header h2 span, .global span, h1 span {
     -o-transform: rotateY(540deg);
     transform: rotateY(540deg); }
   .imprint-mini img {
+    -webkit-border-radius: 5em;
+    -moz-border-radius: 5em;
+    -ms-border-radius: 5em;
+    -o-border-radius: 5em;
     border-radius: 5em;
     padding: 0.5em;
     background: #FFF; }
@@ -2454,8 +2445,8 @@ time, sup, header h2 span, .global span, h1 span {
         bottom: 0; } }
 
 .footnotes {
-  padding: 0;
   margin: 4em 0 0 0;
+  padding: 0;
   font-size: 0.875em;
   line-height: 1.4em; }
   .footnotes:before {

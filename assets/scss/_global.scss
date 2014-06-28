@@ -1,19 +1,5 @@
 /*
 ::::::::::::::::::::::::::::::::::::::::::::::::::
-  =Functions
-::::::::::::::::::::::::::::::::::::::::::::::::::      
-*/
-
-@function calcEm( $target, $context ) {
-  @return ( $target / $context ) + em;
-}
-
-@function calcPercent( $target, $context ) {
-  @return ($target / $context) * 100%;
-}
-
-/*
-::::::::::::::::::::::::::::::::::::::::::::::::::
   =Variables
 ::::::::::::::::::::::::::::::::::::::::::::::::::      
 */
@@ -67,37 +53,6 @@ $pocket           : calcEm( 480, 16 );
   =Extends
 ::::::::::::::::::::::::::::::::::::::::::::::::::      
 */
-
-// grabbing list style from Sassparilla but making them extends instead of mixins
-%unordered {
-   list-style-position: outside; 
-   list-style-type: disc;
-}
-
-%unordered-inside {
-   list-style-position: inside; 
-   list-style-type: disc;
-}
-
-%ordered {
-  list-style-position: outside; 
-  list-style-type: decimal;
-}
-
-%ordered-inside {
-  list-style-position: inside; 
-  list-style-type: decimal;
-}
-
-%nobullet {
-  list-style-type: none;
-}
-
-%borderBox {
-   -webkit-box-sizing: border-box;
-      -moz-box-sizing: border-box;
-           box-sizing: border-box;
-}
 
 %grid {
   @extend %inlineBlock;
@@ -156,16 +111,12 @@ ul {
 }
 
 a {
+  @include prefix( transition, all 0.2s ease-in-out );
   text-decoration: none;
   color: $support-link;
   &:hover {
     color: $highlight;
   }
-}
-
-a, a:link, a:visited, a:active {
-  @include prefix( transition, color 0.3s ease-in-out );
-  @include prefix( transition, border-color 0.1s ease-in-out );
 }
 
 em {
@@ -252,9 +203,9 @@ article {
   }
   ul {
     @extend %unordered;
+    margin: 1em 0;
     padding: 0;
     font-weight: 300;
-    margin: 1em 0;
     li {
       margin: 1em 0;
     }
@@ -360,36 +311,34 @@ time, sup, header h2 span,.global span, h1 span {
     color: #EFEFEF;
   }
   .seal {
+    @include prefix( perspective, 800px );
+    position: relative;
+    margin: 0 auto 3em auto;
     width: 100px;
     height: 100px;
-    margin: 0 auto 3em auto;
-    position: relative;
-    @include prefix( perspective, 800px );
   }
   .card {
+    @include prefix( transform-style, preserve-3d);
+    @include prefix( transition, transform 1s );
     width: 100%;
     height: 100%;
     position: absolute;
-    @include prefix( transform-style, preserve-3d);
-    -webkit-transition: -webkit-transform 1s;
-    -moz-transition: -moz-transform 1s;
-    transition: transform 1s;
     &:hover {
       @include prefix( transform, rotateY( 540deg ));
     }
   }
   figure {
+    @include prefix( backface-visibility, hidden );
     width: 100%;
     height: 100%;
     display: block;
     position: absolute;
-    @include prefix( backface-visibility, hidden );
   }
   .back {
     @include prefix( transform, rotateY( 540deg ));
   }
   img {
-    border-radius: 5em;
+    @include prefix( border-radius, 5em );
     padding: .5em;
     background: #FFF;
   }
@@ -467,8 +416,8 @@ time, sup, header h2 span,.global span, h1 span {
 }
 
 .footnotes {
-  padding: 0;
   margin: 4em 0 0 0;
+  padding: 0;
   font-size: calcEm( 14, 16 );
   line-height: 1.4em;
   &:before {
