@@ -23,7 +23,8 @@ mixin. If you need to prefix both, pass in 'both' as the third parameter.
         #{$property}: -ms-#{$value};
          #{$property}: -o-#{$value};
             #{$property}: #{$value};
-  } @else if $prefix == both {
+  } 
+  @else if $prefix == both {
     -webkit-#{$property}: -webkit-#{$value};
        -moz-#{$property}: -moz-#{$value};
         -ms-#{$property}: -ms-#{$value};

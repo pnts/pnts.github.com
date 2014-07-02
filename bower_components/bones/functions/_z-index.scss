@@ -1,0 +1,20 @@
+/* ::::::::::::::::::::::::::::::::::::::::::::::::::   
+
+Z-index
+
+Another gem from Hugo Giraudel
+http://www.sitepoint.com/better-solution-managing-z-index-sass/
+
+Jackie Balzer also has an interesting approach
+http://www.smashingmagazine.com/2014/06/12/sassy-z-index-management-for-complex-layouts/
+
+::::::::::::::::::::::::::::::::::::::::::::::::::      
+*/
+
+@function z($layer) {
+  @if not map-has-key($z-layers, $layer) {
+    @warn "No layer found for `#{$layer}` in $z-layers map. Property omitted.";
+  }
+ 
+  @return map-get($z-layers, $layer);
+}
