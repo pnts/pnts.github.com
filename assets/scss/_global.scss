@@ -44,7 +44,7 @@ $pocket           : calcEm( 480, 16 );
   margin-right: 2%;
   max-width: 45em;
   h1 {
-    font-size: 2em;
+    font-size: 3em;
   }
 }
 
@@ -104,6 +104,9 @@ body {
   font-size: 1em;
   line-height: 1.5em;
   color: $copy;
+  @include breakpoint( portrait ) { 
+    margin-left: 5%;
+  }
 }
 
 ul {
@@ -255,8 +258,8 @@ article {
   @include breakpoint( portrait ) {
     @include largescreen();
   }
-  @include breakpoint( desktop ) {  
-    margin-left: 28em;
+  @include breakpoint( portrait ) {  
+    margin-left: 35%;
   }
 }
 
@@ -270,13 +273,13 @@ article {
 
 .pagination {
   margin: 0;
-  padding: 0;
+  padding: 0 0 7.5em 0;
   .past, .now {
     a {
       @extend %col-1-2;
       font-weight: 700;
       text-transform: uppercase;
-      font-size: calcEm( 11, 16 );
+      font-size: calcEm( 12, 16 );
     }
   }
   .past a {
@@ -291,8 +294,8 @@ article {
   @include breakpoint( portrait ) {
     @include largescreen();
   }
-  @include breakpoint( desktop ) {  
-    margin-left: 28em;
+  @include breakpoint( portrait ) {  
+    margin-left: 35%;
   }
 }
 
@@ -306,6 +309,11 @@ time, sup, header h2 span,.global span, h1 span {
   background-image: url(../img/space/saturn.jpg);
   background-color: #000;
   background-repeat: no-repeat;
+  @include breakpoint( portrait ) {
+    p {
+      margin: 0 1% 0 3%;
+    }
+  }
   .inner {
     padding: 2em 2em 5em 2em;
     color: #EFEFEF;
@@ -354,6 +362,9 @@ time, sup, header h2 span,.global span, h1 span {
     span {
       padding-right: 1em;
     }
+    @include breakpoint( portrait ) {
+      margin-top: 4em;
+    }
     @include breakpoint( pocket ) {
       text-align: center;
     }
@@ -389,13 +400,13 @@ time, sup, header h2 span,.global span, h1 span {
     }
   }
   @include breakpoint( portrait ) {
-    max-width: 25em;
-    width: 33%;
+    width: 28%;
     position: fixed;
     top: 0;
     bottom: 0;
     border-top: none;
     border-right: .5em solid transparentize( #000, .8 );
+    border-left: .5em solid transparentize( #000, .8 );
     img {
       display: block;
       float: none;
