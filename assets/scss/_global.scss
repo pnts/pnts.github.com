@@ -553,16 +553,16 @@ time, sup, header h2 span,.global span, h1 span {
   overflow: hidden;
   .book {
     @extend %col-2-3;
-    float: right;
+    text-align: center;
     position: relative;
-    background: darken( $copy, 5% );
+    background: hsl(63, 3.9625%, 15.0030%);
     color: #EFEFEF;
     padding: 0 1.5em;
     min-height: 39em;
     margin-bottom: 17em;
     margin-right: 3em;
     @include prefix( transition, all 0.3s ease-in-out );
-    @include prefix(box-shadow, 30px 30px 0 0 $alt-link);
+    //@include prefix(box-shadow, 30px 30px 0 0 $alt-link);
     @include breakpoint( pocket ) {  
       width: 100%;
       margin-right: 0;
@@ -573,8 +573,9 @@ time, sup, header h2 span,.global span, h1 span {
     }
     &:hover {
       h1 {
-        border-top: 3px solid $alt-link;
-        border-bottom: 1px solid $alt-link;
+        border-top: 3px solid $highlight;
+        border-bottom: 1px solid $highlight;
+        color: $alt-link;
       }
       h2 {
         color: $alt-link;
