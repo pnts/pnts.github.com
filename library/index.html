@@ -5,12 +5,10 @@ title: imprint
 
 <ul class="books">
   {% for book in site.data.library %}
-  <li>
+  <li class="book">
     <a href="http://{{ book.link }}">
-    <div class="book">
       <h1> {{ book.title }} </h1>
       <h2> {{ book.people | array_to_sentence_string }} </h2>
-    </div>
     </a>
     <!-- <span>{{ book.tags | array_to_sentence_string}}</span> -->
   </li>
