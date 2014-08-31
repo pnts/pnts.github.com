@@ -2738,7 +2738,7 @@ body {
   font-size: 1em;
   line-height: 1.5em;
   color: #374745; }
-  @media (min-width: 48em) {
+  @media (min-width: 74.375em) {
     body {
       margin-left: 5%; } }
 
@@ -2865,9 +2865,6 @@ article {
       max-width: 45em; }
       article h1 {
         font-size: 3em; } }
-  @media (min-width: 48em) {
-    article {
-      margin-left: 35%; } }
 
 .source {
   font-weight: 300;
@@ -2917,6 +2914,9 @@ time, sup, header h2 span, .global span, h1 span {
   .imprint-mini .inner {
     padding: 2em 2em 5em 2em;
     color: #EFEFEF; }
+    @media (min-width: 48em) {
+      .imprint-mini .inner {
+        padding: 1em 1em 5em 1em; } }
   .imprint-mini .seal {
     -webkit-perspective: 800px;
     -moz-perspective: 800px;

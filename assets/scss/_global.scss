@@ -104,7 +104,7 @@ body {
   font-size: 1em;
   line-height: 1.5em;
   color: $copy;
-  @include breakpoint( portrait ) { 
+  @include breakpoint( desktop ) { 
     margin-left: 5%;
   }
 }
@@ -258,9 +258,6 @@ article {
   @include breakpoint( portrait ) {
     @include largescreen();
   }
-  @include breakpoint( portrait ) {  
-    margin-left: 35%;
-  }
 }
 
 .source {
@@ -317,6 +314,9 @@ time, sup, header h2 span,.global span, h1 span {
   .inner {
     padding: 2em 2em 5em 2em;
     color: #EFEFEF;
+    @include breakpoint( portrait ) {  
+      padding: 1em 1em 5em 1em;
+    }
   }
   .seal {
     @include prefix( perspective, 800px );
