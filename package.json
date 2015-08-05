@@ -2,7 +2,7 @@
   "name": "pnts.us",
   "version": "0.1.0",
   "devDependencies": {
-    "gulp": "^3.8.1",
+    "gulp": "^3.9.0",
     "gulp-sass": "^0.7.2"
   },
   "dependencies": {
