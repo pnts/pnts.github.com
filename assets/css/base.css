@@ -315,7 +315,7 @@ article ul {
   list-style-position: outside;
   list-style-type: disc; }
 
-.imprint-full ul, .books {
+.imprint-full ul, .books, .the-table ul {
   list-style-type: none; }
 
 article,
@@ -3200,3 +3200,16 @@ time, sup, header h2 span, .global span, h1 span {
     color: #efefef; }
   .books a {
     color: #cd2b8f; }
+
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::
+  =The Table (the talk) styles
+::::::::::::::::::::::::::::::::::::::::::::::::::
+*/
+.the-table h2 {
+  margin-top: 2em; }
+.the-table ul {
+  margin-bottom: 4em; }
+.the-table iframe ~ p {
+  margin-top: -.1em;
+  padding-bottom: 2em; }
