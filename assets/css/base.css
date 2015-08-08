@@ -3213,3 +3213,6 @@ time, sup, header h2 span, .global span, h1 span {
 .the-table iframe ~ p {
   margin-top: -.1em;
   padding-bottom: 2em; }
+.the-table .last-updated {
+  font-size: .9em;
+  color: #CCC; }
