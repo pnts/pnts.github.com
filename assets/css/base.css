@@ -2913,6 +2913,7 @@ time, sup, header h2 span, .global span, h1 span {
       margin: 0 1% 0 3%; } }
   .imprint-mini .inner {
     padding: 2em 2em 5em 2em;
+    width: 100%;
     color: #EFEFEF; }
     @media (min-width: 48em) {
       .imprint-mini .inner {
