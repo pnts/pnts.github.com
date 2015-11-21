@@ -3217,3 +3217,6 @@ time, sup, header h2 span, .global span, h1 span {
 .the-table .last-updated {
   font-size: .9em;
   color: #CCC; }
+
+.the-feed iframe {
+  width: 100%; }
