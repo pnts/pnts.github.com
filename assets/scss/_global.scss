@@ -530,16 +530,16 @@ time, sup, header h2 span,.global span, h1 span {
       @extend %inlineBlock;
       font-weight: 400;
       &:nth-child(2) {
-        padding: 0 2em;
+        padding: 0 1.5em;
         &:before, &:after {
           content: "\f2bd";
           font-family: "Ionicons";
         }
         &:before {
-          padding-right: 2em;
+          padding-right: 1.5em;
         }
         &:after {
-          padding-left: 2em;
+          padding-left: 1.5em;
         }
       }
     }

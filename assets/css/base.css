@@ -3106,14 +3106,14 @@ time, sup, header h2 span, .global span, h1 span {
     .imprint-full ul li {
       font-weight: 400; }
       .imprint-full ul li:nth-child(2) {
-        padding: 0 2em; }
+        padding: 0 1.5em; }
         .imprint-full ul li:nth-child(2):before, .imprint-full ul li:nth-child(2):after {
           content: "\f2bd";
           font-family: "Ionicons"; }
         .imprint-full ul li:nth-child(2):before {
-          padding-right: 2em; }
+          padding-right: 1.5em; }
         .imprint-full ul li:nth-child(2):after {
-          padding-left: 2em; }
+          padding-left: 1.5em; }
   .imprint-full .powered {
     text-align: center; }
 
