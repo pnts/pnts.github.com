@@ -1,21 +1,36 @@
-var gulp = require('gulp');
-var sass = require('gulp-ruby-sass');
+var gulp = require('gulp'),
+    sass = require('gulp-ruby-sass'),
+    autoprefixer = require('gulp-autoprefixer'),
+    notify = require('gulp-notify'),
+    livereload = require('gulp-livereload'),
+    del = require('del');
 
 
-gulp.task('default', function() {
-
+gulp.task('styles', function() {
+  return sass('assets/scss/*.scss')
+  .pipe(autoprefixer('last 2 version'))
+  .pipe(gulp.dest('assets/css'))
+  .pipe(notify({ message: 'styles are done baking'}));
 });
 
-gulp.task('sass', function() {
-  return gulp.src('./assets/scss/*.scss')
-    .pipe(sass())
-    .pipe(gulp.dest('./assets/css'));
+gulp.task('clean', function() {
+  return del(['assets/css']);
 });
 
-// Rerun the task when a file changes
+gulp.task('default', ['clean'] function() {
+  gulp.start('styles');
+});
+
 gulp.task('watch', function() {
-  gulp.watch('./assets/scss/*.scss', ['sass']);
+  gulp.watch('assets/scss/*.scss');
+
+  livereload.listen();
+  gulp.watch(['_site/**']).on('change', livereload.changed);
 });
 
-// The default task (called when you run `gulp` from cli)
-gulp.task('default', ['watch', 'sass']);
+gulp.task('watch', function() {
+  livereload.listen();
+  gulp.watch(['_site/**']).on('change', livereload.changed);
+});
+
+
