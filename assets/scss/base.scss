@@ -1,5 +1,148 @@
-@import 'global';
+@import 'reset';
+
+$fonts: (d-regular,  d-medium, d-light, d-condensed-bold, d-condensed, d-condensed-light);
+
+@each $font in $fonts {
+  @font-face {
+    font-family: $font;
+      src: url('../type/#{$font}.eot');
+      src: url('../type/#{$font}.eot?#iefix') format('embedded-opentype'),
+           url('../type/#{$font}.woff') format('woff'),
+           url('../type/#{$font}.ttf')  format('truetype');
+  }
+}
+
+
+
+
+html {
+  background: #FDFDFD;
+  color: #333;
+
+  border-top: 5px solid #333;
+
+  text-rendering: optimizeLegibility;
+}
 
 body {
-  display: flex;
+  font: normal 100% d-regular;
+  line-height: 1.6rem;
+
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+h1 {
+  font-family: d-medium;
+
+  margin-bottom: 1.5rem;
+
+  a {
+    display: block;
+    text-indent: -9999rem;
+    width: 65px;
+    height: 27px;
+    background-image: url(../awm.png);
+    background-size: 65px 27px;
+  }
+}
+
+nav {
+  text-transform: uppercase;
+  font-size: .8rem;
+
+  float: right;
+
+  li {
+    display: inline-block;
+
+    padding-left: 2rem;
+  }
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.inner {
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+a {
+  text-decoration: none; 
+
+  color: #FF6447;
+  &:hover {
+    color: #FFB52F;
+  }
+}
+
+.intro {
+  clear: both;
+
+  margin-top: 3rem;
+
+  font-size: 1.5rem;
+  line-height: 2.3rem;
+  .inner {
+    > p {
+      display: block;
+      padding: 1rem 0;
+    }
+  }
+}
+
+.details {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+
+  font-family: d-light;
+
+  .inner {
+    > h2 {
+      text-transform: uppercase;
+      font-size: .8rem;
+      margin-top: 4rem;
+    }
+  }
+
+  ul {
+    li {
+      margin-top: .5rem;
+      margin-bottom: 1rem;
+    }
+    h3 {
+      font-size: 1.2rem;
+
+      ~ span {
+        display: block;
+        margin-top: .25rem;
+        margin-bottom: .25rem;
+      }
+    }
+    span {
+      font-size: .9rem;
+      font-family: d-light;
+      
+      color: #888;
+    }
+  }
+}
+
+.last-updated {
+  font-size: .9rem;
+}
+
+.bio {
+  img {
+    float: left;
+    margin-top: 2rem;
+    margin-right: 4rem;
+    margin-bottom: 15rem;
+    width: 20rem;
+    height: 20rem;
+    border-radius: 100rem;
+  }
 }
