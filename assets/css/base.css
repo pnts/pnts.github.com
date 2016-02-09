@@ -265,6 +265,7 @@ nav {
 
 a {
   text-decoration: none;
+  transition: color .25s ease-in-out;
   color: #FF6447; }
   a:hover {
     color: #FFB52F; }
@@ -311,3 +312,9 @@ a {
   width: 20rem;
   height: 20rem;
   border-radius: 100rem; }
+
+iframe {
+  max-width: 100%; }
+  iframe ~ p {
+    max-width: 35rem;
+    margin-bottom: 4rem; }
