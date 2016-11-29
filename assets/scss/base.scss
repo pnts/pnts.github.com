@@ -85,12 +85,15 @@ a {
 
   margin-top: 3rem;
 
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   line-height: 2.3rem;
   .inner {
     > p {
       display: block;
       padding: 1rem 0;
+    }
+    .narrow {
+      max-width: 33rem;
     }
   }
 }

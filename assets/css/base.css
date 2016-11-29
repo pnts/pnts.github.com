@@ -198,32 +198,26 @@ input[type=button] {
   font-family: d-regular;
   src: url("../type/d-regular.eot");
   src: url("../type/d-regular.eot?#iefix") format("embedded-opentype"), url("../type/d-regular.woff") format("woff"), url("../type/d-regular.ttf") format("truetype"); }
-
 @font-face {
   font-family: d-medium;
   src: url("../type/d-medium.eot");
   src: url("../type/d-medium.eot?#iefix") format("embedded-opentype"), url("../type/d-medium.woff") format("woff"), url("../type/d-medium.ttf") format("truetype"); }
-
 @font-face {
   font-family: d-light;
   src: url("../type/d-light.eot");
   src: url("../type/d-light.eot?#iefix") format("embedded-opentype"), url("../type/d-light.woff") format("woff"), url("../type/d-light.ttf") format("truetype"); }
-
 @font-face {
   font-family: d-condensed-bold;
   src: url("../type/d-condensed-bold.eot");
   src: url("../type/d-condensed-bold.eot?#iefix") format("embedded-opentype"), url("../type/d-condensed-bold.woff") format("woff"), url("../type/d-condensed-bold.ttf") format("truetype"); }
-
 @font-face {
   font-family: d-condensed;
   src: url("../type/d-condensed.eot");
   src: url("../type/d-condensed.eot?#iefix") format("embedded-opentype"), url("../type/d-condensed.woff") format("woff"), url("../type/d-condensed.ttf") format("truetype"); }
-
 @font-face {
   font-family: d-condensed-light;
   src: url("../type/d-condensed-light.eot");
   src: url("../type/d-condensed-light.eot?#iefix") format("embedded-opentype"), url("../type/d-condensed-light.woff") format("woff"), url("../type/d-condensed-light.ttf") format("truetype"); }
-
 html {
   background: #FDFDFD;
   color: #333;
@@ -273,11 +267,13 @@ a {
 .intro {
   clear: both;
   margin-top: 3rem;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   line-height: 2.3rem; }
   .intro .inner > p {
     display: block;
     padding: 1rem 0; }
+  .intro .inner .narrow {
+    max-width: 33rem; }
 
 .details {
   margin-top: 4rem;
@@ -308,7 +304,7 @@ a {
   float: left;
   margin-top: 2rem;
   margin-right: 4rem;
-  margin-bottom: 15rem;
+  margin-bottom: 7rem;
   width: 20rem;
   height: 20rem;
   border-radius: 100rem; }
