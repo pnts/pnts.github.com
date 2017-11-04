@@ -1,8 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'jekyll', '~> 2.0.3'
-
-group :development do
-  gem 'sass', '3.3.8'
-  gem 'uglifier'
-end
+gem 'middleman', '~> 4.2'
+gem 'middleman-autoprefixer', '~> 2.7'
+gem 'tzinfo-data', platforms: [:mswin, :mingw, :jruby]
+gem 'wdm', '~> 0.1', platforms: [:mswin, :mingw]

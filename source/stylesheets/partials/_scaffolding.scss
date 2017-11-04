@@ -1,0 +1,29 @@
+//////
+//////
+////// Border box all the things
+//////
+//////
+
+
+* {
+  @include box-sizing(border-box);
+}
+*:before,
+*:after {
+  @include box-sizing(border-box);
+}
+
+// Resets
+input,
+button,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+// Links
+a {
+  text-decoration: none;
+}

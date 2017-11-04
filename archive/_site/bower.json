@@ -1,0 +1,7 @@
+{
+  "name": "pnts.us",
+  "version": "0.1.0",
+  "dependencies": {
+    "bones": "0.1.3"
+  }
+}

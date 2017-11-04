@@ -1,0 +1,92 @@
+//////
+//////
+////// Mixings for fun and profit
+//////
+//////
+
+
+//////
+////// Button function to set the color of the button text
+//////
+@function set-button-text-color($color) {
+  @if (lightness($color) > 60) {
+    @return #000000; // Lighter backgorund, return dark color
+  } @else {
+    @return #ffffff; // Darker background, return light color
+  }
+}
+
+
+//////
+////// Mobile first breakpoints
+//////
+@mixin breakpoint($point) {
+  @if $point == medium {
+    @media (min-width: 30rem)  { @content; }
+  }
+  @else if $point == large {
+    @media (min-width: 50rem) { @content; }
+  }
+  @else if $point == xlarge {
+    @media (min-width: 75rem) { @content; }
+  }
+  @else if $point { // allows custom breakpoints
+    @media (min-width: $point) { @content; }
+  }
+}
+
+
+//////
+////// All boxes must be sized
+//////
+@mixin box-sizing($boxmodel) {
+  -webkit-box-sizing: $boxmodel;
+     -moz-box-sizing: $boxmodel;
+          box-sizing: $boxmodel;
+}
+
+
+//////
+////// Flexbox (WIP)
+//////
+// Since we can't have scope for placeholders in Sass, using Hiro Giraudel's hack: http://hugogiraudel.com/2014/03/31/getting-the-most-out-of-sass-placeholders/
+@mixin flexrow($extend: true) {
+  @if $extend {
+    @extend %flexrow;
+  }
+  @else {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+}
+
+%flexrow {
+  @include flexrow($extend: false);
+}
+
+
+//////
+////// Clearfix
+////// Source: http://nicolasgallagher.com/micro-clearfix-hack/
+//////
+
+@mixin clearfix($extend: true) {
+  @if $extend {
+    @extend %clearfix;
+  }
+  @else {
+    &:before,
+    &:after {
+      content: " "; // 1
+      display: table; // 2
+    }
+    &:after {
+      clear: both;
+    }
+  }
+}
+
+%clearfix {
+  @include clearfix($extend: false);
+}

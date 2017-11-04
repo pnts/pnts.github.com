@@ -1,0 +1,23 @@
+//////
+//////
+////// Ye Olde Typography
+//////
+//////
+
+$font-weight-book: 400;
+$font-weight-bold: 700;
+
+$font-heading: "Whitney A", "Whitney B", "Helvetica", "Arial", sans-serif;
+//$font-body: "Gotham Narrow SSm A", "Gotham Narrow SSm B", "Helvetica", "Arial", sans-serif;
+
+
+$font-size-base: 16px;
+
+
+
+body {
+  font-family: $font-heading;
+  font-weight: $font-weight-book;
+  //font-size: $font-size-regular;
+  //line-height: $line-height-body;
+}
