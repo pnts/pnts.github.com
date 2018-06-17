@@ -10,6 +10,21 @@ body {
   padding: 0;
 }
 
+a {
+  color: #647C8E;
+  &:hover {
+    color: #FF6447;
+  }
+}
+
+h3 {
+  text-transform: uppercase;
+  margin-top: 2rem;
+}
+
+h4 {
+  margin: .5rem 0;
+}
 
 .inner {
   margin-left: 1rem;
@@ -60,6 +75,25 @@ nav {
   clear: both;
   padding: 3rem 0;
   background: #EEE;
+
+  a {
+    border-bottom: 1px solid #FF6447;
+    transition: $transition;
+    &:hover {
+      border-bottom: 1px solid #647C8E;
+    }
+  }
+}
+
+.supporting-list {
+  span {
+    display: block;
+    color: #999;
+    margin: .3rem 0;
+  }
+  li {
+    margin: 1rem 0 1.5rem 0;
+  }
 }
 
 footer {
