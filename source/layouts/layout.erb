@@ -6,10 +6,10 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Use the title from a page's frontmatter if it has one -->
-    <meta name="description" content="It is content, or rather the consciousness of content, that fills the void, but the mere presence of content is not enough. It is style that makes us care." />
+    <meta name="description" content="" />
     <meta name="author" content="Andrea Mignolo" />
     <meta name="google-site-verification" content="tCPhQbhWij1mPScz84y0GQDTWrlZ0oMyN702dRmtmr0" />
-    <meta name="keywords" content="design, design leadership, interaction design, organization design" />
+    <meta name="keywords" content="design, design leadership, interaction design, organizational design, business design, coaching" />
 
     <title><%= current_page.data.title || "pnts.us" %></title>
     <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/6543216/6977192/css/fonts.css" />
@@ -17,6 +17,26 @@
     <%= javascript_include_tag "pnts" %>
   </head>
   <body>
-    <%= yield %>
+    <header>
+      <div class="inner">
+        <div class="site-branding">
+          <%= link_to('pnts.us', '/', :class => 'logo') %>
+        </div>
+        <nav>
+          <ul>
+            <li><%= link_to('bio', 'bio') %> </li>
+            <li><%= link_to('speaking', 'speaking') %> </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="content">
+      <div class="inner">
+        <%= yield %>
+      </div>
+    </section>
+
+    <%= partial "footer" %>
   </body>
 </html>
