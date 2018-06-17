@@ -6,6 +6,7 @@
 
 body {
   border-top: .5rem solid #333;
+  border-bottom: .5rem solid #333;
   margin: 0;
   padding: 0;
 }
@@ -17,13 +18,11 @@ a {
   }
 }
 
-h3 {
-  text-transform: uppercase;
-  margin-top: 2rem;
-}
-
-h4 {
-  margin: .5rem 0;
+.intro {
+  margin-bottom: 5rem;
+  @include breakpoint(large) {
+    margin-right: 35%;
+  }
 }
 
 .inner {
@@ -72,6 +71,7 @@ nav {
 }
 
 .content {
+  @extend %clearfix;
   clear: both;
   padding: 3rem 0;
   background: #EEE;
@@ -98,11 +98,69 @@ nav {
 
 footer {
   text-align: center;
+  clear: both;
   ul {
     margin: 3rem auto;
     li {
       display: inline-block;
-      margin: 0 2rem;
+      margin: 0 1rem;
+    }
+  }
+}
+
+.bio {
+  @include breakpoint(large) {
+    width: 60%;
+    display: inline-block;
+    float: left;
+  }
+}
+
+.headshot {
+  max-width: 25rem;
+  @include breakpoint(large) {
+    width: 30%;
+    display: inline-block;
+    float: right;
+  }
+  img {
+    border-radius: 8px;
+  }
+}
+
+.slideshare {
+  @extend %clearfix;
+  margin: 5rem 0;
+  iframe {
+    @include breakpoint(large) {
+      width: 50%;
+      display: inline-block;
+      float: left;
+    }
+  }
+}
+
+.talk-photos {
+  @extend %clearfix;
+  margin: 5rem 0 0 0;
+  li {
+    @include breakpoint(large) {
+      width: 50%;
+      display: inline-block;
+      float: left;
+    }
+  }
+}
+
+.twitter {
+  @extend %clearfix;
+  padding: 5rem auto;
+  li {
+    margin: 0 auto;
+    width: 500px;
+    /// TO-DO: flexbox this
+    @include breakpoint(large) {
+      width: 50%;
     }
   }
 }
