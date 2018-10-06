@@ -1,0 +1,38 @@
+{
+  "name": "bones",
+  "version": "0.1.3",
+  "homepage": "https://github.com/pnts/bones",
+  "author": [
+    "pnts <hi@pnts.us>"
+  ],
+  "description": "A base set of Sass mixins and functions",
+  "main": "bones.scss",
+  "keywords": [
+    "Sass",
+    "scss"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "bower.json",
+    "README.md",
+    "gulpfile.js",
+    "package.json",
+    ".gitignore",
+    "bones.css",
+    "bones.png"
+  ],
+  "_release": "0.1.3",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.1.3",
+    "commit": "6f00deab5a26cdcc688165f9f392f29101941902"
+  },
+  "_source": "git://github.com/pnts/bones.git",
+  "_target": "0.1.3",
+  "_originalSource": "bones"
+}
