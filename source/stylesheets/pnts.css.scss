@@ -152,15 +152,42 @@ footer {
   }
 }
 
+.hero {
+  @include breakpoint(large) {
+    @include flexrow($extend: false);
+  }
+  margin-bottom: 4rem;
+  margin-top: 4rem;
+  .speaking-intro {
+    @include breakpoint(large) {
+      flex-basis: 75%;
+    }
+  }
+  ul {
+    @include breakpoint(large) {
+      margin-left: 4rem;
+    }
+  }
+}
+
 .twitter {
   @extend %clearfix;
   padding: 5rem auto;
+  margin: 4rem auto;
+  ul {
+    @extend %flexrow;
+    flex-wrap: wrap;
+  }
   li {
-    margin: 0 auto;
-    width: 500px;
     /// TO-DO: flexbox this
     @include breakpoint(large) {
-      width: 50%;
+      flex-basis: 45%;
+      width: 320px;
+    }
+  }
+  blockquote {
+    margin-bottom: 0;
+    p {
     }
   }
 }
