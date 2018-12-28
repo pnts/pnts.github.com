@@ -27,8 +27,62 @@ footer {
 }
 
 header {
-  padding: 1rem 3rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   margin-bottom: 2rem;
+  @include breakpoint(medium) {
+    padding-left: $main-padding;
+    padding-right: $main-padding;
+  }
+}
+
+nav {
+  text-transform: uppercase;
+  font-size: .9rem;
+  @include breakpoint(medium) {
+    float: right;
+  }
+  ul {
+    display: block;
+    width: 100%;
+    margin-top: .5rem;
+  }
+  li {
+    display: inline-block;
+    padding-left: 1rem;
+    margin-top: 1rem;
+    @include breakpoint(medium) {
+      padding-left: 2rem;
+      margin-top: 0;
+    }
+    &:first-child {
+      padding-left: 0;
+    }
+  }
+  a {
+    border-bottom: 2px solid $white;
+  }
+}
+
+.logo {
+  display: block;
+  @include breakpoint(medium) {
+    display: inline-block;
+    float: left;
+  }
+  background-image: image-url('logo.png');
+  width: 70px;
+  height: 33px;
+  background-size: 70px 33px;
+  text-indent: -99999rem;
+  border: 0;
+}
+
+.speaking .speaking a,
+.coaching .coaching a,
+.about .about a,
+.reading .reading a {
+  border-bottom: 2px solid $yellow;
 }
 
 
@@ -37,38 +91,24 @@ header {
   h1 {
     position: absolute;
     color: $reversed-out-text;
-    left: 3rem;
-    top: 35%;
+    top: 25%;
+    left: 1rem;
+    font-size: $font-size-regular;
+    @include breakpoint(large) {
+      top: 35%;
+      left: 3rem;
+      font-size: $font-size-x-large;
+    }
   }
   span {
     display: block;
-    font-size: 1.6rem;
+    font-size: 1rem;
+    margin-top: -1.5rem;
+    @include breakpoint(large) {
+      font-size: 1.6rem;
+      margin-top: 0rem;
+    }
   }
-}
-
-nav {
-  text-transform: uppercase;
-  float: right;
-  font-size: .9rem;
-  ul {
-    display: block;
-    width: 100%;
-    margin-top: .5rem;
-  }
-  li {
-    display: inline-block;;
-    padding-left: 2rem;
-  }
-  a {
-    border-bottom: 2px solid $white;
-  }
-}
-
-.speaking .speaking a,
-.coaching .coaching a,
-.about .about a,
-.reading .reading a {
-  border-bottom: 2px solid $yellow;
 }
 
 footer {
@@ -83,12 +123,6 @@ footer {
   }
 }
 
-.newsletter {
-  background: #EEE;
-  padding: 5rem 0;
-  margin-top: 3rem;
-}
-
 input {
   border-radius: 3px;
   border: 0;
@@ -101,38 +135,34 @@ input[type=submit] {
   padding-right: .8rem;
   padding-left: .8rem;
   margin-left: .5rem;
+  font-size: $font-size-small;
+  text-transform: uppercase;
   &:hover {
     cursor: pointer;
   }
 }
 
-.logo {
-  display: inline-block;
-  background-image: image-url('logo.png');
-  width: 70px;
-  height: 33px;
-  background-size: 70px 33px;
-  text-indent: -99999rem;
-  float: left;
-  border: 0;
-}
-
-.center {
-  text-align: center;
-}
-
 .content {
   display: grid;
-  grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
   grid-template-areas:
-    "header content";
-  padding: 0 3rem;
+    "header"
+    "content";
+
+  @include breakpoint(medium) {
+    padding: 0 $main-padding;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "header content";
+    }
 }
 
 .col-1 {
   grid-area: header;
-  max-width: 60%;
+
+  @include breakpoint(medium) {
+    max-width: 60%;
+  }
 }
 
 .col-2 {
@@ -157,8 +187,13 @@ input[type=submit] {
 
 .bio .bio {
   padding-top: 4rem;
-  max-width: 40%;
   margin: 0 auto;
+  @include breakpoint(large) {
+    max-width: 50%;
+  }
+  @include breakpoint(xlarge) {
+    max-width: 40%;
+  }
   img {
     margin-bottom: 2rem;
   }
@@ -174,25 +209,42 @@ input[type=submit] {
   margin-top: 1.5rem;
 }
 
-.video-container {
-  margin-top: 2.5rem;
-  width: 150%;
-  margin-left: -50%;
-  margin-bottom: 4rem;
-}
-
 .training h2 {
   margin-bottom: -1.5rem;
-}
-
-.book-cover {
-  width: 240px;
-  border: 1px solid #EEE;
 }
 
 .col-2 h3 {
   margin-bottom: -1.5rem;
 }
+
+.video-container {
+  @include breakpoint(medium) {
+    width: 150%;
+    margin-left: -50%;
+    margin-top: 2.5rem;
+    margin-bottom: 4rem;
+  }
+}
+
+.book-cover {
+  display: block;
+  width: 240px;
+  border: 1px solid #EEE;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  @include breakpoint(medium) {
+    display: inline-block;
+    margin-bottom: 0;
+    margin-right: 3rem;
+  }
+}
+
+.newsletter {
+  background: #EEE;
+  padding: 5rem 2rem;
+  margin-top: 3rem;
+}
+
 
 .design-loop {
   margin-top: 2rem;
