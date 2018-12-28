@@ -1,10 +1,16 @@
 <footer>
-  <div class="inner">
-    <ul>
-      <li><%= link_to('Twitter', 'https://twitter.com/pnts', :class => 'twitter') %> </li>
-      <li><%= link_to('Github', 'http://github.com/pnts', :class => 'github') %> </li>
-      <li><%= link_to('Medium', 'https://medium.com/the-design-of-things', :class => 'medium') %> </li>
-      <li><%= link_to('LinkedIn', 'https://www.linkedin.com/in/mignolo', :class => 'linkedin') %> </li>
-    </ul>
+  <div class="newsletter">
+    <form style="text-align:center;" action="https://tinyletter.com/pnts" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/pnts', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true">
+      <h3><label for="tlemail">Join my mailing list</label></h3>
+      <p><input type="text"  name="email" id="tlemail" /><input type="hidden" value="1" name="embed"/><input type="submit" value="Subscribe" /></p></form>
+
+    <p>I send out occasional emails about design, transformation, and organizations.</p>
+
   </div>
+  <ul>
+    <li><%= link_to('Twitter', 'https://twitter.com/pnts', :class => 'twitter') %> </li>
+    <li><%= link_to('Github', 'http://github.com/pnts', :class => 'github') %> </li>
+    <li><%= link_to('Medium', 'https://medium.com/the-design-of-things', :class => 'medium') %> </li>
+    <li><%= link_to('LinkedIn', 'https://www.linkedin.com/in/mignolo', :class => 'linkedin') %> </li>
+  </ul>
 </footer>
