@@ -13,13 +13,15 @@ body {
 a {
   color: $main-text;
   border-bottom: 2px solid $link-accent-color;
+  transition: $transition;
   &:hover {
     color: $link-accent-color;
   }
 }
 
 header,
-main {
+main,
+footer {
   max-width: 1600px;
   margin: 0 auto;
 }
@@ -78,6 +80,29 @@ footer {
       display: inline-block;
       margin: 0 1rem;
     }
+  }
+}
+
+.newsletter {
+  background: #EEE;
+  padding: 5rem 0;
+  margin-top: 3rem;
+}
+
+input {
+  border-radius: 3px;
+  border: 0;
+  padding: .2rem;
+}
+
+input[type=submit] {
+  background-color: $yellow;
+  color: $dark-grey;
+  padding-right: .8rem;
+  padding-left: .8rem;
+  margin-left: .5rem;
+  &:hover {
+    cursor: pointer;
   }
 }
 
@@ -167,4 +192,8 @@ footer {
 
 .col-2 h3 {
   margin-bottom: -1.5rem;
+}
+
+.design-loop {
+  margin-top: 2rem;
 }
