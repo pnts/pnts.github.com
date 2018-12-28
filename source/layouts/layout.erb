@@ -16,7 +16,7 @@
     <%= stylesheet_link_tag "pnts" %>
     <%= javascript_include_tag "pnts" %>
   </head>
-  <body>
+  <body class="<%= page_classes %>">
     <header>
       <div class="inner">
         <div class="site-branding">
@@ -24,18 +24,19 @@
         </div>
         <nav>
           <ul>
-            <li><%= link_to('bio', 'bio') %> </li>
-            <li><%= link_to('speaking', 'speaking') %> </li>
+            <li class="speaking"><%= link_to('speaking', 'speaking') %> </li>
+            <li class="coaching"><%= link_to('coaching', 'coaching') %> </li>
+            <li class="reading"><%= link_to('reading', 'reading') %> </li>
+            <li class="about"><%= link_to('about', 'about') %> </li>
           </ul>
         </nav>
       </div>
     </header>
 
-    <section class="content">
-      <div class="inner">
-        <%= yield %>
-      </div>
-    </section>
+
+    <main>
+      <%= yield %>
+    <main>
 
     <%= partial "footer" %>
 

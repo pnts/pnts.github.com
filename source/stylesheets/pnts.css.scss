@@ -5,50 +5,49 @@
 @import 'partials/normalize';
 
 body {
-  border-top: .5rem solid #333;
-  border-bottom: .5rem solid #333;
   margin: 0;
-  padding: 0;
+  padding: 0 2rem;
+  color: $main-text;
 }
 
 a {
-  color: #647C8E;
+  color: $main-text;
+  border-bottom: 2px solid $link-accent-color;
   &:hover {
-    color: #FF6447;
+    color: $link-accent-color;
   }
 }
 
-.intro {
-  margin-bottom: 5rem;
-  @include breakpoint(large) {
-    margin-right: 35%;
-  }
-}
-
-.inner {
-  margin-left: 1rem;
-  margin-right: 1rem;
-
-  @include breakpoint(large) {
-    max-width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  @include breakpoint(xlarge) {
-    max-width: 60%;
-    margin-left: auto;
-    margin-right: auto;
-  }
+header,
+main {
+  max-width: 1600px;
+  margin: 0 auto;
 }
 
 header {
-  padding: 2rem 0;
+  padding: 1rem 3rem;
   margin-bottom: 2rem;
+}
+
+
+.hero {
+  position: relative;
+  h1 {
+    position: absolute;
+    color: $reversed-out-text;
+    left: 3rem;
+    top: 35%;
+  }
+  span {
+    display: block;
+    font-size: 1.6rem;
+  }
 }
 
 nav {
   text-transform: uppercase;
   float: right;
+  font-size: .9rem;
   ul {
     display: block;
     width: 100%;
@@ -58,42 +57,16 @@ nav {
     display: inline-block;;
     padding-left: 2rem;
   }
-}
-
-.logo {
-  display: inline-block;
-  background-image: image-url('awm.png');
-  width: 80px;
-  height: 33px;
-  background-size: 80px 33px;
-  text-indent: -99999rem;
-  float: left;
-}
-
-.content {
-  @extend %clearfix;
-  clear: both;
-  padding: 3rem 0;
-  background: #EEE;
-
   a {
-    border-bottom: 1px solid #FF6447;
-    transition: $transition;
-    &:hover {
-      border-bottom: 1px solid #647C8E;
-    }
+    border-bottom: 2px solid $white;
   }
 }
 
-.supporting-list {
-  span {
-    display: block;
-    color: #999;
-    margin: .3rem 0;
-  }
-  li {
-    margin: 1rem 0 1.5rem 0;
-  }
+.speaking .speaking a,
+.coaching .coaching a,
+.about .about a,
+.reading .reading a {
+  border-bottom: 2px solid $yellow;
 }
 
 footer {
@@ -108,87 +81,90 @@ footer {
   }
 }
 
-.bio {
-  @include breakpoint(large) {
-    width: 60%;
-    display: inline-block;
-    float: left;
+.logo {
+  display: inline-block;
+  background-image: image-url('logo.png');
+  width: 70px;
+  height: 33px;
+  background-size: 70px 33px;
+  text-indent: -99999rem;
+  float: left;
+  border: 0;
+}
+
+.center {
+  text-align: center;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "header content";
+  padding: 0 3rem;
+}
+
+.col-1 {
+  grid-area: header;
+  max-width: 60%;
+}
+
+.col-2 {
+  grid-area: content;
+  h2 {
+    margin-top: 2rem;
   }
 }
 
-.headshot {
-  max-width: 25rem;
-  @include breakpoint(large) {
-    width: 30%;
-    display: inline-block;
-    float: right;
-  }
+.mission-statement {
+  text-align: center;
+  padding: 4rem 0 3rem 0;
+}
+
+.section-label {
+  font-size: $font-size-small;
+  text-transform: uppercase;
+  line-height: 1.6rem;
+  margin-bottom: 0;
+  margin-top: 2rem;
+}
+
+.bio .bio {
+  padding-top: 4rem;
+  max-width: 40%;
+  margin: 0 auto;
   img {
-    border-radius: 8px;
+    margin-bottom: 2rem;
   }
 }
 
-.slideshare {
-  @extend %clearfix;
-  margin: 5rem 0;
-  iframe {
-    @include breakpoint(large) {
-      width: 50%;
-      display: inline-block;
-      float: left;
-    }
-  }
+.separator {
+  width: 100%;
+  border-bottom: 1px solid #E0E0E0;
+  margin: 2rem 0;
 }
 
-.talk-photos {
-  @extend %clearfix;
-  margin: 5rem 0 0 0;
-  li {
-    @include breakpoint(large) {
-      width: 50%;
-      display: inline-block;
-      float: left;
-    }
-  }
+.index .content h2 {
+  margin-top: 1.5rem;
 }
 
-.hero {
-  @include breakpoint(large) {
-    @include flexrow($extend: false);
-  }
+.video-container {
+  margin-top: 2.5rem;
+  width: 150%;
+  margin-left: -50%;
   margin-bottom: 4rem;
-  margin-top: 4rem;
-  .speaking-intro {
-    @include breakpoint(large) {
-      flex-basis: 75%;
-    }
-  }
-  ul {
-    @include breakpoint(large) {
-      margin-left: 4rem;
-    }
-  }
 }
 
-.twitter {
-  @extend %clearfix;
-  padding: 5rem auto;
-  margin: 4rem auto;
-  ul {
-    @extend %flexrow;
-    flex-wrap: wrap;
-  }
-  li {
-    /// TO-DO: flexbox this
-    margin: 0 auto;
-    @include breakpoint(large) {
-      flex-basis: 49%;
-      //width: 320px;
-    }
-  }
-  blockquote {
-    margin-bottom: 0;
-    p {
-    }
-  }
+.training h2 {
+  margin-bottom: -1.5rem;
+}
+
+.book-cover {
+  width: 240px;
+  border: 1px solid #EEE;
+}
+
+.col-2 h3 {
+  margin-bottom: -1.5rem;
 }
