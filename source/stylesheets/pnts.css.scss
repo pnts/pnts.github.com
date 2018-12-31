@@ -117,8 +117,13 @@ footer {
   ul {
     margin: 3rem auto;
     li {
-      display: inline-block;
-      margin: 0 1rem;
+      display: block;
+      text-align: center;
+      margin: 1rem 0;
+      @include breakpoint(medium) {
+        display: inline-block;
+        margin: 0 1rem;
+      }
     }
   }
 }
@@ -126,20 +131,42 @@ footer {
 input {
   border-radius: 3px;
   border: 0;
-  padding: .2rem;
+  padding: .8rem;
+  display: inline;
+  &:focus {
+    outline: 0;
+  }
+}
+
+input[type=email] {
+  width: 15rem;
 }
 
 input[type=submit] {
   background-color: $yellow;
   color: $dark-grey;
-  padding-right: .8rem;
-  padding-left: .8rem;
+  padding-right: 1.2rem;
+  padding-left: 1.2rem;
   margin-left: .5rem;
+  margin-top: 1rem;
   font-size: $font-size-small;
   text-transform: uppercase;
+  @include breakpoint(medium) {
+    margin-top: 0;
+  }
   &:hover {
     cursor: pointer;
   }
+}
+
+.newsletter div {
+  display: inline-block;
+}
+
+.mc-status {
+  display: block !important;
+  text-align: center;
+  margin-top: 1rem;
 }
 
 .content {
