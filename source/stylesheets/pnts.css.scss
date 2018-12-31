@@ -154,7 +154,7 @@ input[type=submit] {
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
       "header content";
-    }
+  }
 }
 
 .col-1 {
@@ -170,6 +170,29 @@ input[type=submit] {
   h2 {
     margin-top: 2rem;
     margin-bottom: 0;
+  }
+}
+
+.on-design {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "header"
+    "content";
+
+  @include breakpoint(large) {
+    padding: 0 $main-padding;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "header content";
+  }
+
+  .design-col-1 {
+    grid-area: header;
+
+    @include breakpoint(large) {
+      max-width: 60%;
+    }
   }
 }
 
@@ -250,4 +273,17 @@ input[type=submit] {
 
 .design-loop {
   margin-top: 2rem;
+  align-self: center;
+}
+
+.about .design-loop {
+  margin: 3rem 0;
+}
+
+.about .col-2 h3 {
+  margin: 2rem 0 2rem 0;
+  span {
+    display: block;
+    font-size: $font-size-small;
+  }
 }
