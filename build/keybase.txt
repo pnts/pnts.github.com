@@ -1,0 +1,64 @@
+==================================================================
+https://keybase.io/pnts
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://pnts.us
+  * I am pnts (https://keybase.io/pnts) on keybase.
+  * I have a public key with fingerprint 4437 4A17 4AD9 9ECC 8E47  9CEF 1D99 DF11 6F29 BD85
+
+To claim this, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "fingerprint": "44374a174ad99ecc8e479cef1d99df116f29bd85",
+            "host": "keybase.io",
+            "key_id": "1d99df116f29bd85",
+            "uid": "79064e935aba6d6138df83cea6a73300",
+            "username": "pnts"
+        },
+        "service": {
+            "hostname": "pnts.us",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1397526264,
+    "expire_in": 157680000,
+    "prev": "f25906b8d6b96d0f0d0e14b916e259361c49817e98cc511d18f8fa51d8b185cd",
+    "seqno": 3,
+    "tag": "signature"
+}
+
+with the aforementioned key, yielding the PGP signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v0.1.8
+Comment: https://keybase.io/crypto
+
+yMHXAnicbVFfSBRbGN9VUxOXQuxBCaojQcSyzJl/OzPZizcRIYsUg1RYZuacWYet
+mXVmdtdNNzBEH6IgSiyIRDYIosRLZCBF65oFu/aHxFsJgb6IEJHExUQv4hkp6OEe
+OBy+3/f7cz6+l75CT5k3Jd8BTf8mE958ZiXmaTl5bb0HKCZKAqkHRPDOo+lGGFtR
+SzccIAGWZYKsDMlFoohVVcBsUFSxBkmJNAh5jRYVJHDADzpN21UQG0W2cUA3CUaK
+kI4I+j/82E4jKFI8i0WGkxWZRzxkBKQJjIplXg4yDEW5RBtbhnwBE3bUcGyQ8gOC
+xHWVID07sX90AzGbSKKW6ZiqeZ6AnY4TlVyNk4y6pARWQr/kIUU3EBmXCOLYsnXT
+ABIkTNXRXT/IiEGO5mme9QPcHdUtHNJdBhfkBYocNwbHiaVGc2QKRUC8IvKI0ihE
+YcgqIuQx6TA8VFlRgEEsCqrKQYigoAmazEEkKFDgVETybdxlmEBiyDflMLG09bAh
+OzELg1Q201Hk8ZZ5incVuAvzlO3e+3uN1TMlW+AtfVSrkL2TS1/6v3/qX/gvO5ZI
+DHxu7ixMr/q21usPbdnllY6v/LJwdyXwoLntqzQCBo/Mz2VvF//TkKtvHytgun7E
+H0+921AO5gdi/Zkp2kgy9qO/J8cuUWcLaq5OVB1feKoNN090XxerN97sG31fVzNR
+cer1vY/z+bA6em48NzvdsNZXp5RCVqq4UV6yWUM/zIznu8Sl9rnnbbli6tbqnm/W
+sdHDkd6RtHHT78tVtkDQ8CR7oKlvsU2v1XqXG2dT06elZyf2F16c6W5dpFIjQ8tX
+Ipkz66XpyCY/7H3RvrZUaw3/VRT4OdT4ajCUZmjvhyq7o/X+7DYkAg6X
+=r9Ju
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/pnts
+
+==================================================================
