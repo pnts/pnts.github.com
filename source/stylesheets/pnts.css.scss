@@ -12,7 +12,7 @@ body {
 
 a {
   color: $main-text;
-  border-bottom: 2px solid $link-accent-color;
+  border-bottom: 1px dotted $link-accent-color;
   transition: $transition;
   &:hover {
     color: $link-accent-color;
@@ -83,6 +83,14 @@ nav {
 .about .about a,
 .reading .reading a {
   border-bottom: 2px solid $yellow;
+}
+
+.intro {
+  max-width: 50rem;
+  margin-top: 7rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10rem;
 }
 
 
@@ -239,12 +247,7 @@ input[type=submit] {
 .bio .bio {
   padding-top: 4rem;
   margin: 0 auto;
-  @include breakpoint(large) {
-    max-width: 50%;
-  }
-  @include breakpoint(xlarge) {
-    max-width: 40%;
-  }
+  max-width: 50rem;
   img {
     margin-bottom: 2rem;
   }
