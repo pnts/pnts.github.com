@@ -90,7 +90,7 @@ nav {
   margin-top: 7rem;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 10rem;
+  margin-bottom: 6rem;
 }
 
 
@@ -298,6 +298,11 @@ input[type=submit] {
   background: #EEE;
   padding: 5rem 2rem;
   margin-top: 3rem;
+  .index & {
+    max-width: 50rem;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+  }
 }
 
 
