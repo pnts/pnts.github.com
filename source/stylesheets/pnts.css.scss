@@ -12,7 +12,7 @@ body {
 
 a {
   color: $main-text;
-  border-bottom: 1px dotted $link-accent-color;
+  border-bottom: 1px solid $link-accent-color;
   transition: $transition;
   &:hover {
     color: $link-accent-color;
@@ -86,11 +86,43 @@ nav {
 }
 
 .intro {
-  max-width: 50rem;
-  margin-top: 7rem;
+  max-width: 40rem;
+  margin-top: 4rem;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 6rem;
+  margin-bottom: 1rem;
+  span {
+    color: #CCC;
+  }
+  h1 {
+    margin-top: 3rem;
+    font-size: $font-size-regular;
+    line-height: 2.6rem;
+  }
+  .info {
+    margin-top: 3rem;
+    text-align: center;
+    li {
+      padding-bottom: .5rem;
+    }
+    h4 {
+      margin-top: 3rem;
+    }
+  }
+}
+
+.previous-roles {
+  color: #999;
+}
+
+.deer {
+  max-width: 30rem;
+  margin: 0 auto;
+  display: block;
+}
+
+.center {
+  text-align: center;
 }
 
 
@@ -148,6 +180,7 @@ input {
 
 input[type=email] {
   width: 15rem;
+  background: #EEE;
 }
 
 input[type=submit] {
@@ -165,6 +198,12 @@ input[type=submit] {
   &:hover {
     cursor: pointer;
   }
+}
+
+.list-description {
+  font-size: 1rem;
+  line-height: 1.1rem;
+  margin-top: 0;
 }
 
 .newsletter div {
@@ -295,7 +334,7 @@ input[type=submit] {
 }
 
 .newsletter {
-  background: #EEE;
+  //background: #EEE;
   padding: 5rem 2rem;
   margin-top: 3rem;
   .index & {
