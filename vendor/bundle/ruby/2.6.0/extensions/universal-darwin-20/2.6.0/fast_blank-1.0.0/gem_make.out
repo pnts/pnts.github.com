@@ -1,0 +1,18 @@
+current directory: /Users/klapaucius/code/pnts.github.com/vendor/bundle/ruby/2.6.0/gems/fast_blank-1.0.0/ext/fast_blank
+/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/bin/ruby -I /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0 -r ./siteconf20210207-19018-1l7t7fb.rb extconf.rb
+creating Makefile
+
+current directory: /Users/klapaucius/code/pnts.github.com/vendor/bundle/ruby/2.6.0/gems/fast_blank-1.0.0/ext/fast_blank
+make "DESTDIR=" clean
+
+current directory: /Users/klapaucius/code/pnts.github.com/vendor/bundle/ruby/2.6.0/gems/fast_blank-1.0.0/ext/fast_blank
+make "DESTDIR="
+compiling fast_blank.c
+linking shared-object fast_blank.bundle
+ld: warning: directory not found for option '-L/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.2.Internal.sdk/usr/local/lib'
+ld: warning: ignoring file fast_blank.o, building for macOS-arm64e but attempting to link with file built for unknown-x86_64
+ld: warning: directory not found for option '-L/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.2.Internal.sdk/usr/local/lib'
+
+current directory: /Users/klapaucius/code/pnts.github.com/vendor/bundle/ruby/2.6.0/gems/fast_blank-1.0.0/ext/fast_blank
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 fast_blank.bundle ./.gem.20210207-19018-p14lsg
