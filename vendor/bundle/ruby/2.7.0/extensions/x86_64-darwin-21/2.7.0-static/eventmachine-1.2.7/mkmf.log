@@ -1,0 +1,11 @@
+"gcc -o conftest -I/Users/klapaucius/.rubies/ruby-2.7.4/include/ruby-2.7.0/x86_64-darwin21 -I/Users/klapaucius/.rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/backward -I/Users/klapaucius/.rubies/ruby-2.7.4/include/ruby-2.7.0 -I.  -I/usr/local/opt/openssl@1.1/include -I/usr/local/opt/readline/include -I/usr/local/opt/libyaml/include -I/usr/local/opt/gdbm/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -g -O2 -pipe conftest.c  -L. -L/Users/klapaucius/.rubies/ruby-2.7.4/lib -L/usr/local/opt/openssl@1.1/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libyaml/lib -L/usr/local/opt/gdbm/lib -L. -fstack-protector-strong -L/usr/local/lib -L/usr/local/opt/openssl@1.1/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libyaml/lib -L/usr/local/opt/gdbm/lib     -lruby.2.7-static -framework Security -framework Foundation -lpthread -lgmp -ldl -lobjc   "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: int main(int argc, char **argv)
+4: {
+5:   return !!argv[argc];
+6: }
+/* end */
+
