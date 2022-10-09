@@ -86,11 +86,8 @@ nav {
 }
 
 .intro {
+  margin-top: 5%;
   max-width: 40rem;
-  margin-top: 4rem;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 1rem;
   span {
     color: #CCC;
   }
@@ -179,7 +176,7 @@ input {
 }
 
 input[type=email] {
-  width: 15rem;
+  width: 30rem;
   background: #EEE;
 }
 
@@ -208,12 +205,6 @@ input[type=submit] {
 
 .newsletter div {
   display: inline-block;
-}
-
-.mc-status {
-  display: block !important;
-  text-align: center;
-  margin-top: 1rem;
 }
 
 .content {
@@ -340,12 +331,12 @@ input[type=submit] {
 
 .newsletter {
   //background: #EEE;
-  padding: 1rem 2rem 0 2rem;
+  //padding: 1rem 2rem 0 2rem;
   margin-top: 1rem;
   .index & {
-    max-width: 50rem;
-    margin: 0 auto;
-    padding: 1rem 1rem 0 1rem;
+    //max-width: 50rem;
+    //margin: 0 auto;
+    //padding: 1rem 1rem 0 1rem;
   }
 }
 
@@ -381,4 +372,69 @@ input[type=submit] {
 
 .social {
   font-size: 1rem;
+}
+
+// updating to be a studio page. for the future, delete css above
+
+.about {
+  border-bottom: 1px solid #EEE;
+}
+
+.name {
+  font-size: $font-size-x-large;
+  margin-bottom: -1rem;
+}
+
+blockquote {
+  margin: 2rem 0;
+  font-size: 1.3rem;
+  font-style: italic;
+  line-height: 1.8rem;
+}
+
+.literature {
+  margin-top: 1rem;
+  border-top: 1px solid #EEE;
+
+  .name {
+    margin-bottom: 2rem;
+  }
+
+  ul {
+    margin-top: 2rem;
+
+    li {
+      margin-top: 2.5rem;
+    }
+  }
+
+  h3, h4 {
+    display: block;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+    margin-bottom: 0;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+}
+
+.newsletter {
+  border-top: 1px solid #EEE;
+  border-bottom: 1px solid #EEE;
+  padding-bottom: 3rem;
+  margin-top: 3rem;
+
+  .name {
+    display: block;
+    font-size: 1.3rem;
+    clear: both;
+  }
+}
+
+.updated {
+  font-size: .9rem;
 }
