@@ -3,8 +3,7 @@ _theme_packages/*
 */.sass-cache/*
 .sass-cache/*
 node_modules/*
-vendor/*
-
+/build/
 
 Thumbs.db
 .DS_Store

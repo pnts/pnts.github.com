@@ -1,0 +1,30 @@
+<footer>
+  <div class="newsletter">
+
+<!-- <h4><label for="tlemail">THE MAILING LIST</label></h4>
+<p class="list-description">Joyfully irregular mailings.</p> -->
+
+<div id="revue-embed">
+  <form action="https://www.getrevue.co/profile/pnts/add_subscriber" method="post" id="revue-form" name="revue-form"  target="_blank">
+  <div class="revue-form-group">
+    <input class="revue-form-field" placeholder="Your email address..." type="email" name="member[email]" id="member_email">
+  </div>
+  <div class="revue-form-actions">
+    <input type="submit" value="Subscribe" name="member[subscribe]" id="member_submit">
+  </div>
+  <!-- <div class="revue-form-footer">By subscribing, you agree with Revue’s <a target="_blank" href="https://www.getrevue.co/terms">Terms of Service</a> and <a target="_blank" href="https://www.getrevue.co/privacy">Privacy Policy</a>.</div> -->
+  </form>
+</div>
+
+</div>
+
+
+
+  <ul class="social">
+    <li><%= link_to('twitter', 'https://twitter.com/pnts', :class => 'twitter') %> </li>
+    <li><%= link_to('medium', 'https://medium.com/the-design-of-things', :class => 'medium') %> </li>
+    <li><%= link_to('linkedin', 'https://www.linkedin.com/in/mignolo', :class => 'linkedin') %> </li>
+    <li><%= link_to('bio', 'bio', :class => 'bio') %> </li>
+    <li><%= link_to('method & matter', 'https://methodandmatter.com') %> </li>
+  </ul>
+</footer>
