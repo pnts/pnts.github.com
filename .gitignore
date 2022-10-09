@@ -1,10 +1,15 @@
+.bundle
+.cache
+.DS_Store
+.sass-cache
+build
+vendor
+
 _site/*
 _theme_packages/*
 */.sass-cache/*
 .sass-cache/*
 node_modules/*
-vendor/*
-
 
 Thumbs.db
 .DS_Store
