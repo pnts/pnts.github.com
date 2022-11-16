@@ -130,7 +130,7 @@ resource:
   - title: "The Design Philosophy Reader"
     author: "Anne Marie-Willis (Editor)"
     year: "2018"
-    Link: "https://www.bloomsbury.com/us/design-philosophy-reader-9780857853509/"
+    link: "https://www.bloomsbury.com/us/design-philosophy-reader-9780857853509/"
   - title: "Practiced-based ontological design for multiplying realities"
     author: "Chris Nold"
     year: "2018"
