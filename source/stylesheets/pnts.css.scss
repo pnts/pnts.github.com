@@ -390,6 +390,10 @@ blockquote {
   font-size: 1.3rem;
   font-style: italic;
   line-height: 1.8rem;
+  p {
+    margin-top: 1rem;
+    color: #999;
+  }
 }
 
 .literature {
