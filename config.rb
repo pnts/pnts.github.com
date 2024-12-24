@@ -6,7 +6,7 @@ activate :autoprefixer do |prefix|
 end
 
 activate :directory_indexes
-activate :livereload
+# activate :livereload
 
 
 # Layouts
